@@ -12,7 +12,7 @@ const Sidebar3 = () => {
         <div className="side4">
           <div className="side5">
             <h5>Courses</h5>
-            <i class="fa-light fa-dash"></i>
+            <div className="side555"></div>
           </div>
           <div className="side6">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -39,7 +39,7 @@ const Sidebar3 = () => {
         <div className="side4">
           <div className="side5">
             <h5>Merit Basis</h5>
-            <i class="fa-light fa-dash"></i>
+            <div className="side555"></div>
           </div>
           <div className="side6">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -66,7 +66,7 @@ const Sidebar3 = () => {
         <div className="side4">
           <div className="side5">
             <h5>City</h5>
-            <i class="fa-light fa-dash"></i>
+            <div className="side555"></div>
           </div>
           <div className="side6">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -93,7 +93,7 @@ const Sidebar3 = () => {
         <div className="side4">
           <div className="side5">
             <h5>College Offered</h5>
-            <i class="fa-light fa-dash"></i>
+            <div className="side555"></div>
           </div>
           <div className="side6">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -115,7 +115,7 @@ const Sidebar3 = () => {
         <div className="side4">
           <div className="side5">
             <h5>Income Based</h5>
-            <i class="fa-light fa-dash"></i>
+            <div className="side555"></div>
           </div>
           <div className="side6">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -143,7 +143,7 @@ const Sidebar3 = () => {
         <div className="side4">
           <div className="side5">
             <h5>Gender Based</h5>
-            <i class="fa-light fa-dash"></i>
+            <div className="side555"></div>
           </div>
           <div className="side6">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -171,7 +171,7 @@ const Sidebar3 = () => {
         <div className="side4">
           <div className="side5">
             <h5>Other Scholarships</h5>
-            <i class="fa-light fa-dash"></i>
+            <div className="side555"></div>
           </div>
           <div className="side6">
             <i class="fa-solid fa-magnifying-glass"></i>

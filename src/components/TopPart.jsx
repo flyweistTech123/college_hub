@@ -22,9 +22,6 @@ const TopPart = ()=>{
           <p className={location.pathname === "/scholarship2"? "clg12" : "clg13"} 
             onClick={()=>navigate("/scholarship2")}
           >Scholarship</p>
-          <p className={location.pathname === "/scholarship2"? "clg12" : "clg13"} 
-            onClick={()=>navigate("/scholarship2")}
-          >Q&A</p>
         </div>
       </div>
         </>

@@ -192,6 +192,10 @@ const TopNavbar = (props) => {
   };
   const moreMenu = [
 
+    {
+      name: "Counsellor connect",
+      link: "/counsellor",
+    },
 
     {
       name: "Mock Test",
@@ -204,14 +208,6 @@ const TopNavbar = (props) => {
     {
       name: "College Predictor",
       link: '/college-predictor',
-    },
-    {
-      name: "Scholarship Test",
-      link: '/scholarshiptest',
-    },
-    {
-      name: "Community",
-      link: '/community',
     },
 
     {
@@ -485,7 +481,7 @@ const TopNavbar = (props) => {
             <p onClick={() => navigate("/common-applications")} style={{ color: props.color }}>
               Common Application
             </p>
-            <p onClick={() => navigate("/careers")} style={{ color: props.color }}>
+            <p onClick={() => navigate("/scholarshiptest")} style={{ color: props.color }}>
             Scholarship Test
             </p>
 

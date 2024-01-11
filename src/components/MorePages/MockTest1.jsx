@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import './MockTest.css'
 import { useNavigate } from "react-router-dom";
 import TopPart3 from "../TopPart3";
-import Footer from "../Footer";
+import Footer1 from "../Footer1";
 import "bootstrap/dist/css/bootstrap.min.css";
-import img6 from "../../Images/c38.png";
-import img7 from "../../Images/c87.png";
-import TopNavbar from "../TopNavbar";
-import moke from '../../Images/moketest.png'
+import NavbarSlider from "../uppside/Navbar&skider";
 
 const MockTest1 = () => {
     const navigate = useNavigate();
@@ -17,35 +14,12 @@ const MockTest1 = () => {
     }
     return (
         <>
-            <div className="app1">
-                <div className="schro">
-                    <TopNavbar />
-                </div>
-                <div className="app6">
-                    <img src={moke} />
-                </div>
-                <div className="schro1">
-                    <div className="home100">
-                        <i class="fa-solid fa-bars" ></i>
-                    </div>
-                    <div className="schro2">
-                        <h2>Let's start your career journey.</h2>
-                    </div>
-                    <div className="home4">
-                        <input
-                            type="text"
-                            placeholder="Search for colleges, exams, Q & A, Articles..."
-                        />
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div className="schro3">
-                        <button onClick={() => navigate("/screen2")}>
-                            Explore College & University
-                        </button>
-                    </div>
-                </div>
+            <div>
+                <NavbarSlider />
             </div>
-            <TopPart3 />
+            <div className="topki">
+                <TopPart3 />
+            </div>
             <div className="tst1">
                 <div className="tst2">
                     <h4>Select the language for the test </h4>
@@ -136,7 +110,7 @@ const MockTest1 = () => {
             </div>
             <div className="loan21">
             </div>
-            <Footer />
+            <Footer1 />
 
         </>
     );

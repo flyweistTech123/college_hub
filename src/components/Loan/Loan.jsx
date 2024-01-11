@@ -25,8 +25,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import TopNavbar from "../TopNavbar";
 import TopPart3 from "../TopPart3";
+import img111 from "../../Images/c33.png";
+import img21 from "../../Images/c26.png";
+import img31 from "../../Images/slider1.png";
+import img41 from "../../Images/slider2.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Footer1 from '../Footer1'
 
 const Loan = () => {
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 100,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
 
   const [chartData, setChartData] = useState({
     series: [85, 15,],
@@ -36,12 +54,12 @@ const Loan = () => {
         type: 'pie',
       },
       labels: ['Total Interest', 'Principal loan amount'],
-      colors: ['#001848', '#F4BC1C'], // Custom colors
+      colors: ['#D9D9D9', '#349DCF'], // Custom colors
       responsive: [{
         breakpoint: 480,
         options: {
           chart: {
-            width: 200
+            width: 300
           },
           legend: {
             position: 'bottom'
@@ -61,29 +79,67 @@ const Loan = () => {
   };
 
 
+
+  const [loanAmount, setLoanAmount] = useState(10000);
+  const priceGap = 1000;
+
+  const handleInputChange = (e) => {
+    let value = parseInt(e.target.value, 10);
+
+    if (value >= 2500 && value <= 10000) {
+      setLoanAmount(value);
+    }
+  };
+
   return (
     <>
       <div className="app1">
-        <div className="schro">
-          <TopNavbar />
-        </div>
-        <div className="app6">
-          <img src={Loanimg} />
+        <div className="home200">
+          <div className="home1">
+            <Slider {...settings}>
+              <div className="car1">
+                <img src={img111} />
+              </div>
+              <div className="car1">
+                <img src={img21} />
+              </div>
+              <div className="car1">
+                <img src={img31} />
+              </div>
+              <div className="car1">
+                <img src={img41} />
+              </div>
+            </Slider>
+            <div className="home2">
+              <div className="home100">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <TopNavbar color="#1A3B5A" />
+            </div>
+          </div>
+
+
+          <div className="newhome1">
+            <h2>Admissions Open for O P Jindal Global University. Click to Apply Now!</h2>
+          </div>
         </div>
 
         <div className="loan31">
           <div className="loan30">
             <img src={img2} alt="" />
             <h5>Calculate <span>EMI</span></h5>
-            <p>Corem ipsum dolor sit amet, consectetur adipiscing </p>
+            <p>Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
           </div>
           <div className="loan30">
             <img src={img3} alt="" />
             <h5><span>KYE:</span> know your Eligibilty</h5>
-            <p>Corem ipsum dolor sit amet, </p>
+            <p>Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>
           </div>
         </div>
-        <TopPart3 />
+        <div className="topki">
+          <TopPart3 />
+        </div>
+
       </div>
       <div className="loan10">
         <div className="loan11">
@@ -100,16 +156,16 @@ const Loan = () => {
         </div>
       </div>
       <div className="loan35">
-      {["All Banks", "Govt Banks", "Private Banks", "Cooperative", "NBFCs"].map((bank, index) => (
-        <div
-          key={index}
-          className={faltu === index ? "loan36" : "loan37"}
-          onClick={() => handleFaltu(index)}
-        >
-          {bank}
-        </div>
-      ))}
-    </div>
+        {["All Banks", "Govt Banks", "Private Banks", "Cooperative", "NBFCs"].map((bank, index) => (
+          <div
+            key={index}
+            className={faltu === index ? "loan36" : "loan37"}
+            onClick={() => handleFaltu(index)}
+          >
+            {bank}
+          </div>
+        ))}
+      </div>
       <div className="loan12">
         <div className="loan13">
           <p>Bank Name</p>
@@ -145,8 +201,8 @@ const Loan = () => {
           </div>
           <div className="loan18">
             <div className="ext1">
-              <button className="ext3">Apply Now</button>
-              <button className="ext2" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
+              <button className="ext3" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
+              <button className="ext2">Apply Now</button>
             </div>
           </div>
         </div>
@@ -247,37 +303,104 @@ const Loan = () => {
 
       <div className="loan24">
         <div className="loan22">
-          <h5>EMI Calculator</h5>
+          <div>
           <div className="loan23">
-            <label htmlFor="">Loan Amount</label>
-            <input type="text" name="" id="" placeholder="₹25,17,310" />
+            <label htmlFor="">Fill the Loan Amount</label>
+            <input type="text" placeholder="10,000₹"  value={loanAmount}
+            onChange={handleInputChange} />
           </div>
+          <div className="rangebox">
+            <div className="slider">
+              <div className="progress"></div>
+            </div>
+            <div className="range-input">
+              <input type="range" className="range-min"
+              min="2500"
+              max="10000"
+              step={priceGap}
+              value={loanAmount}
+              onChange={handleInputChange} />
+            </div>
+          </div>
+          <div className="values">
+            <span>10,000</span>
+            <span>10L</span>
+            <span>20L</span>
+            <span>30L</span>
+            <span>40L</span>
+            <span>50L</span>
+            <span>60L</span>
+            <span>70L</span>
+            <span>80L</span>
+            <span>90L</span>
+            <span>1CR</span>
+          </div>
+          </div>
+          <div>
           <div className="loan23">
-            <label htmlFor="">Interest Rate</label>
-            <input type="text" name="" id="" placeholder="7%" />
+            <label htmlFor="">Fill the Interest Rate</label>
+            <input type="text" placeholder="10,000₹"  value={loanAmount}
+            onChange={handleInputChange} />
           </div>
+          <div className="rangebox">
+            <div className="slider">
+              <div className="progress"></div>
+            </div>
+            <div className="range-input">
+              <input type="range" className="range-min"
+              min="2500"
+              max="10000"
+              step={priceGap}
+              value={loanAmount}
+              onChange={handleInputChange} />
+            </div>
+          </div>
+          <div className="values">
+            <span>10,000</span>
+            <span>10L</span>
+            <span>20L</span>
+            <span>30L</span>
+            <span>40L</span>
+            <span>50L</span>
+            <span>60L</span>
+            <span>70L</span>
+            <span>80L</span>
+            <span>90L</span>
+            <span>1CR</span>
+          </div>
+          </div>
+          <div>
           <div className="loan23">
-            <label htmlFor="">Tenure (Months)</label>
-            <input type="text" name="" id="" placeholder="147" />
+            <label htmlFor="">Fill the Loan Rate</label>
+            <input type="text" placeholder="10,000₹"  value={loanAmount}
+            onChange={handleInputChange} />
           </div>
-          <div className="loan23">
-            <label htmlFor="">EMI (Monthly)</label>
-            <input type="text" name="" id="" placeholder="₹₹25,550" />
+          <div className="rangebox">
+            <div className="slider">
+              <div className="progress"></div>
+            </div>
+            <div className="range-input">
+              <input type="range" className="range-min"
+              min="2500"
+              max="10000"
+              step={priceGap}
+              value={loanAmount}
+              onChange={handleInputChange} />
+            </div>
           </div>
-          <div className="loan23">
-            <label htmlFor="">Total Interest</label>
-            <input type="text" name="" id="" placeholder="₹12,38,574" />
+          <div className="values">
+            <span>10,000</span>
+            <span>10L</span>
+            <span>20L</span>
+            <span>30L</span>
+            <span>40L</span>
+            <span>50L</span>
+            <span>60L</span>
+            <span>70L</span>
+            <span>80L</span>
+            <span>90L</span>
+            <span>1CR</span>
           </div>
-          <div className="loan25">
-            <hr />
-          </div>
-          <div className="loan23">
-            <label htmlFor="">Total Payment</label>
-            <input type="text" name="" id="" placeholder="₹37,55,850" />
-          </div>
-
-          <div className="loan26">
-            <button>Submit</button>
           </div>
         </div>
 
@@ -296,7 +419,7 @@ const Loan = () => {
       </div>
       <div className="loan21">
       </div>
-      <Footer />
+      <Footer1 />
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title></Offcanvas.Title>

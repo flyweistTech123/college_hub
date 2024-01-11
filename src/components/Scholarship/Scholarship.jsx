@@ -4,11 +4,10 @@ import { useNavigate } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../Footer";
-import scholarshipimg from '../../Images/schrolarship.png';
 import img from '../../Images/clgschro.png'
-import TopNavbar from "../TopNavbar";
 import Sidebar3 from "../Sidebar3";
 import { IoMdArrowDropright } from "react-icons/io";
+import NavbarSlider from "../uppside/Navbar&skider";
 
 
 const Scholarship = () => {
@@ -116,33 +115,8 @@ const Scholarship = () => {
 
   return (
     <>
-      <div className="app1">
-        <div className="schro">
-          <TopNavbar />
-        </div>
-        <div className="app6">
-          <img src={scholarshipimg} />
-        </div>
-        <div className="schro1">
-          <div className="home100">
-            <i class="fa-solid fa-bars" onClick={handleShow}></i>
-          </div>
-          <div className="schro2">
-            <h2>Let's start your career journey.</h2>
-          </div>
-          <div className="home4">
-            <input
-              type="text"
-              placeholder="Search for colleges, exams, Q & A, Articles..."
-            />
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div className="schro3">
-            <button onClick={() => navigate("/screen2")}>
-              Explore College & University
-            </button>
-          </div>
-        </div>
+      <div>
+        <NavbarSlider />
       </div>
       <div className="schro5">
         <div className="screen2">
@@ -153,45 +127,72 @@ const Scholarship = () => {
         <div className="schro12">
           <div className="schro6">
             <div className="schro7">
-              <div className="schro8"><h6>TATA Scholarship-Cornell University</h6></div>
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
               <div className="schro9">
-                <p>International Student Eligible : <span>Yes</span></p>
-                <p>Amount : <span>Variable Amount</span></p>
-                <p>Type : <span>College Specific</span></p>
-                <p>Level Of Study  : <span>Bachelors</span></p>
-                <p>Number Of Scholorships : <span>40</span></p>
-                <h5>Read more  <IoMdArrowDropright /></h5>
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
               </div>
+              
               <div className="schro10">
                 <button>Apply Now</button>
                 <button>Get Alert</button>
               </div>
             </div>
             <div className="schro7">
-              <div className="schro8"><h6>Hubert H. Humphery Fellows...........</h6></div>
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
               <div className="schro9">
-                <p>International Student Eligible : <span>Yes</span></p>
-                <p>Amount : <span>Variable Amount</span></p>
-                <p>Type : <span>College Specific</span></p>
-                <p>Level Of Study  : <span>Bachelors</span></p>
-                <p>Number Of Scholorships : <span>40</span></p>
-                <h5>Read more  <IoMdArrowDropright /></h5>
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
               </div>
+              
               <div className="schro10">
                 <button>Apply Now</button>
                 <button>Get Alert</button>
               </div>
             </div>
             <div className="schro7">
-              <div className="schro8"><h6>Ontario Trillium Scholarship...........</h6></div>
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
               <div className="schro9">
-                <p>International Student Eligible : <span>Yes</span></p>
-                <p>Amount : <span>Variable Amount</span></p>
-                <p>Type : <span>College Specific</span></p>
-                <p>Level Of Study  : <span>Bachelors</span></p>
-                <p>Number Of Scholorships : <span>40</span></p>
-                <h5>Read more  <IoMdArrowDropright /></h5>
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
               </div>
+              
+              <div className="schro10">
+                <button>Apply Now</button>
+                <button>Get Alert</button>
+              </div>
+            </div>
+            <div className="schro7">
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
+              <div className="schro9">
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
+              </div>
+              
               <div className="schro10">
                 <button>Apply Now</button>
                 <button>Get Alert</button>
@@ -199,49 +200,76 @@ const Scholarship = () => {
             </div>
           </div>
           <div className="schro11">
-            
+
           </div>
           <div className="schro6">
             <div className="schro7">
-              <div className="schro8"><h6>TATA Scholarship-Cornell University</h6></div>
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
               <div className="schro9">
-                <p>International Student Eligible : <span>Yes</span></p>
-                <p>Amount : <span>Variable Amount</span></p>
-                <p>Type : <span>College Specific</span></p>
-                <p>Level Of Study  : <span>Bachelors</span></p>
-                <p>Number Of Scholorships : <span>40</span></p>
-                <h5>Read more  <IoMdArrowDropright /></h5>
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
               </div>
+              
               <div className="schro10">
                 <button>Apply Now</button>
                 <button>Get Alert</button>
               </div>
             </div>
             <div className="schro7">
-              <div className="schro8"><h6>Hubert H. Humphery Fellows...........</h6></div>
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
               <div className="schro9">
-                <p>International Student Eligible : <span>Yes</span></p>
-                <p>Amount : <span>Variable Amount</span></p>
-                <p>Type : <span>College Specific</span></p>
-                <p>Level Of Study  : <span>Bachelors</span></p>
-                <p>Number Of Scholorships : <span>40</span></p>
-                <h5>Read more  <IoMdArrowDropright /></h5>
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
               </div>
+              
               <div className="schro10">
                 <button>Apply Now</button>
                 <button>Get Alert</button>
               </div>
             </div>
             <div className="schro7">
-              <div className="schro8"><h6>Ontario Trillium Scholarship...........</h6></div>
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
               <div className="schro9">
-                <p>International Student Eligible : <span>Yes</span></p>
-                <p>Amount : <span>Variable Amount</span></p>
-                <p>Type : <span>College Specific</span></p>
-                <p>Level Of Study  : <span>Bachelors</span></p>
-                <p>Number Of Scholorships : <span>40</span></p>
-                <h5>Read more  <IoMdArrowDropright /></h5>
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
               </div>
+              
+              <div className="schro10">
+                <button>Apply Now</button>
+                <button>Get Alert</button>
+              </div>
+            </div>
+            <div className="schro7">
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
+              <div className="schro9">
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
+              </div>
+              
               <div className="schro10">
                 <button>Apply Now</button>
                 <button>Get Alert</button>
@@ -352,45 +380,72 @@ const Scholarship = () => {
 
           <div className="schro6">
             <div className="schro7">
-              <div className="schro8"><h6>TATA Scholarship-Cornell University</h6></div>
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
               <div className="schro9">
-                <p>International Student Eligible : <span>Yes</span></p>
-                <p>Amount : <span>Variable Amount</span></p>
-                <p>Type : <span>College Specific</span></p>
-                <p>Level Of Study  : <span>Bachelors</span></p>
-                <p>Number Of Scholorships : <span>40</span></p>
-                <h5>Read more  <IoMdArrowDropright /></h5>
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
               </div>
+              
               <div className="schro10">
                 <button>Apply Now</button>
                 <button>Get Alert</button>
               </div>
             </div>
             <div className="schro7">
-              <div className="schro8"><h6>Hubert H. Humphery Fellows...........</h6></div>
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
               <div className="schro9">
-                <p>International Student Eligible : <span>Yes</span></p>
-                <p>Amount : <span>Variable Amount</span></p>
-                <p>Type : <span>College Specific</span></p>
-                <p>Level Of Study  : <span>Bachelors</span></p>
-                <p>Number Of Scholorships : <span>40</span></p>
-                <h5>Read more  <IoMdArrowDropright /></h5>
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
               </div>
+              
               <div className="schro10">
                 <button>Apply Now</button>
                 <button>Get Alert</button>
               </div>
             </div>
             <div className="schro7">
-              <div className="schro8"><h6>Ontario Trillium Scholarship...........</h6></div>
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
               <div className="schro9">
-                <p>International Student Eligible : <span>Yes</span></p>
-                <p>Amount : <span>Variable Amount</span></p>
-                <p>Type : <span>College Specific</span></p>
-                <p>Level Of Study  : <span>Bachelors</span></p>
-                <p>Number Of Scholorships : <span>40</span></p>
-                <h5>Read more  <IoMdArrowDropright /></h5>
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
               </div>
+              
+              <div className="schro10">
+                <button>Apply Now</button>
+                <button>Get Alert</button>
+              </div>
+            </div>
+            <div className="schro7">
+              <div className="schro8"><h6>Shree Ram College- Delhi Uni...</h6></div>
+              <div className="schro9">
+                <ul>
+                  <li><p>International Student Eligible : <span>Yes</span></p></li>
+                  <li><p>Amount : <span>Variable Amount</span></p></li>
+                  <li><p>Type : <span>Full-Ride-Scholarship</span></p></li>
+                  <li><p>Level Of Study  : <span>Bachelors</span></p></li>
+                  <li><p>Number Of Scholorships : <span>40</span></p></li>
+                </ul>
+                <h5>Read more</h5>
+              </div>
+              
               <div className="schro10">
                 <button>Apply Now</button>
                 <button>Get Alert</button>

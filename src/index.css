@@ -677,6 +677,13 @@ code {
 
 
 /* footer styling */
+.foot122 {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  background: #C8C8C8;
+}
+
 .foot1 {
   margin-top: 100px;
   width: 100%;
@@ -764,7 +771,7 @@ code {
 .nav1 {
   width: 100%;
   border-bottom: 1px solid #C0C0C0;
-  
+
 }
 
 .nav2 {
@@ -1097,7 +1104,7 @@ code {
   align-items: center;
 }
 
-.side555{
+.side555 {
   width: 21px;
   height: 3px;
   border-radius: 10px;
@@ -1142,7 +1149,7 @@ code {
 }
 
 
-.checkbox-group label{
+.checkbox-group label {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 500;
@@ -1587,115 +1594,131 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .common2 {
-  width: 976px;
-  height: 640px;
+  width: 192.04px;
+  height: 298.64px;
   background: #FFFFFF;
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
-  display: flex;
-  gap: 30px;
-  padding: 30px;
-  margin-bottom: 50px;
 }
 
+.coommoom {
+  width: 100%;
+  height: 160px;
+  background: #1A3B5A;
 
-.common2 img {
-  width: 110px;
-  height: 110px;
 }
 
-.common3 h1 {
+.coommoom3{
+  margin-top: 50px;
+}
+.coommoom h4 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35.41px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.coommoom h6 {
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 40.85px;
+  line-height: normal;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.coommoom1{
+  text-align: end;
+  padding-right: 20px;
+}
+
+.coommoom1 button{
+  width: 120px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: #1A3B5A;
+  transition: all 0.3s ease;
+  /* Adding transition for smooth animation */
+}
+
+.coommoom1 button:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.common3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 10px;
+}
+
+.common3 img {
+  width: 48px;
+  height: 48px;
+}
+
+.common4 h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.79px;
   color: #000000;
 }
 
-.common4 {
-  display: flex;
-  gap: 70px;
-}
-
-.common4 img {
-  width: 14px;
-  height: 20px;
+.common4 p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: #1A3B5A;
 }
 
 .common5 {
-  display: flex;
-  gap: 5px;
+  padding: 20px;
 }
 
-.common5 p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.79px;
-  color: #001848;
-}
-
-.common3 h5 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 27.24px;
-  color: #000000;
-  margin-top: 10px;
-}
-
-.common3 span {
-  font-weight: 600;
+.common5 h6 {
+  font-weight: 700;
   font-size: 16px;
   line-height: 21.79px;
   color: #000000;
 }
 
 .common6 {
-  margin-top: 20px;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.common6 p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.79px;
-  color: #000000;
-}
-
-.common7 {
-  display: flex;
-  gap: 50px;
-  margin-top: 20px;
-}
-
-.common7 button:nth-child(1) {
-  width: 240px;
-  height: 41px;
+.common6 button {
+  background: #1A3B5A;
+  width: 152px;
+  height: 28px;
   border: none;
   outline: none;
-  background-color: #001848;
-  border-radius: 30px;
-  font-weight: 600;
   font-size: 16px;
+  font-weight: 600;
   line-height: 21.79px;
   color: #FFFFFF;
-  transition: all 0.3s ease;
-  /* Adding transition for smooth animation */
 }
-
-.common7 button:hover {
+.common6 button:hover {
   transform: scale(1.1);
 }
-
-
-.common7 button:nth-child(2) {
-  width: 240px;
-  height: 41px;
-  border: 1px solid #DFDFDF;
-  outline: none;
-  background: transparent;
-  border-radius: 30px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21.79px;
-  color: #3D3D3D;
+.common7 {
+  display: flex;
+  gap: 70px;
+  margin-top: 50px;
 }
+
 
 
 .app2 {
@@ -1778,7 +1801,7 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .app9 {
-  background-color: #001848;
+  background: linear-gradient(180deg, rgba(1, 133, 195, 0.70) 0%, rgba(29, 57, 105, 0.50) 100%);
 }
 
 .app10 {
@@ -2245,11 +2268,11 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .clg8 {
-  background: #1d3969;
+  background: #349DCF;
   color: #FFFFFF;
   width: 174px;
   border: none;
-  border-radius: 30px;
+  border-radius: 5px;
   height: 32px;
   font-style: normal;
   font-weight: 400;
@@ -2257,17 +2280,25 @@ input[type="checkbox"]:checked+label:after {
   line-height: 21.79px;
 }
 
+.clg8:hover {
+  transform: scale(1.1);
+}
+
 .clg9 {
-  background: #F4BC1C;
+  background: #33BDFF;
   color: #FFFFFF;
   width: 121px;
   border: none;
-  border-radius: 30px;
+  border-radius: 5px;
   height: 32px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21.79px;
+}
+
+.clg9:hover {
+  transform: scale(1.1);
 }
 
 .clg10 {
@@ -2319,6 +2350,10 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .clg16 {
+  width: 100%;
+}
+
+.clg1611 {
   width: 30%;
 }
 
@@ -2473,14 +2508,13 @@ input[type="checkbox"]:checked+label:after {
 .clg26 button {
   background: #1d3969;
   color: #FFFFFF;
-  width: 163.48px;
+  width: 167.56px;
   border: none;
-  border-radius: 35px;
-  height: 40px;
+  height: 34px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21.79px;
 }
 
 .clg27 {
@@ -2521,15 +2555,23 @@ input[type="checkbox"]:checked+label:after {
 
 .clg28 button {
   background: transparent;
-  color: #1D3969;
+  border: 1.5px solid #1D3969;
+  color: #1A3B5A;
   width: 212px;
-  border: 1px solid #1D3969;
-  border-radius: 35px;
+  border-radius: 5px;
   height: 46px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 24.51px;
+}
+
+.space {
+  width: 90%;
+  height: 268px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  margin-top: 50px;
 }
 
 .clg28 p {
@@ -2610,10 +2652,10 @@ input[type="checkbox"]:checked+label:after {
   font-weight: 400;
   font-size: 16px;
   line-height: 21.79px;
-  color: #001848;
+  color: #349DCF;
   margin: 0;
   cursor: pointer;
-  border-bottom: 2.5px solid #001848;
+  border-bottom: 2.5px solid #349DCF;
 }
 
 .clg33p {
@@ -2909,28 +2951,28 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .clg50 {
-  border: none;
-  background: #001848;
-  border-radius: 30px;
+  border: 1px solid #1D3969;
+  background: #FFFFFF;
+  border-radius: 5px;
   width: 172.18px;
   height: 38px;
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24.51px;
-  color: #FFFFFF;
+  color: #1D3969;
 }
 
 .clg51 {
   border: none;
-  background: #F4BC1C;
-  border-radius: 30px;
+  background: #33BDFF;
+  border-radius: 5px;
   width: 172.18px;
   height: 38px;
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24.51px;
   color: #FFFFFF;
@@ -3011,13 +3053,13 @@ input[type="checkbox"]:checked+label:after {
 
 .clg56 button {
   border: none;
-  background: #F4BC1C;
-  border-radius: 30px;
-  width: 124px;
+  background: #33BDFF;
+  border-radius: 5px;
+  width: 121px;
   height: 32px;
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 21.79px;
   color: #FFFFFF;
@@ -3614,7 +3656,7 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .loan16 {
-  background: #001848;
+  background: #349DCF;
   text-align: center;
   width: 187px;
   height: 22px;
@@ -3638,7 +3680,7 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .loan15 button {
-  background: #001848;
+  background: #349DCF;
   width: 143px;
   height: 22px;
   border: none;
@@ -3694,7 +3736,7 @@ input[type="checkbox"]:checked+label:after {
   font-size: 20px;
   line-height: 27px;
   text-align: center;
-  color: #001848;
+  color: #349DCF;
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
@@ -3757,8 +3799,7 @@ input[type="checkbox"]:checked+label:after {
 
 .loan23 {
   display: flex;
-  /* gap: 50px; */
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
   margin-top: 50px;
 }
@@ -3774,7 +3815,7 @@ input[type="checkbox"]:checked+label:after {
   height: 36px;
   border: none;
   outline: none;
-  border-bottom: 2px solid #001848;
+  border-bottom: 2px solid #0185C3;
   background-color: #E7E7E7;
   color: #606060;
   padding-left: 10px;
@@ -3784,6 +3825,12 @@ input[type="checkbox"]:checked+label:after {
   font-size: 16px;
   font-weight: 600;
   color: #606060;
+}
+
+.loanp2 input {
+  width: 100%;
+  height: 1px;
+  background: #7E7E7E;
 }
 
 .loan25 {
@@ -4588,7 +4635,7 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .tst2 {
-  background-color: #001848;
+  background: linear-gradient(180deg, rgba(0, 174, 255, 0.70) 0%, rgba(0, 54, 145, 0.73) 73.31%);
   width: 483px;
   height: 260px;
   display: flex;
@@ -4618,17 +4665,41 @@ input[type="checkbox"]:checked+label:after {
   margin-bottom: 40px; */
 }
 
-.tst3 {
+.tst221{
+  background: linear-gradient(180deg, rgba(123, 204, 242, 0.70) 0%, rgba(29, 57, 105, 0.50) 73.31%);  width: 483px;
+  height: 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.tst221 h4 {
+  font-family: "Open Sans";
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.tst221 select {
+  width: 354px;
+  height: 48px;
+}
+
+
+
+.tst3 {
+  text-align: center;
   margin-top: 50px;
 }
 
 .tst3 button {
-  background: #F4BC1C;
-  border-radius: 30px;
+  background: #0185C3;
+  border-radius: 5px;
   width: 245px;
   height: 64px;
   font-weight: 600;
@@ -4690,8 +4761,8 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .tst8 button {
-  background: #001848;
-  border-radius: 30px;
+  background: #0185C3;
+  border-radius: 4.45px;
   height: 40.06px;
   width: 10%;
   color: #FFFFFF;
@@ -6160,15 +6231,14 @@ input[type="file"] {
 }
 
 .ext2 {
-
-  width: 140px;
-  height: 47px;
-  border-radius: 30px;
+  width: 70px;
+  height: 65px;
   border: none;
   outline: none;
-  background-color: #001848;
-  font-weight: 600;
+  background-color: #349DCF;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 19.07px;
   color: #FFFFFF;
   margin-top: 10px;
   transition: all 0.3s ease;
@@ -6180,15 +6250,16 @@ input[type="file"] {
 
 .ext3 {
 
-  width: 140px;
-  height: 47px;
-  border-radius: 30px;
-  border: none;
+  width: 70px;
+  height: 65px;
+  border: 1px solid #AAAAAA;
   outline: none;
-  background-color: #F4BC1C;
-  font-weight: 600;
+  background-color: #FFFFFF;
+  font-weight: 400;
   font-size: 14px;
-  color: #FFFFFF;
+  line-height: 19.07px;
+  color: #616161;
+  margin-top: 10px;
   transition: all 0.3s ease;
 }
 

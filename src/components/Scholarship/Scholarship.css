@@ -58,14 +58,16 @@
   .schro5{
     display: flex;
     /* justify-content: space-between; */
-    gap: 30px;
+    gap: 40px;
     margin-top: 40px;
+
   }
   
 
 
 .schro12{
 
+  width: 100%;
 }
 
   
@@ -73,72 +75,80 @@
     /* margin-top: 3rem; */
     display: flex;
     /* justify-content: space-between; */
-    gap: 50px;
+    gap: 40px;
   }
   
   .schro7{
-    width: 320px;
-    height: 378px;
-    border: 1px solid #DFDFDF;
-    border-radius: 11px;
-    box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.3);
+    width: 234px;
+    height: 298px;
+    border: 1.5px solid #0185C3;
+    border-bottom: none;
   }
 
 
 
 
   .schro8{
-    border-bottom: 1px solid #DFDFDF;
-    padding: 10px;
+    border-bottom: 1px solid #0185C3;
     text-align: center;
+    padding: 5px;
   }
   
   .schro8 h6{
     font-weight: 600;
-    font-size: 17px;
-    color: #000000;
+    font-size: 14px;
+    line-height: 19.07px;
+    color: #1A3B5A;
   }
   
   .schro9{
-    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .schro9 ul li{
+    font-weight: 600;
+    font-size: 12px;
+    color: #252525;
+    line-height: 16.34px;
+    margin-top: 15px;
   }
   
   .schro9 p{
-    font-weight: 400;
-    font-size: 15px;
-    color: #3D3D3D;
+    font-weight: 600;
+    font-size: 12px;
+    color: #252525;
+    line-height: 16.34px;
   }
   
   .schro9 span{
     font-weight: 700;
-    font-size: 14px;
-    color: #3D3D3D;
+    font-size: 12px;
+    color: #000000;
   }
   .schro9 h5{
     font-weight: 700;
-    font-size: 16px;
-    color: #3D3D3D;
+    font-size: 13px;
+    line-height: 16.34px;
+    color: #128DC6;
     cursor: pointer;
+    padding-left: 13px;
   }
   
   .schro10{
     display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-left: 10px;
+    margin-top: 20px;
   }
   
   .schro10 button:nth-child(1){
-    width: 140px;
-    height: 47px;
+    width: 117px;
+    height: 41px;
     border: none;
     outline: none;
-    border-radius: 30px;
     font-weight: 600;
     font-size: 14px;
     line-height: 19.07px;
     color: #FFFFFF;
-    background-color: #F4BC1C;
+    background-color: #128DC6;
     transition: all 0.3s ease; /* Adding transition for smooth animation */
   }
   .schro10 button:hover {
@@ -146,16 +156,15 @@
   }
   
   .schro10 button{
-    width: 140px;
-    height: 47px;
+    width: 117px;
+    height: 41px;
     border: none;
     outline: none;
-    border-radius: 30px;
     font-weight: 600;
     font-size: 14px;
     line-height: 19.07px;
-    color: #FFFFFF;
-    background-color: #001848;
+    color: #128DC6;
+    background-color: #E7E7E7;
     transition: all 0.3s ease; /* Adding transition for smooth animation */
   
   }
@@ -164,7 +173,7 @@
 
 
   .schro11{
-    width: 100%;
+    width: 96%;
     height: 155px;
     background-color: #D9D9D9;
     margin-top: 40px;
@@ -175,9 +184,7 @@
   .schro13{
     margin-top: 40px;
     display: flex;
-    /* gap: 50px; */
-    justify-content: space-between;
-
+   gap: 90px;
   }
 
 .schro14{
@@ -187,7 +194,7 @@
 .schro15{
     width: 267px;
     height: 37px;
-    background-color: #001848;
+    background-color: #71C3EB;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
@@ -202,8 +209,8 @@
     height: 47px;
     background-color: #FFFFFF;
     color: #000000;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 17.7px;
     text-align: center;
     box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.25);
@@ -220,7 +227,7 @@
 .schro18{
     width: 285px;
     height: 37px;
-    background-color: #001848;
+    background-color: #71C3EB;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
@@ -269,8 +276,7 @@
     height: 26px;
     border: none;
     outline: none;
-    border-radius: 30px;
-    background-color: #F4BC1C;
+    background-color: #349DCF;
     color: #FFFFFF;
     font-weight: 600;
     font-size: 14px;
@@ -290,7 +296,7 @@
   .schro22{
     width: 326px;
     height: 37px;
-    background-color: #001848;
+    background-color: #71C3EB;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
@@ -314,12 +320,11 @@
     height: 26px;
     border: none;
     outline: none;
-    border-radius: 30px;
-    background-color: #F4BC1C;
+    background-color: #349DCF;
     color: #FFFFFF;
     font-weight: 600;
     font-size: 14px;
-    transition: all 0.3s ease; /* Adding transition for smooth animation */
+    transition: all 0.3s ease;
 }
 
 .schro23 button:hover {

@@ -16,6 +16,7 @@ import { IoFilterOutline } from "react-icons/io5";
 
 import clgimg from '../../Images/homclg.png'
 import scholar from '../../Images/schrolarship12.png'
+import Footer1 from "../Footer1";
 
 
 
@@ -1755,7 +1756,7 @@ const Screen2 = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer1 />
 
     </>
   );

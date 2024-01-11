@@ -15,6 +15,8 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import location from '../Images/loaction.png'
 import { IoMdArrowDropright } from "react-icons/io";
 import ShortList from "./Modals/ShortList/ShortList";
+import NavbarSlider from "./uppside/Navbar&skider";
+import Footer1 from "./Footer1";
 
 
 
@@ -126,38 +128,15 @@ const CommonApplication = () => {
         onHide={() => setShow(false)}
       />
       <LoginModal show={show3} onHide={() => setShow3(false)} />
-      <div className="app1">
-        <div className="schro">
-          <TopNavbar />
-        </div>
-        <div className="app6">
-          <img src={common} />
-        </div>
-        <div className="schro1">
-          <div className="home100">
-            <i class="fa-solid fa-bars" onClick={handleShow}></i>
-          </div>
-          <div className="schro2">
-            <h2>Let's start your career journey.</h2>
-          </div>
-          <div className="home4">
-            <input
-              type="text"
-              placeholder="Search for colleges, exams, Q & A, Articles..."
-            />
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div className="schro3">
-            <button onClick={() => navigate("/screen2")}>
-              Explore College & University
-            </button>
-          </div>
-        </div>
+      <div>
+        <NavbarSlider />
       </div>
-      <TopPart3 />
+      <div className="topki">
+        <TopPart3 />
+      </div>
 
       <ShortList show={modalShow}
-        onHide={() => setModalShow(false)}/>
+        onHide={() => setModalShow(false)} />
 
       <div className="common1">
         <div className="screen2">
@@ -165,669 +144,682 @@ const CommonApplication = () => {
         </div>
 
         <div>
-          <div className="common2">
-            <img src={common2} alt="" />
-            <div className="common3">
-              <h1>Parul University Vaddora (PUV)</h1>
-              <div className="common4"><StarRating rating={5} /> 
-              <div className="common5">
-              <img src={location} alt=""  />
-              <p>Vaddora</p>
-              </div>
-              
-              </div>
-              <h5>Parul University offers various undergraduate, postgraduate, diploma, and PhD courses in a wide range of discipline</h5>
-              <div className="common6">
-              <p><span>Info :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Placements :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Courses & Fees :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Admissions :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Cut Off :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Scholarships :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common7">
-                <button  onClick={() => setModalShow(true)}>Short List</button>
-                <button>Read more <IoMdArrowDropright /></button>
-              </div>
+          <div className="coommoom">
+            <h4>Popular Colleges for common application</h4>
+            <h6>College Hub offers you the convenience of applying to over 100 colleges through a single application.</h6>
+            <div className="coommoom1">
+              <button>View All</button>
             </div>
           </div>
-          <div className="common2">
-            <img src={common2} alt="" />
-            <div className="common3">
-              <h1>Parul University Vaddora (PUV)</h1>
-              <div className="common4"><StarRating rating={5} /> 
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
               <div className="common5">
-              <img src={location} alt=""  />
-              <p>Vaddora</p>
-              </div>
-              
-              </div>
-              <h5>Parul University offers various undergraduate, postgraduate, diploma, and PhD courses in a wide range of discipline</h5>
-              <div className="common6">
-              <p><span>Info :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
+                <h6>Parul University
+                  Vadodra</h6>
               </div>
               <div className="common6">
-              <p><span>Placements :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Courses & Fees :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Admissions :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Cut Off :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Scholarships :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common7">
-                <button  onClick={() => setModalShow(true)}>Short List</button>
-                <button>Read more <IoMdArrowDropright /></button>
-              </div>
-            </div>
-          </div>
-          <div className="common2">
-            <img src={common2} alt="" />
-            <div className="common3">
-              <h1>Parul University Vaddora (PUV)</h1>
-              <div className="common4"><StarRating rating={5} /> 
-              <div className="common5">
-              <img src={location} alt=""  />
-              <p>Vaddora</p>
-              </div>
-              
-              </div>
-              <h5>Parul University offers various undergraduate, postgraduate, diploma, and PhD courses in a wide range of discipline</h5>
-              <div className="common6">
-              <p><span>Info :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Placements :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Courses & Fees :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Admissions :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Cut Off :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Scholarships :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common7">
                 <button>Short List</button>
-                <button>Read more <IoMdArrowDropright /></button>
               </div>
+
             </div>
-          </div>
-          <div className="common2">
-            <img src={common2} alt="" />
-            <div className="common3">
-              <h1>Parul University Vaddora (PUV)</h1>
-              <div className="common4"><StarRating rating={5} /> 
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
               <div className="common5">
-              <img src={location} alt=""  />
-              <p>Vaddora</p>
-              </div>
-              
-              </div>
-              <h5>Parul University offers various undergraduate, postgraduate, diploma, and PhD courses in a wide range of discipline</h5>
-              <div className="common6">
-              <p><span>Info :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
+                <h6>Parul University
+                  Vadodra</h6>
               </div>
               <div className="common6">
-              <p><span>Placements :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Courses & Fees :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Admissions :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Cut Off :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Scholarships :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common7">
                 <button>Short List</button>
-                <button>Read more <IoMdArrowDropright /></button>
               </div>
+
             </div>
-          </div>
-          <div className="common2">
-            <img src={common2} alt="" />
-            <div className="common3">
-              <h1>Parul University Vaddora (PUV)</h1>
-              <div className="common4"><StarRating rating={5} /> 
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
               <div className="common5">
-              <img src={location} alt=""  />
-              <p>Vaddora</p>
-              </div>
-              
-              </div>
-              <h5>Parul University offers various undergraduate, postgraduate, diploma, and PhD courses in a wide range of discipline</h5>
-              <div className="common6">
-              <p><span>Info :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
+                <h6>Parul University
+                  Vadodra</h6>
               </div>
               <div className="common6">
-              <p><span>Placements :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Courses & Fees :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Admissions :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Cut Off :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common6">
-              <p><span>Scholarships :</span> Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risu</p>
-              </div>
-              <div className="common7">
                 <button>Short List</button>
-                <button>Read more <IoMdArrowDropright /></button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="filt33">
+            <p>Load More...</p>
+          </div>
+          <div className="coommoom3">
+            <div className="coommoom">
+              <h4>Popular Colleges for common application</h4>
+              <h6>College Hub offers you the convenience of applying to over 100 colleges through a single application.</h6>
+              <div className="coommoom1">
+                <button>View All</button>
               </div>
             </div>
           </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="filt33">
+            <p>Load More...</p>
+          </div>
+          <div className="coommoom3">
+            <div className="coommoom">
+              <h4>Popular Colleges for common application</h4>
+              <h6>College Hub offers you the convenience of applying to over 100 colleges through a single application.</h6>
+              <div className="coommoom1">
+                <button>View All</button>
+              </div>
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="filt33">
+            <p>Load More...</p>
+          </div>
+          <div className="loan21">
+          </div>
+
         </div>
       </div>
 
-      <div className="loan21">
-      </div>
 
 
 
-      {/* <div className="app14">
-        <h3>We Tried To Help You Pick Easily</h3>
-        <div className="app15">
-          <div className="app16">
-            <p>Preferred City</p>
-          </div>
-          <div className="app16">
-            <p>Course Level</p>
-          </div>
-          <div className="app16">
-            <p>Course Stream</p>
-          </div>
-          <div className="app16">
-            <p>Degree Type</p>
-          </div>
-        </div>
-        <div className="app17">
-          <div className="app16">
-            <p>Payment Mode</p>
-          </div>
-          <div className="app16">
-            <p>Course Type</p>
-          </div>
-          <div className="app16">
-            <p>Engineering</p>
-          </div>
-          <div className="app16">
-            <p>Management UG</p>
-          </div>
-          <div className="app16">
-            <p>Computer </p>
-          </div>
-        </div>
-        <div className="app18">
-          <div className="app19">
-            <p>Pharmacy</p>
-          </div>
-          <div className="app19">
-            <p>Law</p>
-          </div>
-          <div className="app19">
-            <p>Medical</p>
-          </div>
-          <div className="app19">
-            <p>B.Tech</p>
-          </div>
-          <div className="app19">
-            <p>MBA</p>
-          </div>
-          <div className="app19">
-            <p>PGDM</p>
-          </div>
-          <div className="app19">
-            <p>MBA</p>
-          </div>
-        </div>
-        <div className="app18" style={{marginLeft:"40px"}}>
-          <div className="app19">
-            <p>BCA</p>
-          </div>
-          <div className="app19">
-            <p>B.Pharma</p>
-          </div>
-          <div className="app19">
-            <p>Scholarship</p>
-          </div>
-        </div>
-      </div>
-      <div className="app20">
-        <div className="app21">
-          <div className="app23">
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-            <div className="app24">
-              <div className="app25">
-                <img src={img7} alt="" />
-                <div className="app26">
-                  <h6>340 Courses</h6>
-                  <p>
-                    <i class="fa-solid fa-indian-rupee-sign"></i>5,000
-                  </p>
-                </div>
-              </div>
-              <div className="app27">
-                <h5>Parul University Vadodra</h5>
-              </div>
-              <div className="app28">
-                <button>Short List</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="app22">
-          <div className="app29">
-            <div className="app30">
-              <p>Register for the scholarship Test Now</p>
-              <button>Register Now</button>
-            </div>
-            <div className="app31">
-              <img src={img8} alt="" />
-            </div>
-          </div>
-          <div className="app29">
-            <div className="app30">
-              <p>Register for the scholarship Test Now</p>
-              <button>Register Now</button>
-            </div>
-            <div className="app31">
-              <img src={img8} alt="" />
-            </div>
-          </div>
-          <div className="app29">
-            <div className="app30">
-              <p>Register for the scholarship Test Now</p>
-              <button>Register Now</button>
-            </div>
-            <div className="app31">
-              <img src={img8} alt="" />
-            </div>
-          </div>
-          <div className="app29">
-            <div className="app30">
-              <p>Register for the scholarship Test Now</p>
-              <button>Register Now</button>
-            </div>
-            <div className="app31">
-              <img src={img8} alt="" />
-            </div>
-          </div>
-          <div className="app29">
-            <div className="app30">
-              <p>Register for the scholarship Test Now</p>
-              <button>Register Now</button>
-            </div>
-            <div className="app31">
-              <img src={img8} alt="" />
-            </div>
-          </div>
-          <div className="app29">
-            <div className="app30">
-              <p>Register for the scholarship Test Now</p>
-              <button>Register Now</button>
-            </div>
-            <div className="app31">
-              <img src={img8} alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="app7">
-        <div className="app33">
-          <p>Why College Hub ONE APPLICATION is the right choice for you</p>
-          <ul className="app32">
-            <li>FRIENDLY</li>
-            <li>FAST</li>
-            <li>EASY</li>
-          </ul>
-        </div>
-      </div>
-      <div className="app34">
-        <div className="app35">
-          <h6>Connect with India's Top Counsellor</h6>
-          <p>Need Confidence Choosing your university or Courses.</p>
-          <p>Call us at 99523020120</p>
-        </div>
-        <div className="app36">
-          <div className="app37">
-            <img src={img9} alt="" />
-            <h5>Neha Sharma</h5>
-            <p>Counselling Finance</p>
-            <h6>6000+ students | 7+ yrs exp</h6>
-          </div>
-          <div className="app37">
-            <img src={img9} alt="" />
-            <h5>Neha Sharma</h5>
-            <p>Counselling Finance</p>
-            <h6>6000+ students | 7+ yrs exp</h6>
-          </div>
-          <div className="app37">
-            <img src={img9} alt="" />
-            <h5>Neha Sharma</h5>
-            <p>Counselling Finance</p>
-            <h6>6000+ students | 7+ yrs exp</h6>
-          </div>
-          <div className="app37">
-            <img src={img9} alt="" />
-            <h5>Neha Sharma</h5>
-            <p>Counselling Finance</p>
-            <h6>6000+ students | 7+ yrs exp</h6>
-          </div>
-        </div>
-      </div>
-      <div className="app38">
-        <div className="app29">
-          <div className="app30">
-            <p>Register for the scholarship Test Now</p>
-            <button>Register Now</button>
-          </div>
-          <div className="app31">
-            <img src={img8} alt="" />
-          </div>
-        </div>
-        <div className="app29">
-          <div className="app30">
-            <p>Register for the scholarship Test Now</p>
-            <button>Register Now</button>
-          </div>
-          <div className="app31">
-            <img src={img8} alt="" />
-          </div>
-        </div>
-        <div className="app29">
-          <div className="app30">
-            <p>Register for the scholarship Test Now</p>
-            <button>Register Now</button>
-          </div>
-          <div className="app31">
-            <img src={img8} alt="" />
-          </div>
-        </div>
-      </div> */}
-      <Footer />
+
+
+      <Footer1 />
       <Offcanvas show={show2} onHide={handleClose}>
         <Offcanvas.Header closeButton>
         </Offcanvas.Header>

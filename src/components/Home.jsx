@@ -47,6 +47,7 @@ import HomeTable from "./HomeTable";
 import TopNavbar from "./TopNavbar";
 import Modal from "react-bootstrap/Modal";
 import ApplyNowModal from "./Modals/Login/Apply";
+import NavbarSlider from "./uppside/Navbar&skider";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -322,47 +323,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="home200">
-        <div className="home1">
-          <Slider {...settings}>
-            <div className="car1">
-              <img src={img26} />
-            </div>
-            <div className="car1">
-              <img src={img} />
-            </div>
-          </Slider>
-          <div className="home2">
-            <div className="home100">
-              <i class="fa-solid fa-bars" onClick={handleShow}></i>
-            </div>
-            <TopNavbar color="#1A3B5A" />
-
-            {showNavbar ? <NavMenu2 /> : " "}
-            {showNavbar2 ? <NavMenu /> : ""}
-            <div className="home5">
-              <h2>Let's start your career journey.</h2>
-            </div>
-            <div className="home4">
-
-              <input
-                type="text"
-                placeholder="Search for colleges, exams, Q & A, Articles..."
-              />
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-
-            <div className="home6">
-              <button onClick={() => navigate("/screen2")}>
-                Explore College & University
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="newhome1">
-        <h2>Admissions Open for O P Jindal Global University. Click to Apply Now!</h2>
+      <div>
+        <NavbarSlider />
       </div>
 
 
