@@ -121,6 +121,8 @@ code {
   cursor: pointer;
 }
 
+
+
 .home4 {
   display: flex;
   width: 50%;
@@ -167,6 +169,10 @@ code {
   text-align: center;
 }
 
+
+
+
+
 .home5 h2 {
   color: #FFFFFF;
   font-size: 40px;
@@ -175,6 +181,35 @@ code {
   font-weight: 700;
   line-height: normal;
 }
+
+.onestopp12 {
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.onestopp12 h2 {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.onestopp12 p {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+
 
 .home6 {
   display: flex;
@@ -3171,7 +3206,7 @@ input[type="checkbox"]:checked+label:after {
   font-weight: 700;
   font-size: 25px;
   line-height: 34.05px;
-  color: #001848;
+  color: #0185C3;
 }
 
 
@@ -3182,7 +3217,7 @@ input[type="checkbox"]:checked+label:after {
   outline: none;
   width: 328px;
   height: 40px;
-  border: 1.5px solid #001848;
+  border: 1.5px solid #0185C3;
   border-radius: 6px;
   padding-left: 20px;
   margin-top: 20px;
@@ -3192,7 +3227,7 @@ input[type="checkbox"]:checked+label:after {
   font-size: 16px;
   font-weight: 600;
   line-height: 21.79px;
-  color: #8C8C8C;
+  color: #0185C3;
 }
 
 .login2 {
@@ -3249,8 +3284,8 @@ input[type="checkbox"]:checked+label:after {
 .login9 button {
   width: 250px;
   height: 56px;
-  background: #F4BC1C;
-  border-radius: 30px;
+  background: #0185C3;
+  border-radius: 10px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -3277,7 +3312,7 @@ input[type="checkbox"]:checked+label:after {
   font-weight: 700;
   font-size: 25px;
   line-height: 34.05px;
-  color: #001848;
+  color: #0185C3;
 }
 
 .login8 {
@@ -3293,13 +3328,13 @@ input[type="checkbox"]:checked+label:after {
   outline: none;
   width: 228px;
   height: 40px;
-  border: 1.5px solid #001848;
+  border: 1.5px solid #0185C3;
   border-radius: 6px;
   padding-left: 20px;
 }
 
 .login6 {
-  border: 1px solid #001848;
+  border: 1px solid #349DCF;
   border-radius: 10px;
   width: 20%;
   height: 40px;
@@ -3313,7 +3348,7 @@ input[type="checkbox"]:checked+label:after {
   font-size: 20px;
   line-height: 27px;
   padding-top: 5px;
-  color: #001848;
+  color: #349DCF;
 }
 
 .login9 button:hover {
@@ -3420,7 +3455,7 @@ input[type="checkbox"]:checked+label:after {
   height: 40px;
   text-align: center;
   font-size: 18px;
-  border: 1px solid #001848;
+  border: 1px solid #0185C3;
   border-radius: 5px;
   outline: none;
 }
@@ -3435,7 +3470,7 @@ input[type="checkbox"]:checked+label:after {
   font-weight: 700;
   font-size: 25px;
   line-height: 34.05px;
-  color: #001848;
+  color: #0185C3;
 }
 
 
@@ -4558,6 +4593,28 @@ input[type="checkbox"]:checked+label:after {
   line-height: 20.43px;
 }
 
+
+
+
+.drop3 {
+  display: flex;
+  /* Add any other styles for the container as needed */
+}
+.drop3 p {
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.drop3 p:hover {
+  text-decoration: underline; 
+}
+
+.drop3 p.active {
+  text-decoration: underline;
+}
+
+
+
 .home100 {
   display: none;
 }
@@ -5392,7 +5449,7 @@ table td {
 .onesolution3 {
   width: 90%;
   margin: auto;
-
+  margin-top: 50px
 }
 
 .onesolution3 h2 {
@@ -5416,7 +5473,7 @@ table td {
 .onesolution4 {
   width: 100%;
   height: 160px;
-  background: #001848;
+  background: #1A3B5A;
   color: #FFFFFF;
   margin: auto;
   text-align: center;
@@ -5449,7 +5506,7 @@ table td {
   cursor: pointer;
   width: auto;
   height: 58.67px;
-  background-color: #001848;
+  background-color: #349DCF;
   font-weight: 600;
   font-size: 20px;
   color: #FFFFFF;
@@ -5525,11 +5582,11 @@ table td {
 }
 
 .one5 {
-  background: #F4BC1C;
-  border-radius: 30px;
+  background: #0185C3;
+  border-radius: 5px;
   border: none;
-  height: 47px;
-  width: 195px;
+  height: 46px;
+  width: 137px;
   display: block;
   margin: auto;
   color: #FFFFFF;
@@ -6454,7 +6511,7 @@ select:focus {
   height: 100px;
   width: 100px;
   border-radius: 100%;
-  background-color: #001848;
+  background-color: #0185C3;
   display: block;
   margin: auto;
 }
@@ -6481,7 +6538,7 @@ select:focus {
 }
 
 .basic1 {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: auto;
   margin-top: 60px;
@@ -6495,7 +6552,7 @@ select:focus {
 }
 
 .basic2 {
-  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
   background: #FFFFFF;
   margin-top: 30px;
   padding: 50px;
@@ -6505,7 +6562,7 @@ select:focus {
 .basic3 {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  gap: 20px;
+  gap: 30px;
 }
 
 .basic4 {
@@ -6516,7 +6573,7 @@ select:focus {
 
 .basic4 label {
   color: #000;
-  font-size: 18.437px;
+  font-size: 17.437px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 26.47px;
@@ -6524,9 +6581,9 @@ select:focus {
 
 .basic4 input {
   width: auto;
-  height: 43.69px;
+  border-radius: 4.86px;
+  height: 53.69px;
   background: #E7E7E7;
-  border-radius: 30px;
   border: 0.972px solid #707070;
   font-weight: 500;
   font-size: 16px;
@@ -6535,9 +6592,9 @@ select:focus {
 
 .basic4 select {
   width: auto;
-  height: 43.69px;
+  border-radius: 4.86px;
+  height: 53.69px;
   background: #E7E7E7;
-  border-radius: 30px;
   border: 0.972px solid #707070;
   font-weight: 500;
   font-size: 16px;
@@ -6546,15 +6603,14 @@ select:focus {
 
 .basic5 {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
-.basic5 button:nth-child(1) {
+.basic5 button{
   border: none;
-  border-radius: 30px;
-  background: #001848;
+  background: #0185C3;
+  border-radius: 5px;
   color: #FFFFFF;
   width: 173px;
   height: 46px;
@@ -6571,20 +6627,8 @@ select:focus {
 
 
 
-.basic5 button {
-  border: none;
-  border-radius: 30px;
-  background: #F4BC1C;
-  color: #FFFFFF;
-  width: 173px;
-  height: 46px;
-  font-weight: 600;
-  font-size: 19.44px;
-  line-height: 26.47px;
-}
-
 .recp1 {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: auto;
   margin-top: 60px;
@@ -6627,10 +6671,16 @@ select:focus {
 
 .recp3 {
   display: flex;
-  justify-content: center;
-  gap: 70px;
+  justify-content: space-between;
   margin-top: 50px;
   padding-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.recp301{
+  display: flex;
+  gap: 20px;
 }
 
 .recp22 {
@@ -6650,8 +6700,8 @@ select:focus {
 
 .recp3 button {
   border: none;
-  border-radius: 30px;
-  background: #001848;
+  border-radius: 5px;
+  background: #0185C3;
   color: #FFFFFF;
   width: 173px;
   height: 46px;
@@ -6666,22 +6716,9 @@ select:focus {
   transform: scale(1.1);
 }
 
-.recp3 button:last-child {
-  border: none;
-  border-radius: 30px;
-  background: #F4BC1C;
-  color: #FFFFFF;
-  width: 173px;
-  height: 46px;
-  font-weight: 600;
-  font-size: 19.44px;
-  line-height: 26.47px;
-  transition: all 0.3s ease;
-  /* Adding transition for smooth animation */
-}
 
 .dec11 {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: auto;
   margin-top: 60px;
@@ -6742,7 +6779,7 @@ select:focus {
 }
 
 .acad1 {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: auto;
   margin-top: 60px;
@@ -7041,10 +7078,10 @@ select:focus {
 
 .Acknow9 button {
   border: none;
-  border-radius: 30px;
-  background: #001848;
+  border-radius: 5px;
+  background: #0185C3;
   color: #FFFFFF;
-  width: 115px;
+  width: 116px;
   height: 46px;
   font-weight: 600;
   font-size: 19.44px;
@@ -7057,19 +7094,6 @@ select:focus {
   transform: scale(1.1);
 }
 
-.Acknow9 button:last-child {
-  border: none;
-  border-radius: 30px;
-  background: #F4BC1C;
-  color: #FFFFFF;
-  width: 115px;
-  height: 46px;
-  font-weight: 600;
-  font-size: 19.44px;
-  line-height: 26.47px;
-  transition: all 0.3s ease;
-  /* Adding transition for smooth animation */
-}
 
 
 
@@ -7197,6 +7221,12 @@ select:focus {
 
 /* =========== cart styling ============*/
 
+
+.cart90{
+  width: 90%;
+  margin: auto;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
+}
 .cart1 {
   display: flex;
   gap: 30px;
@@ -7389,8 +7419,8 @@ select:focus {
 .cart12 button {
   width: 163px;
   height: 39px;
-  border: 1px solid #001848;
-  color: #001848;
+  border: 1px solid #0185C3;
+  color: #0185C3;
   font-size: 16px;
   font-family: Open Sans;
   font-weight: 600;
@@ -7420,13 +7450,12 @@ select:focus {
   height: 39px;
   border: none;
   outline: none;
-  border-radius: 30px;
   color: #FFFFFF;
   font-size: 16px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 21.79px;
-  background: #F4BC1C;
+  background: #0185C3;
   transition: all 0.3s ease;
   /* Adding transition for smooth animation */
 }

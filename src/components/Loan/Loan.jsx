@@ -34,6 +34,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer1 from '../Footer1'
+import ApplyNowModal from "../Modals/Login/Apply";
 
 const Loan = () => {
 
@@ -90,6 +91,8 @@ const Loan = () => {
       setLoanAmount(value);
     }
   };
+  const [modalShow, setModalShow] = useState(false);
+
 
   return (
     <>
@@ -202,7 +205,7 @@ const Loan = () => {
           <div className="loan18">
             <div className="ext1">
               <button className="ext3" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
-              <button className="ext2">Apply Now</button>
+              <button className="ext2" onClick={() => setModalShow(true)}>Apply Now</button>
             </div>
           </div>
         </div>
@@ -229,7 +232,7 @@ const Loan = () => {
           </div>
           <div className="loan18">
             <div className="ext1">
-              <button className="ext3">Apply Now</button>
+              <button className="ext3" onClick={() => setModalShow(true)}>Apply Now</button>
               <button className="ext2" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
             </div>
           </div>
@@ -257,7 +260,7 @@ const Loan = () => {
           </div>
           <div className="loan18">
             <div className="ext1">
-              <button className="ext3">Apply Now</button>
+              <button className="ext3" onClick={() => setModalShow(true)}>Apply Now</button>
               <button className="ext2" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
             </div>
           </div>
@@ -285,7 +288,7 @@ const Loan = () => {
           </div>
           <div className="loan18">
             <div className="ext1">
-              <button className="ext3">Apply Now</button>
+              <button className="ext3" onClick={() => setModalShow(true)}>Apply Now</button>
               <button className="ext2" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
             </div>
           </div>
@@ -419,6 +422,8 @@ const Loan = () => {
       </div>
       <div className="loan21">
       </div>
+      <ApplyNowModal show={modalShow}
+        onHide={() => setModalShow(false)} />
       <Footer1 />
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>

@@ -48,6 +48,7 @@ import TopNavbar from "./TopNavbar";
 import Modal from "react-bootstrap/Modal";
 import ApplyNowModal from "./Modals/Login/Apply";
 import NavbarSlider from "./uppside/Navbar&skider";
+import ShortList from "./Modals/ShortList/ShortList";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -317,6 +318,7 @@ const Home = () => {
 
   const [modalShow, setModalShow] = useState(false);
 
+  const[collegeselectModal, setCollegeSelect] = useState(false)
 
 
 
@@ -413,7 +415,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -454,7 +456,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button  onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -494,7 +496,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -533,7 +535,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -573,7 +575,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -709,7 +711,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -750,7 +752,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -790,7 +792,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -829,7 +831,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -869,7 +871,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -911,7 +913,7 @@ const Home = () => {
           <div className="newhome3">
             <h1>Have Any Doubt?
               Connect With Us</h1>
-            <button>Connect Now</button>
+            <button onClick={() => setModalShow(true)}>Connect Now</button>
           </div>
         </div>
       </div>
@@ -923,68 +925,19 @@ const Home = () => {
       <ApplyNowModal show={modalShow}
         onHide={() => setModalShow(false)} />
 
+      <ShortList show={collegeselectModal}
+        onHide={() => setCollegeSelect(false)} />
+
       <Footer />
-      {/* <div className="home555">
-        <p>Jamia Miliya Islamia College of Engineering Delhi : Admissions Open for  B.E | MBA | MCA 2023 </p>
-        <button onClick={() => setModalShow(true)}>Apply Now!</button>
-      </div> */}
       <Offcanvas show={showt} onHide={handleClose}>
         <Offcanvas.Header closeButton></Offcanvas.Header>
         <Offcanvas.Body>
           <div className="home101">
             <img src={img3} alt="" />
             <>
-              {/* <div className="drop100">
-                {Records?.map((ele, i) =>
-                  ele?.item ? (
-                    <Dropdown key={i}>
-                      <Dropdown.Toggle variant="none" id="dropdown-basic">
-                        {ele?.name}
-                      </Dropdown.Toggle>
-                      <div className="drop1">
-                        <Dropdown.Menu style={{ display: "flex" }}>
-                          {ele?.item?.map((element) => (
-                            <Dropdown.Item>
-                              <div className="drop2">
-                                {element?.name}
-                                {element?.subItems?.map((ele, i) => (
-                                  <>
-                                    <p>{ele}</p>
-                                  </>
-                                ))}
-                              </div>
-                            </Dropdown.Item>
-                          ))}
-                        </Dropdown.Menu>
-                      </div>
-                    </Dropdown>
-                  ) : (
-                    <Dropdown key={i}>
-                      <Dropdown.Toggle
-                        variant="none"
-                        id="dropdown-basic"
-                        onClick={() => navigate(ele?.link)}
-                      >
-                        {ele?.name}
-                      </Dropdown.Toggle>
-                    </Dropdown>
-                  )
-                )}
-              </div> */}
+          
             </>
-            {/* <p>
-              <Dropdown>
-                <Dropdown.Toggle variant="none" id="dropdown-basic">
-                  More
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  {moreMenu?.map((ele, i) => (
-                    <Dropdown.Item href={ele?.link}>{ele?.name}</Dropdown.Item>
-                  ))}
-                </Dropdown.Menu>
-              </Dropdown>
-            </p> */}
+         
             <div className="login10">
               <i class="fa-solid fa-user"></i>
               <p>Login</p>

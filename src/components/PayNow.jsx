@@ -4,7 +4,7 @@ import img2 from "../Images/c103.png";
 import img3 from "../Images/c104.png";
 import img4 from "../Images/c105.png";
 import TopNavbar from "./TopNavbar";
-import Footer from "./Footer";
+import Footer1 from "./Footer1";
 import img5 from '../Images/application.png'
 import { MdUpload } from "react-icons/md";
 
@@ -24,7 +24,7 @@ const PayNow = () => {
   return (
     <>
       <div className="app1">
-        <div className="schro">
+        <div className="cart90">
           <TopNavbar />
         </div>
       </div>
@@ -83,7 +83,7 @@ const PayNow = () => {
               <div className="basic4">
                 <label>Title</label>
                 <select>
-                  <option value="english">Select Course</option>
+                  <option value="english">Select</option>
                   <option value="hindi">Hindi</option>
                   <option value="germany">Germany</option>
                 </select>
@@ -161,8 +161,11 @@ const PayNow = () => {
           </div>
           <p>This is system generated reciept and does not requrie signature</p>
           <div className="recp3">
-            <button onClick={decCnt}>Back</button>
-            <button onClick={handlePrint}>Print</button>
+            <div className="recp301">
+              <button onClick={decCnt}>Back</button>
+              <button onClick={handlePrint}>Print</button>
+            </div>
+
             <button onClick={incCnt}>Next</button>
           </div>
         </div>
@@ -411,8 +414,10 @@ const PayNow = () => {
                 <p>Upload Image from Filemanager,Gallery</p>
               </div>
               <div className="recp3">
-                <button onClick={decCnt}>Back</button>
-                <button>Save & Exit</button>
+                <div className="recp301">
+                  <button onClick={decCnt}>Back</button>
+                  <button>Save & Exit</button>
+                </div>
                 <button onClick={incCnt}>Next</button>
               </div>
             </div>
@@ -589,7 +594,7 @@ const PayNow = () => {
 
       <div className="loan21">
       </div>
-      <Footer />
+      <Footer1 />
     </>
   );
 };

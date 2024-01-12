@@ -18,12 +18,10 @@ const Cart = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div className="app1">
-                <div className="schro">
-                    <TopNavbar />
-                </div>
-            </div>
 
+        <div className="cart90">
+            <TopNavbar/>
+        </div>
             <div className="loan100">
                 <i class="fa-solid fa-bars" onClick={handleShow}></i>
             </div>
@@ -52,7 +50,7 @@ const Cart = () => {
                             </tbody>
                         </table>
                         <div className="cart12">
-                            <button>More College</button>
+                            <button onClick={()=>navigate('/common-applications')}>More College</button>
                             <input type="text" name="" id="" placeholder="Enter Coupon Code" />
                         </div>
                         <div className="cart122">

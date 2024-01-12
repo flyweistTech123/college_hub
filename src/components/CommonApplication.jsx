@@ -50,6 +50,8 @@ const CommonApplication = () => {
 
   const [showNavbar, setShowNavbar] = useState(false);
   const [modalShow, setModalShow] = useState(false);
+  const[collegeselectModal, setCollegeSelect] = useState(false)
+
 
 
   function NavMenu() {
@@ -165,7 +167,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -182,7 +184,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -199,7 +201,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -216,77 +218,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-          </div>
-          <div className="common7">
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -305,7 +237,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -322,7 +254,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -339,7 +271,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -356,7 +288,77 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -387,7 +389,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -404,7 +406,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -421,7 +423,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -438,77 +440,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-          </div>
-          <div className="common7">
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -527,7 +459,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -544,7 +476,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -561,7 +493,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -578,7 +510,77 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)} >Short List</button>
               </div>
 
             </div>
@@ -609,7 +611,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -626,7 +628,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -643,7 +645,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -660,77 +662,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-          </div>
-          <div className="common7">
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -749,7 +681,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -766,7 +698,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -783,7 +715,7 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -800,7 +732,77 @@ const CommonApplication = () => {
                   Vadodra</h6>
               </div>
               <div className="common6">
-                <button>Short List</button>
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common7">
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
               </div>
 
             </div>
@@ -817,6 +819,8 @@ const CommonApplication = () => {
 
 
 
+      <ShortList show={collegeselectModal}
+        onHide={() => setCollegeSelect(false)} />
 
 
       <Footer1 />

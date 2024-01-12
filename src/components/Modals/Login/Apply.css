@@ -12,7 +12,7 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    gap: 70px;
+    gap: 50px;
 }
 
 .Apply12 h2 {
@@ -23,8 +23,8 @@
 }
 
 .Apply12 img {
-    width: 130px;
-    height: 130px;
+    width: 118px;
+    height: 118px;
 }
 
 
@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    border: 1px solid #001848;
+    border: 1px solid #349DCF;
     border-radius: 10px;
     overflow: hidden;
     width: 354px;
@@ -48,7 +48,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 27.24px;
-    color: #001848;
+    color: #349DCF;
 }
 
 .Apply14 input {
@@ -63,14 +63,14 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 27.24px;
-    color: #001848;
+    color: #0185C3
 }
 
 .apply-button button {
     width: 348px;
     height: 47px;
-    background: #F4BC1C;
-    border-radius: 30px;
+    background: #0185C3;
+    border-radius: 10px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
@@ -96,7 +96,7 @@
     margin-bottom: 20px;
     width: 303px;
     height: 41px;
-    border: 1px solid #001848;
+    border: 1px solid #0185C3;
     border-radius: 10px;
     overflow: hidden;
 
@@ -113,14 +113,14 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 27.24px;
-    color: #001848;
+    color: #0185C3;
 }
 
 
 .Apply18 {
     width: 89px;
     height: 41px;
-    background-color: #F4BC1C;
+    background-color: #0185C3;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 15px;
@@ -157,7 +157,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 27.24px;
-    color: #001848;
+    color: #0185C3;
 }
 
 

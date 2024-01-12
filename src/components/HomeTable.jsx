@@ -3,6 +3,7 @@ import img from "../Images/c91.png";
 import img2 from "../Images/c92.png";
 import img3 from "../Images/c106.png";
 import ApplyNowModal from "./Modals/Login/Apply";
+import ShortList from "./Modals/ShortList/ShortList";
 
 const HomeTable = () => {
   const [modalShow, setModalShow] = useState(false);
@@ -14,7 +15,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -27,7 +28,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -40,7 +41,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -53,7 +54,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -66,7 +67,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -79,7 +80,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -92,7 +93,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -105,7 +106,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -118,7 +119,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -131,7 +132,7 @@ const HomeTable = () => {
       location: "Indore, Madhya Pradesh",
       rating: 8.7,
       ranking: "#7",
-      ranking1:'out of 281 in india 2022',
+      ranking1: 'out of 281 in india 2022',
       img: img,
       img2: img2,
       img3: img3,
@@ -139,7 +140,8 @@ const HomeTable = () => {
     },
 
   ];
-  
+  const[collegeselectModal, setCollegeSelect] = useState(false)
+
 
   return (
     <>
@@ -167,7 +169,7 @@ const HomeTable = () => {
                       </div>
                       <div className="table10">
                         <h6>{item.instituteName}</h6>
-                        <p style={{color:'#3D3D3D', fontWeight:'400',}}>
+                        <p style={{ color: '#3D3D3D', fontWeight: '400', }}>
                           {item.location} |{" "}
                           <i className="fa-solid fa-star" style={{ color: "gold" }}></i>
                           {item.rating} / 10
@@ -181,19 +183,19 @@ const HomeTable = () => {
                         <img src={item.img2} alt="" />
                       </div>
                       <div className="table10">
-                        <p>{item.ranking} <span style={{color:'#2E2E2E'}}>{item.ranking1}</span></p>
+                        <p>{item.ranking} <span style={{ color: '#2E2E2E' }}>{item.ranking1}</span></p>
                       </div>
                     </div>
                   </td>
                   <td><img src={item.img3} alt="" className="table11" /></td>
                   <td>
                     <h6>{item.fees}</h6>
-                    <p style={{color:'#3E3E3E'}}>Application Fee</p>
+                    <p style={{ color: '#3E3E3E' }}>Application Fee</p>
                   </td>
                   <td>
                     <div className="table13">
-                      <button  onClick={() => setModalShow(true)}>Apply Now</button>
-                      <button>Add to Common Application Form</button>
+                      <button onClick={() => setModalShow(true)}>Apply Now</button>
+                      <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                     </div>
                   </td>
                 </tr>
@@ -203,7 +205,9 @@ const HomeTable = () => {
         </div>
       </div>
       <ApplyNowModal show={modalShow}
-        onHide={() => setModalShow(false)}/>
+        onHide={() => setModalShow(false)} />
+      <ShortList show={collegeselectModal}
+        onHide={() => setCollegeSelect(false)} />
     </>
   );
 };

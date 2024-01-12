@@ -1,15 +1,22 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import img28 from "../Images/c1.png";
-import Dropdown from "react-bootstrap/Dropdown";
+import { useNavigate } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
-import img27 from "../Images/c59.png";
 import logo from '../Images/collegehublogo.png'
 import MoreModal from "./Modals/MoreModal";
 import login from '../Images/loginpage.png'
 import google from '../Images/google.png'
 
 const TopNavbar = (props) => {
+
+  const [activeLink, setActiveLink] = useState(null);
+
+  const handleClick11 = (index) => {
+    setActiveLink(index);
+  };
+  const handleClick12 = (index, route) => {
+    handleClick11(index);
+    navigate(route);
+  };
   const navigate = useNavigate();
   const [showNavbar, setShowNavbar] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -194,7 +201,7 @@ const TopNavbar = (props) => {
 
     {
       name: "Counsellor connect",
-      link: "/counsellor",
+      link: "/counsellorconnect",
     },
 
     {
@@ -214,7 +221,7 @@ const TopNavbar = (props) => {
       name: "Review a College",
       link: '/review',
     },
-  
+
     // {
     //   name: "Test and Services  ",
     //   link: "/test",
@@ -424,12 +431,19 @@ const TopNavbar = (props) => {
 
 
   const data = [
-    "Top Universities","Top Courses", "Top Exams"
+    "Top Universities", "Top Courses", "Top Exams"
   ]
 
   const data1 = [
     "Management", "Engineering", "Law", "Science", "Commerce", "Arts", "Paramedical", "Pharmacy"
   ]
+  const items = [
+    { name: "Scholarships", route: "/scholarships" },
+    { name: "Loan", route: "/loan" },
+    { name: "Common Application", route: "/common-applications" },
+    { name: "Scholarship Test", route: "/scholarshiptest" },
+  ];
+
 
   return (
     <>
@@ -445,49 +459,30 @@ const TopNavbar = (props) => {
 
         <div className="newNav2">
           <div className="drop3">
-            {data.map((i, index) => (
+            {data.map((i, index1) => (
               <div ref={dropdownRef}>
-                <p onClick={() => setShowNavbar(true)} style={{ color: props.color }}> {i} </p>
+                <p onClick={() => {
+                  handleClick11(index1);
+                  setShowNavbar(true);
+                }}
+                  className={activeLink === index1 ? 'active' : ''}
+                  style={{ color: props.color }}> {i} </p>
               </div>
             ))}
-            {/* <p
-              onClick={() => navigate("/exam")}
-              style={{ color: props.color }}
-            >
-              Exams
-            </p> */}
-            {/* <p
-              onClick={() => navigate("/courses")}
-              style={{ color: props.color }}
-            >
-              Courses
-            </p> */}
 
-            <p
-              onClick={() => navigate("/scholarships")}
-              style={{ color: props.color }}
-            >
-              Scholarships
-            </p>
-            {/* <div ref={dropdownRef}>
-                <p onClick={() => setShowNavbar2(true)} style={{color:props.color}}>Scholarships</p>
-              </div>  */}
-            <p
-              onClick={() => navigate("/loan")}
-              style={{ color: props.color }}
-            >
-              Loan
-            </p>
-            <p onClick={() => navigate("/common-applications")} style={{ color: props.color }}>
-              Common Application
-            </p>
-            <p onClick={() => navigate("/scholarshiptest")} style={{ color: props.color }}>
-            Scholarship Test
-            </p>
 
-            {/* <p onClick={() => navigate("/hostels")} style={{ color: props.color }}>
-              Hostels
-            </p> */}
+            <div className="drop3">
+              {items.map((item, index) => (
+                <p
+                  key={index}
+                  onClick={() => handleClick12(index, item.route)}
+                  className={activeLink === index ? 'active' : ''}
+                  style={{ color: props.color }}
+                >
+                  {item.name}
+                </p>
+              ))}
+            </div>
             <p style={{ color: props.color }} onClick={openMoremodal}>
               More
             </p>
@@ -511,52 +506,11 @@ const TopNavbar = (props) => {
 
 
 
-            {/* <p style={{ color: props.color }}>
-              <span onClick={handleShow} className="modal-trigger">
-                More
-              </span>
 
-              <Modal show={showModal} onHide={handleClose} className="modalll12">
-                <Modal.Header closeButton>
-                  <Modal.Title>More</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                  <ul className="custom-dropdown">
-                    {moreMenu.map((ele, i) => (
-                      <li key={i}>
-                        <a href={ele?.link}>{ele?.name}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </Modal.Body>
-              </Modal>
-            </p> */}
           </div>
 
         </div>
-        {/* <div className="newNav3">
-          <div className="login10" style={{ marginTop: "-31px" }}>
-            <i class="fa-solid fa-user" style={{ color: props.color }}></i>
-            <p onClick={() => setShow(true)} style={{ color: props.color }}>
-            Log In
-            </p>
-          </div>
-        </div> */}
       </div>
-
-
-
-      {/* <div className="nav-course">
-        <div className="newNav2">
-          <div className="drop3">
-            {data1.map((i, index) => (
-              <div ref={dropdownRef}>
-                <p style={{ color: props.color }}> {i} </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
       {showNavbar ? <NavMenu2 /> : ""}
       {showNavbar2 ? <NavMenu /> : ""}
       <MyVerticallyCenteredModal show={show} onHide={() => setShow(false)} />

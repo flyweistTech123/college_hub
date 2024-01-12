@@ -4,7 +4,8 @@ import Footer from "./Footer";
 import Slider from "react-slick";
 import TopNavbar from "./TopNavbar";
 import { useNavigate } from "react-router-dom";
-import img from '../Images/onestopsolution.png'
+import img from '../Images/one.png'
+import Footer1 from "./Footer1";
 
 const OneStop = () => {
 
@@ -13,34 +14,45 @@ const OneStop = () => {
   const handleFaltu = (index) => {
     setFaltu(index);
   };
+  const navigate = useNavigate();
 
   return (
     <>
-      <div className="app1">
-        <div className="schro">
-          <TopNavbar />
+      <div className="home200">
+        <div className="home1">
+          <div className="car1">
+            <img src={img} />
+          </div>
+          <div className="home2">
+            <div className="home100">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <TopNavbar color="#1A3B5A" />
+
+
+            <div className="onestopp12">
+              <h2>One Stop Application | pay Fees | apply loan | apply scholarships and more...</h2>
+              <p>We Aim to enhance your experience by making the process more convenient.</p>
+            </div>
+            <div className="home4">
+
+              <input
+                type="text"
+                placeholder="Search for colleges, exams, Q & A, Articles..."
+              />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
         </div>
-        <div className="app6">
-          <img src={img} />
-        </div>
-        <div className="onesolution1">
-          <div className="home100">
-            <i class="fa-solid fa-bars" ></i>
-          </div>
-          <div className="onesolution2">
-            <h2>One Stop Application | pay Fees | apply loan | apply scholarships and more...</h2>
-            <p>We Aim to enhance your experience by making the process more convenient.</p>
-          </div>
-          <div className="home4">
-            <input
-              type="text"
-              placeholder="Search for colleges, exams, Q & A, Articles..."
-            />
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
+
+
+        <div className="newhome1">
+          <h2>Admissions Open for O P Jindal Global University. Click to Apply Now!</h2>
         </div>
       </div>
-      <TopPart3 />
+      <div className="topki">
+        <TopPart3 />
+      </div>
 
       <div className="onesolution3">
         <div className="onesolution4">
@@ -263,8 +275,8 @@ const OneStop = () => {
         </div>
 
         <div className="onesolution11">
-        <input type="checkbox" name="" id="" />
-        <label htmlFor="">I Agree</label>
+          <input type="checkbox" name="" id="" />
+          <label htmlFor="">I Agree</label>
         </div>
 
         <button className="one5">Submit & Pay</button>
@@ -272,7 +284,7 @@ const OneStop = () => {
       </div>
 
 
-      <Footer />
+      <Footer1 />
     </>
   );
 };

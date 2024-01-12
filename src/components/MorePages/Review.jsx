@@ -6,6 +6,8 @@ import Footer from "../Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TopNavbar from "../TopNavbar";
 import moke from '../../Images/review.png'
+import NavbarSlider from "../uppside/Navbar&skider";
+import Footer1 from "../Footer1";
 
 
 const Review = () => {
@@ -15,79 +17,143 @@ const Review = () => {
   }
   return (
     <>
-      <div className="app1">
-        <div className="schro">
-          <TopNavbar />
-        </div>
-        <div className="app6">
-          <img src={moke} />
-        </div>
-        <div className="schro1">
-          <div className="home100">
-            <i class="fa-solid fa-bars" ></i>
-          </div>
-          <div className="schro2">
-            <h2>Let’s StartWriting Your Reviews.</h2>
-          </div>
-          <div className="home4">
-            <input
-              type="text"
-              placeholder="Search for colleges, exams, Q & A, Articles..."
-            />
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div className="schro3">
-            <button onClick={() => navigate("/screen2")}>
-            Start Writing Your Review
-            </button>
-          </div>
-        </div>
+      <div>
+        <NavbarSlider />
       </div>
 
       <div className="review21">
-        <div className="review22">
-            <h1>Do's & Dont's - Points to Consider While Writing a Review</h1>
-            <ul>
-                <li>Be Factual - Read the instructions provided along with the questions carefully, and try to include mentioned facts to the best of your knowledge</li>
-                <li>Be Decent - Talking about your alma mater should always have decency, even when criticizing it. No Rash Words Should be Used in the content, it will be edited during the moderation process.</li>
-                <li>Be Original - Don't Copy and write your own experience. Most elaborate reviews might bring extra rewards. Write your review on your own, don't let anyone else use your identity.</li>
-                <li>Be Patient - The review has 8 steps, each step covering one aspect of your college life, so answer them with patience so they add value to the user. You can always complete the review form in phases.</li>
-                <li>Be Social - Once you are done with your review, share the review form with as many students from your college as possible. More the review more the rewards. Reviews for the courses with lesser reviews on collegedunia have extra rewards added to them</li>
-            </ul>
+        <h1>
+          Unveiling Campus  Experiences
+        </h1>
+        <p>Dive into the Authentic Narratives of Campus Life, Academic Excellence, and Beyond.Peer Perspectives and Insights to Shape Your College Journey</p>
+      </div>
+
+      <div className="review22">
+        <div className="review23">
+          <div className="review24">
+            <label htmlFor="">Select Your College / University</label>
+            <select>
+              <option value="english">Select Course</option>
+              <option value="hindi">Hindi</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
         </div>
-        <div className="review22" >
-            <h1>Rules</h1>
-            <ul>
-                <li>Be Factual - Read the instructions provided along with the questions carefully, and try to include mentioned facts to the best of your knowledge</li>
-                <li>Be Decent - Talking about your alma mater should always have decency, even when criticizing it. No Rash Words Should be Used in the content, it will be edited during the moderation process.</li>
-                <li>Be Original - Don't Copy and write your own experience. Most elaborate reviews might bring extra rewards. Write your review on your own, don't let anyone else use your identity.</li>
-                <li>Be Patient - The review has 8 steps, each step covering one aspect of your college life, so answer them with patience so they add value to the user. You can always complete the review form in phases.</li>
-                <li>Be Social - Once you are done with your review, share the review form with as many students from your college as possible. More the review more the rewards. Reviews for the courses with lesser reviews on collegedunia have extra rewards added to them</li>
-            </ul>
+        <div className="review23">
+          <div className="review24">
+            <label htmlFor="">Your Course</label>
+            <select>
+              <option value="english">Select Course</option>
+              <option value="hindi">Hindi</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
         </div>
-        <div className="review22">
-            <h1>FAQ’S</h1>
-            <ul>
-                <li>Why fill out the College Review Form on Collegedunia?</li>
-                <li>How to fill out the review form on Collegedunia?</li>
-                <li>My college and course is not listed in the review form?</li>
-                <li>How long does it take to get the review approved?</li>
-                <li>How to write an anonymous review?</li>
-                <li>How will I get the reward?</li>
-                <li>I have filled out the review form but didn’t receive the reward yet?</li>
-                <li>How to edit an approved review?</li>
-                <li>What happens once I fill the review form?</li>
-                <li>How to report a Bad or Incorrect review?</li>
-                <li>Reward Transaction Failed - What are the alternatives?</li>
-                <li>Someone else used my details to fill the review?</li>
-                <li>Is my data secure with Collegedunia?</li>
-                <li>How to get my referral code?</li>
-                <li>I didn’t get my referral reward yet?</li>
-                <li>How to edit a disapproved review?</li>
-            </ul>
+        <div className="review23">
+          <div className="review244">
+            <label htmlFor="">Passing Year</label>
+            <select>
+              <option value="english">Select Year</option>
+              <option value="hindi">Hindi</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
+
+          <div className="review244">
+            <label htmlFor="">Year of Entrollment</label>
+            <select>
+              <option value="english">Select Year</option>
+              <option value="hindi">Hindi</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
+        </div>
+        <div className="review23">
+          <div className="review24">
+            <label htmlFor="">Your Feedback</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+
+        <div className="review23">
+          <div className="review24">
+            <label htmlFor="">Rate Your College</label>
+            <div className="review28">
+              <h5><i className="fa-solid fa-star"></i></h5>
+              <h5><i className="fa-solid fa-star"></i></h5>
+              <h5><i className="fa-solid fa-star"></i></h5>
+              <h5><i className="fa-solid fa-star"></i></h5>
+              <h5><i className="fa-solid fa-star"></i></h5>
+              <h5><i className="fa-solid fa-star"></i></h5>
+              <h5><i className="fa-solid fa-star"></i></h5>
+              <h5><i className="fa-solid fa-star"></i></h5>
+              <h5><i className="fa-solid fa-star"></i></h5>
+              <h5><i className="fa-solid fa-star"></i></h5>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div className="review30">
+        <h3>Contact Info</h3>
+      </div>
+
+      <div className="review29">
+        <div className="review23">
+          <div className="review24">
+            <label htmlFor="">Full Name</label>
+            <input type="text" />
+          </div>
+          <div className="review24">
+            <label htmlFor="">Contact Number</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div className="review23">
+          <div className="review24">
+            <label htmlFor="">E Mail ID</label>
+            <input type="text" />
+          </div>
+          <div className="review244">
+            <label htmlFor="">College Roll Number</label>
+            <select>
+              <option value="english">General</option>
+              <option value="hindi">Hindi</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
+        </div>
+        <div className="review23">
+          <div className="review244">
+            <label htmlFor="">State</label>
+            <select>
+              <option value="english">Select State</option>
+              <option value="hindi">Hindi</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
+          <div className="review244">
+            <label htmlFor="">Select City</label>
+            <select>
+              <option value="english">General</option>
+              <option value="hindi">Hindi</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
         </div>
       </div>
-      <Footer />
+      <div className="review32">
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">College Hub representatives may reach out for more information</label>
+      </div>
+
+      <div className="review33">
+        <button>Submit</button>
+      </div>
+
+      <Footer1 />
 
     </>
   );

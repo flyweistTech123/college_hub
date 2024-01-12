@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from "react-bootstrap/Modal";
 import './Apply.css'
-import logo from '../../../Images/logo.png'
+import logo from '../../../Images/c61.png'
 import { FaRegUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
