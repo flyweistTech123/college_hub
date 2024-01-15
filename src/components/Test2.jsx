@@ -40,7 +40,7 @@ const Test2 = () => {
       {start ? (
         <>
             <div className="tst5">
-                <p>B.Tech Scholarship Test</p>
+                <p>B.Tech Scholarship Tet</p>
                 <div className="tst6">
                     <p>This Could prove to be start of something BIG</p>
                     <div className="tst7">

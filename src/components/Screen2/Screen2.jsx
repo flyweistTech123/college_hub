@@ -1,50 +1,40 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './Screen2.css'
-import Footer from "../Footer";
+import './Screen2.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../Navbar";
-import { FaSearch } from 'react-icons/fa';
-import { FaRegQuestionCircle } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 import img from '../../Images/cardsimg.png'
 import Sidebar from "../Sidebar";
-import { FaAngleDown } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 
 import { IoFilterOutline } from "react-icons/io5";
 
 import clgimg from '../../Images/homclg.png'
-import scholar from '../../Images/schrolarship12.png'
 import Footer1 from "../Footer1";
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import MobileLoanNavbar from "../MobileLoanNavabr"
 
 
 
 const Screen2 = () => {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate('/tests')
-  }
+  const [show, setShow] = useState(false);
 
-  const [showMore, setShowMore] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const handleFaltu = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
 
       <Navbar />
 
-      <div className="now1">
-        <div className="sidefilt" >
+      <div className="screen1">
+      <div className="screen20" style={{marginTop:"10px", marginLeft:"10px"}}>
+          <i class="fa-solid fa-bars" onClick={handleShow}></i>
+        </div>
+        <div className="screen2">
           <Sidebar />
         </div>
-
-
-        <div className="sidefilt1">
-          <div className="now4">
+        <div className="screen3">
             <div className="filt50">
               <h1>List of Top Colleges In India based on 2023 Ranking</h1>
               <button> <IoFilterOutline /> Popularity <IoIosArrowDown /></button>
@@ -1753,11 +1743,18 @@ const Screen2 = () => {
                 <button>Explore Now</button>
               </div>
             </div>
-          </div>
+    
         </div>
       </div>
       <Footer1 />
-
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <MobileLoanNavbar />
+          <Sidebar />
+        </Offcanvas.Body>
+      </Offcanvas>
     </>
   );
 };

@@ -630,12 +630,11 @@ code {
 .home25 {
   width: 100%;
   margin-top: 50px;
-  /* padding: 30px 80px 30px 50px; */
 }
 
 .home26 {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   margin-top: 40px;
 }
 
@@ -644,7 +643,7 @@ code {
   color: #FFFFFF;
   border-radius: 30px;
   height: 37px;
-  width: 178px;
+  width: auto;
   border: none;
   font-family: "Open Sans";
   font-style: normal;
@@ -890,7 +889,7 @@ code {
 .screen1 {
   display: flex;
   width: 100;
-  gap: 10px;
+  gap: 20px;
 }
 
 .screen2 {
@@ -906,6 +905,7 @@ code {
 
 .screen3 {
   width: 78%;
+  margin-top: 30px;
 }
 
 .screen4 {
@@ -1642,9 +1642,10 @@ input[type="checkbox"]:checked+label:after {
 
 }
 
-.coommoom3{
+.coommoom3 {
   margin-top: 50px;
 }
+
 .coommoom h4 {
   font-weight: 700;
   font-size: 26px;
@@ -1666,12 +1667,12 @@ input[type="checkbox"]:checked+label:after {
   margin-top: 20px;
 }
 
-.coommoom1{
+.coommoom1 {
   text-align: end;
   padding-right: 20px;
 }
 
-.coommoom1 button{
+.coommoom1 button {
   width: 120px;
   height: 35px;
   border: none;
@@ -1745,9 +1746,11 @@ input[type="checkbox"]:checked+label:after {
   line-height: 21.79px;
   color: #FFFFFF;
 }
+
 .common6 button:hover {
   transform: scale(1.1);
 }
+
 .common7 {
   display: flex;
   gap: 70px;
@@ -2470,7 +2473,7 @@ input[type="checkbox"]:checked+label:after {
 
 .clg21 {
   width: 100%;
-  height: 847px;
+  height: auto;
   background: #FFFFFF;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
   padding: 20px;
@@ -4600,13 +4603,14 @@ input[type="checkbox"]:checked+label:after {
   display: flex;
   /* Add any other styles for the container as needed */
 }
+
 .drop3 p {
   cursor: pointer;
   margin-right: 15px;
 }
 
 .drop3 p:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .drop3 p.active {
@@ -4722,8 +4726,9 @@ input[type="checkbox"]:checked+label:after {
   margin-bottom: 40px; */
 }
 
-.tst221{
-  background: linear-gradient(180deg, rgba(123, 204, 242, 0.70) 0%, rgba(29, 57, 105, 0.50) 73.31%);  width: 483px;
+.tst221 {
+  background: linear-gradient(180deg, rgba(123, 204, 242, 0.70) 0%, rgba(29, 57, 105, 0.50) 73.31%);
+  width: 483px;
   height: 260px;
   display: flex;
   flex-direction: column;
@@ -6607,7 +6612,7 @@ select:focus {
   margin-top: 50px;
 }
 
-.basic5 button{
+.basic5 button {
   border: none;
   background: #0185C3;
   border-radius: 5px;
@@ -6678,7 +6683,7 @@ select:focus {
   margin-right: 10px;
 }
 
-.recp301{
+.recp301 {
   display: flex;
   gap: 20px;
 }
@@ -7222,11 +7227,12 @@ select:focus {
 /* =========== cart styling ============*/
 
 
-.cart90{
+.cart90 {
   width: 90%;
   margin: auto;
   box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
 }
+
 .cart1 {
   display: flex;
   gap: 30px;
@@ -7558,6 +7564,264 @@ select:focus {
 
 /*==== mobile styling ====*/
 @media (max-width: 1000px) {
+
+  .newhome2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newhome3 {
+    margin-bottom: 20px;
+  }
+
+  .newhome3 h1 {
+    font-size: 30px;
+  }
+
+  .home27 {
+    width: auto;
+    height: 57px;
+  }
+
+
+  .home177 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filt50 {
+    flex-direction: column;
+  }
+
+  .clg29 {
+    gap: 20px;
+  }
+
+  .clg1611 {
+    width: 100%;
+  }
+
+  .clg40 {
+    padding: 10px;
+  }
+
+  .clg41 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+  }
+
+
+  .clg42 {
+    margin-top: 30px;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .clg42 h5 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1A3B5A;
+  }
+
+  .clg42 p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.51px;
+    color: #000000;
+  }
+
+  .clg26 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .clg26 button {
+    height: auto;
+
+  }
+
+  .clg44 {
+    padding: 10px;
+  }
+
+  .clg45 {
+    padding-top: 20px;
+    margin-left: 0%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .clg46 {
+    width: 45%;
+  }
+
+  .clg47 {
+    width: 55%;
+  }
+
+  .clg48 {
+    display: flex;
+    width: 60%;
+    margin-left: 25%;
+  }
+
+  .clg48 p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #00163a;
+  }
+
+  .clg49 {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .clg23 {
+    width: 100%;
+  }
+  .tst4 {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+  
+  }
+
+  .onestopp12 {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .onestopp12 h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  
+  .onestopp12 p {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  
+  .document-table1 {
+    margin: 20px auto;
+  }
+  
+  .document-table1 table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: auto;
+  }
+  
+  .document-table1 table th,
+  td {
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .document-table1 table th {
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: 21.79px;
+  }
+
+  .cart12 input {
+    width: auto;
+    height: 39px;
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-weight: 600;
+    line-height: 21.79px;
+    padding-left: 20px;
+  }
+
+  .loan24 {
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cart10 {
+    width: auto;
+  }
+  
+  .schro6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .schro7 {
+    width: 100%;
+    height: 298px;
+    border: 1.5px solid #0185C3;
+    border-bottom: none;
+  }
+
+  .schro11 {
+    margin: auto;
+  }
+
+  .schro13 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .common7 {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  .coommoom{
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .common2{
+    width: 90%;
+    margin: auto;
+  }
+
+
   .review2 {
     flex-direction: column;
   }
@@ -7704,9 +7968,7 @@ select:focus {
     grid-template-columns: auto;
   }
 
-  .one5 {
-    width: 20%;
-  }
+
 
   /* === table styling === */
   table {
@@ -7715,6 +7977,9 @@ select:focus {
 
   .tst1 {
     grid-template-columns: auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
   }
 
   .home100 {
@@ -7750,25 +8015,35 @@ select:focus {
   }
 
   .home6 {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
-  .home8 {
+  /* .home8 {
     display: grid;
     grid-template-columns: auto auto auto;
+  } */
+
+  .dropmobile {
+    margin-left: 15px;
+    margin-top: 10px;
   }
 
   .home21 {
-    margin-top: 60px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: auto;
     grid-gap: 100px;
     margin-left: 5%;
     width: 90%;
+    height: auto;
+    padding: 20px;
+
   }
 
+
+
   .home12 {
-    background: #e7e7e7;
+    background: #FFFFFF;
     border-radius: 10px;
     margin-right: 20px !important;
     padding-right: 0px;
@@ -8095,9 +8370,9 @@ select:focus {
     width: 15%;
   }
 
-  .tst3 {
+  /* .tst3 {
     width: 50%;
-  }
+  } */
 
   .tst8 button {
     width: 50%;
@@ -8290,10 +8565,12 @@ select:focus {
 
   .cart2 {
     width: 100%;
+    height: auto;
   }
 
   .cart3 {
     width: 100%;
+    height: auto;
   }
 
   .cart12 {

@@ -1,12 +1,5 @@
 import React from 'react'
-import TopNavbar from "../TopNavbar";
-import { IoLocationSharp } from "react-icons/io5";
-import { MdMessage } from "react-icons/md";
-import { FaClock } from "react-icons/fa";
-import { FaShield } from "react-icons/fa6";
 import { MdDownload } from "react-icons/md";
-import { IoMdPhotos } from "react-icons/io";
-import { FaStar } from "react-icons/fa6";
 import img26 from "../../Images/Rectangle 71.png";
 import img27 from '../../Images/Rectangle 4.png'
 import img28 from '../../Images/clginfo.png'
@@ -17,7 +10,6 @@ import Navbar from "../Navbar";
 
 export const CollegeInfotoppart = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   return (
     <>
       <div className="ingooo1">

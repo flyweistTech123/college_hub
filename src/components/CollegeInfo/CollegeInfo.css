@@ -1,134 +1,167 @@
+.ingooo2 {
+  width: 100%;
+  height: 296px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
 
 
-  .ingooo1 {
+.ingooo2 img {
+  width: 100%;
+  height: 296px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 
-  }
+
+.ingooo4 {
+  display: flex;
+  position: absolute;
+  bottom: 150px;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+}
+
+.ingooo4 img {
+  width: 49px;
+  height: 52px;
+}
+
+.ingooo4 h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20.43px;
+  color: #FFFFFF;
+  width: 70%;
+}
 
 
-  .ingooo2 {
-    width: 100%;
-    height: 296px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-  }
 
+
+.ingooo5 {
+  width: 100%;
+  height: 103px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.ingooo6 {
+  display: flex;
+  gap: 60px;
+}
+
+.ingooo6 span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: #000000;
+}
+
+.ingooo7 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.ingooo7 p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.07px;
+  color: #000000;
+}
+
+.ingooo8 {
+  display: flex;
+  gap: 20px;
+}
+
+
+.ingooo8 button:nth-child(1) {
+  width: 280px;
+  height: 38px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #33BDFF;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #FFFFFF;
+}
+
+
+.ingooo8 button:nth-child(2) {
+  width: 194px;
+  height: 38px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #33BDFF;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #FFFFFF;
+}
+
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 568px) {
 
   .ingooo2 img {
-    width: 100%;
-    height: 296px;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    width: 50%;
   }
 
- 
 
-  
   .ingooo4 {
-    display: flex;
-    position: absolute;
-    bottom: 150px;
+    bottom: 400px;
     gap: 20px;
     padding: 10px;
     align-items: center;
   }
-  .ingooo4 img{
-    width: 49px;
-    height: 52px;
-  }
-  
+
   .ingooo4 h2 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20.43px;
-    color: #FFFFFF;
-    width: 70%;
+    font-size: 14px;
+    line-height: 16.43px;
+  }
+
+
+  .ingooo5 {
+    height: auto;
+  }
+
+  .ingooo7 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
   }
   
 
-  .ingooo4 button{
-    width: 194px;
-    height: 47px;
-    border: none;
-    outline:  none;
-    border-radius: 30px;
-    background: #F4BC1C;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    color: #FFFFFF;
+
+  .ingooo7 p {
+    /* font-size: 12px; */
+    line-height: 16.07px;
   }
 
-
-  .ingooo5{
-    width: 100%;
-    height: 103px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 20px;
+  .ingooo8{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .ingooo6{
-    display: flex;
-   gap: 60px;
+  .ingooo8 button {
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 20px;
   }
-
-  .ingooo6 span{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21.79px;
-    color: #000000;
-  }
-
-  .ingooo7{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-
-.ingooo7 p{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19.07px;
-    color: #000000;
 }
 
-.ingooo8{
-    display: flex;
-    gap: 20px;
-}
-
-
-.ingooo8 button:nth-child(1){
-    width: 280px;
-    height: 38px;
-    border: none;
-    outline:  none;
-    border-radius: 5px;
-    background: #33BDFF;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 22.5px;
-    color: #FFFFFF;
-}
-
-
-.ingooo8 button:nth-child(2){
-    width: 194px;
-    height: 38px;
-    border: none;
-    outline:  none;
-    border-radius: 5px;
-    background: #33BDFF;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 22.5px;
-    color: #FFFFFF;
-}
-
-
-.ingooo10{
+.ingooo10 {
   display: flex;
   gap: 50px;
 }
@@ -185,40 +218,40 @@
 
 
 
-.ingooo11{
+.ingooo11 {
   display: flex;
   gap: 20px;
   padding: 20px;
 }
 
 
-.ingooo11 img{
+.ingooo11 img {
   width: 50px;
   height: 50px;
 }
 
-.ingooo12 h6{
+.ingooo12 h6 {
   font-weight: 700;
   font-size: 20px;
   line-height: 27.24px;
   color: #121212;
 }
 
-.ingooo12 p{
+.ingooo12 p {
   font-weight: 600;
   font-size: 15px;
   line-height: 16.34px;
   color: #121212;
 }
 
-.ingooo13{
+.ingooo13 {
   width: auto;
   height: 113px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
   margin-top: 20px;
 }
 
-.ingooo14{
+.ingooo14 {
   display: flex;
   padding: 10px;
   gap: 30px;
@@ -226,18 +259,18 @@
 }
 
 
-.ingooo14 p{
+.ingooo14 p {
   font-weight: 700;
   font-size: 12px;
   line-height: 16.34px;
   color: #000000;
 }
 
-.ingooo15{
+.ingooo15 {
   text-align: center;
 }
 
-.ingooo15 span{
+.ingooo15 span {
   font-weight: 400;
   font-size: 15px;
   line-height: 16.34px;
@@ -248,7 +281,7 @@
 
 
 
-.ingooo16 button:nth-child(1){
+.ingooo16 button:nth-child(1) {
   width: 325px;
   height: 38px;
   border: none;
@@ -263,7 +296,7 @@
 }
 
 
-.ingooo16 button:nth-child(2){
+.ingooo16 button:nth-child(2) {
   width: 325px;
   height: 38px;
   border: 1px solid #000000;
@@ -308,7 +341,7 @@
   padding-top: 20px;
 }
 
-.ingooo21 h5{
+.ingooo21 h5 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -318,7 +351,7 @@
   padding-top: 20px;
 }
 
-.ingooo21 p{
+.ingooo21 p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -329,12 +362,12 @@
 }
 
 
-.ingooo21 li{
+.ingooo21 li {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height:24.51px;
+  line-height: 24.51px;
   color: #000000;
   padding-top: 20px;
 }
@@ -377,7 +410,7 @@
 .ingooo24 button {
   background: #1d3969;
   color: #FFFFFF;
-  width:256.15px;
+  width: 256.15px;
   border: none;
   height: 47px;
   font-style: normal;

@@ -1,18 +1,10 @@
 import React, { useState } from "react";
 import './CollegePredictor.css'
-import { useNavigate } from "react-router-dom";
 import TopPart3 from "../TopPart3";
-import Footer from "../Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import TopNavbar from "../TopNavbar";
-import moke from '../../Images/predictor.png'
-import clg from '../../Images/IIT.png'
-import clg1 from '../../Images/IIT2.png'
 import NavbarSlider from "../uppside/Navbar&skider";
 import Footer1 from "../Footer1";
-import google from '../../Images/google.png'
 import Modal from "react-bootstrap/Modal";
-import login from '../../Images/loginpage.png'
 
 
 

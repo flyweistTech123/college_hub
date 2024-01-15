@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
-import img from "../Images/c33.png";
 import img3 from "../Images/c1.png";
 import img4 from "../Images/c4.png";
 import img5 from "../Images/c5.png";
@@ -23,7 +22,6 @@ import img19 from "../Images/c19.png";
 import img20 from "../Images/c20.png";
 import img21 from "../Images/c21.png";
 import img22 from "../Images/c22.png";
-import img26 from "../Images/c26.png";
 import clgimg from '../Images/homclg.png'
 
 
@@ -42,10 +40,6 @@ import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-ico
 import "bootstrap/dist/css/bootstrap.min.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import HomeTable from "./HomeTable";
-
-
-import TopNavbar from "./TopNavbar";
-import Modal from "react-bootstrap/Modal";
 import ApplyNowModal from "./Modals/Login/Apply";
 import NavbarSlider from "./uppside/Navbar&skider";
 import ShortList from "./Modals/ShortList/ShortList";
@@ -151,8 +145,17 @@ const Home = () => {
     slidesToShow: slideShow,
     slidesToScroll: 1,
     autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    nextArrow: window.innerWidth >= 800 ? <SampleNextArrow /> : null,
+    prevArrow: window.innerWidth >= 800 ? <SamplePrevArrow /> : null,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          nextArrow: null,
+          prevArrow: null,
+        },
+      },
+    ],
   };
   const settings3 = {
     dots: false,
@@ -170,8 +173,35 @@ const Home = () => {
     speed: 500,
     slidesToShow: 8,
     slidesToScroll: 3,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    autoplay: true,
+    nextArrow: window.innerWidth >= 800 ? <SampleNextArrow /> : null,
+    prevArrow: window.innerWidth >= 800 ? <SamplePrevArrow /> : null,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+    ]
   };
 
 
@@ -318,7 +348,7 @@ const Home = () => {
 
   const [modalShow, setModalShow] = useState(false);
 
-  const[collegeselectModal, setCollegeSelect] = useState(false)
+  const [collegeselectModal, setCollegeSelect] = useState(false)
 
 
 
@@ -328,8 +358,12 @@ const Home = () => {
       <div>
         <NavbarSlider />
       </div>
+      {/* <div className="home100">
+        <i class="fa-solid fa-bars" onClick={handleShow}></i>
+      </div> */}
 
-
+      {showNavbar ? <NavMenu2 /> : " "}
+      {showNavbar2 ? <NavMenu /> : ""}
       <div className="maintomainhome">
         <div className="home7">
           <h2>Top Cities</h2>
@@ -456,7 +490,7 @@ const Home = () => {
                   <img src={img11} alt="" />
                 </div>
                 <div className="home177">
-                  <button  onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
+                  <button onClick={() => setCollegeSelect(true)}>Add to Common Application Form</button>
                   <button onClick={() => setModalShow(true)}>Apply Now</button>
                 </div>
               </div>
@@ -881,6 +915,7 @@ const Home = () => {
         <div className="home25">
           <h2>Top Featured Colleges</h2>
           <div className="home26">
+          <Slider {...settings3}>
             <div className="home29">
               <button className="home27"><MdOutlineSort /> City Name <FaAngleDown /></button>
             </div>
@@ -897,14 +932,24 @@ const Home = () => {
               <button className="home28">BCA</button>
             </div>
             <div className="home29">
-              <button className="home28">B.Com / B.Com (Hons.)</button>
-            </div>
-            <div className="home29">
               <button className="home28">B.Pharm</button>
             </div>
+            <div className="home29">
+              <button className="home28">B.F.A</button>
+            </div>
+            <div className="home29">
+              <button className="home28">M.F.A</button>
+            </div>
+            <div className="home29">
+              <button className="home28">B.Design</button>
+            </div>
+            <div className="home29">
+              <button className="home28">M.Design</button>
+            </div>
+            </Slider>
           </div>
         </div>
-        <div>
+        <div className="home1212">
           <HomeTable />
         </div>
 
@@ -935,9 +980,9 @@ const Home = () => {
           <div className="home101">
             <img src={img3} alt="" />
             <>
-          
+
             </>
-         
+
             <div className="login10">
               <i class="fa-solid fa-user"></i>
               <p>Login</p>

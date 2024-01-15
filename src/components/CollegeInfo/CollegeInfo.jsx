@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Footer from "../Footer";
 import TopPart from "../TopPart";
 import img from "../../Images/c50.png";
 import img2 from "../../Images/c51.png";
@@ -8,18 +7,13 @@ import img4 from "../../Images/c53.png";
 import img5 from "../../Images/c54.png";
 import img6 from "../../Images/c55.png";
 import img7 from "../../Images/c56.png";
-import img8 from "../../Images/c57.png";
-import img9 from "../../Images/c58.png";
-import cap from '../../Images/cap.png'
 import './CollegeInfo.css'
-import { IoIosArrowForward } from "react-icons/io";
 
 
 import MobileLoanNavbar from "../MobileLoanNavabr";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { CollegeInfotoppart } from "./CollegeInfotoppart";
-import { IoLocationSharp } from "react-icons/io5";
 import Footer1 from "../Footer1";
 import RightSide from "./RightSide";
 

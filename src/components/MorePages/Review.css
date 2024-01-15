@@ -187,3 +187,47 @@
     /* Increase the size by 10% on hover */
   }
   
+
+
+
+  @media screen and (max-width: 568px){
+    .review22{
+        width:100%;
+        height: auto;
+    }
+
+    .review23{
+        display: flex;
+       flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .review24 select{
+        width: 100%;
+        height: 55px;
+        border-radius: 5px;
+        border: 1px solid #707070;
+        background: #E7E7E7;
+        padding: 10px;
+    }
+    .review24 textarea{
+        width: 100%;
+        height: 150px;
+        border-radius: 5px;
+        border: 1px solid #707070;
+        background: #E7E7E7;
+        padding: 10px;
+    }
+    .review28{
+        display: flex;
+        gap: 10px;
+    }
+    .review29{
+        width:100%;
+        height: auto;
+        padding: 20px;
+    }
+
+  }

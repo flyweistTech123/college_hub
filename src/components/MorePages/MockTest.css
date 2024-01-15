@@ -63,3 +63,14 @@
     text-align: center;
     padding-top: 10px;
   }
+
+
+
+  @media screen and (max-width: 568px){
+
+    .testtt1{
+      width: 95%;
+      height: auto;
+    }
+  
+  }

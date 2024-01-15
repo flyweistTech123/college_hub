@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import './Loan.css'
-import LoanNavbar from "../LoanNavbar";
 import ReactApexChart from 'react-apexcharts';
 import MobileLoanNavbar from "../MobileLoanNavabr";
-import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
-import Loanimg from '../../Images/Loan.png'
 import img2 from "../../Images/c64.png";
 import img3 from "../../Images/c65.png";
 import img4 from "../../Images/c66.png";
@@ -17,10 +14,6 @@ import img9 from "../../Images/c71.png";
 import img10 from "../../Images/c72.png";
 import img11 from "../../Images/c73.png";
 import img12 from "../../Images/c74.png";
-import img13 from "../../Images/c75.png";
-import img14 from "../../Images/c76.png";
-import img15 from "../../Images/c77.png";
-import img16 from "../../Images/c78.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import TopNavbar from "../TopNavbar";

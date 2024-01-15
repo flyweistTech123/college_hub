@@ -6,9 +6,10 @@ import Footer from "../Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import img6 from "../../Images/c38.png";
 import img7 from "../../Images/c87.png";
-import TopNavbar from "../TopNavbar";
+import TopNavbar from "../TopNavbar"; 
 import moke from '../../Images/moketest.png'
 import NavbarSlider from "../uppside/Navbar&skider";
+import Footer1 from "../Footer1";
 
 const MockTest = () => {
   const navigate = useNavigate();
@@ -76,7 +77,7 @@ const MockTest = () => {
       </div>
       <div className="loan21">
       </div>
-      <Footer />
+      <Footer1 />
 
     </>
   );

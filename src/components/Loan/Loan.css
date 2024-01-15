@@ -1,4 +1,4 @@
-.loan31{
+.loan31 {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -7,7 +7,8 @@
     gap: 20px;
     top: 200px;
 }
-.loan30{
+
+.loan30 {
     width: 229px;
     height: 340px;
     background-color: #FFFFFF;
@@ -19,32 +20,27 @@
     padding: 20px;
 }
 
-.loan30 img{
+.loan30 img {
     width: 30px;
     height: 44.28px;
     margin-bottom: 10px;
 }
 
-.loan30 h5{
+.loan30 h5 {
     font-weight: 600;
     font-size: 20px;
     line-height: 27.24px;
     color: #000000;
 }
 
-.topki{
+.topki {
     margin-top: 50px;
 }
 
-.loan30 span{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27.24px;
-    color: #349DCF;
-}
 
 
-.loan30 p{
+
+.loan30 p {
     font-weight: 400;
     font-size: 20px;
     line-height: 27.24px;
@@ -59,9 +55,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-  }
-  
-  .loan36 {
+}
+
+.loan36 {
     font-family: Open Sans;
     cursor: pointer;
     width: 208.02px;
@@ -73,11 +69,11 @@
     text-align: center;
     padding: 10px;
     line-height: 27.24px;
-  }
-  
+}
 
-  
-  .loan37 {
+
+
+.loan37 {
     font-family: Open Sans;
     cursor: pointer;
     width: 208.02px;
@@ -90,9 +86,9 @@
     text-align: center;
     padding: 10px;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
-  }
-  
- 
+}
+
+
 
 
 /* .rangebox input {
@@ -214,3 +210,30 @@ input[type="range"]::-webkit-slider-thumb {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
+
+
+
+@media screen and (max-width: 568px) {
+    .loan31 {
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        top: 100px;
+    }
+
+    .loan30 {
+        width: 229px;
+        height: auto;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+
+    .loan30 h5 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27.24px;
+        color: #000000;
+    }
+
+}

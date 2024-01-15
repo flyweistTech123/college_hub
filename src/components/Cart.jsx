@@ -8,6 +8,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import img from "../Images/c102.png";
 import TopNavbar from "./TopNavbar";
 import Footer from "./Footer";
+import Footer1 from "./Footer1";
 
 const Cart = () => {
     const [show, setShow] = useState(false);
@@ -101,7 +102,7 @@ const Cart = () => {
             </div>
             <div className="loan21">
             </div>
-            <Footer />
+            <Footer1 />
             <Offcanvas show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title></Offcanvas.Title>

@@ -3,10 +3,9 @@ import './Scholarship.css'
 import { useNavigate } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Footer from "../Footer";
+import Footer1 from "../Footer1";
 import img from '../../Images/clgschro.png'
 import Sidebar3 from "../Sidebar3";
-import { IoMdArrowDropright } from "react-icons/io";
 import NavbarSlider from "../uppside/Navbar&skider";
 import ApplyNowModal from "../Modals/Login/Apply";
 
@@ -471,7 +470,7 @@ const Scholarship = () => {
       <ApplyNowModal show={modalShow}
         onHide={() => setModalShow(false)} />
     
-      <Footer />
+      <Footer1 />
     </>
   );
 };

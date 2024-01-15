@@ -85,6 +85,13 @@
     line-height: 29.08px;
 }
 
+.filt50 h1 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34.05px;
+    color: #000000;
+}
+
 
 /* SearchInput.css */
 
@@ -164,12 +171,12 @@
     /* margin-top: 20px; */
 }
 
-.now4 h1 {
+/* .filt50 h1 {
     font-weight: 600;
     font-size: 25px;
     line-height: 34.05px;
     color: #000000;
-}
+} */
 
 
 .now20 {
@@ -232,35 +239,6 @@
 }
 
 
-/* .filt23 {
-    display: flex;
-    position: absolute;
-    top: 130px;
-    bottom: 0;
-    left: 0;
-    gap: 8px;
-   padding: 5px;
-}
-
-.filt23 img {
-    width: 51px;
-    height: 51px;
-}
-
-.filt23 h6 {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16.34px;
-    color: #FFFFFF;
-}
-
-.filt23 p {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16.34px;
-    color: #FFFFFF;
-} */
-
 
 .filt30 {
     padding-left: 10px;
@@ -290,9 +268,7 @@
     display: flex;
 }
 
-.filt34 {
-    /* padding-top: 10px; */
-}
+
 
 
 
@@ -361,11 +337,9 @@
 
 .filt38 button:hover {
     transform: scale(1.1);
-    /* Increase the size by 10% on hover */
 }
 .filt25btn:hover {
     transform: scale(1.1);
-    /* Increase the size by 10% on hover */
 }
 
 
@@ -392,7 +366,6 @@
 }
 .filt39 button:hover {
     transform: scale(1.1);
-    /* Increase the size by 10% on hover */
 }
 
 .filt39 button:nth-child(2) {
@@ -561,4 +534,15 @@
     font-size: 16px;
     line-height: 21.79px;
     color: #349DCF;
+  }
+
+
+
+  @media screen and  (max-width: 568px){
+
+    .filt40{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
   }

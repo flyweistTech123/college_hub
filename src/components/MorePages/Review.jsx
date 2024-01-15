@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import './Review.css'
 import { useNavigate } from "react-router-dom";
-import TopPart3 from "../TopPart3";
-import Footer from "../Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import TopNavbar from "../TopNavbar";
-import moke from '../../Images/review.png'
 import NavbarSlider from "../uppside/Navbar&skider";
 import Footer1 from "../Footer1";
 
