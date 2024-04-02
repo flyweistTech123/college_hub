@@ -7,6 +7,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import img from "../Images/c99.png";
 import img2 from "../Images/c100.png";
+import TopNavbar from "./TopNavbar";
 
 const Counsellor = () => {
     const [show2, setShow2] = useState(false);
@@ -14,7 +15,9 @@ const Counsellor = () => {
     const handleShow = () => setShow2(true);
   return (
     <>
-      <LoanNavbar />
+      <div className="cart90">
+        <TopNavbar />
+      </div>
       <div className="home100">
         <i class="fa-solid fa-bars" onClick={handleShow}></i>
       </div>

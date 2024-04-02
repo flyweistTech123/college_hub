@@ -5,6 +5,7 @@ import logo from '../Images/collegehublogo.png'
 import MoreModal from "./Modals/MoreModal";
 import login from '../Images/loginpage.png'
 import google from '../Images/google.png'
+import profileimg from '../Images/navprofile.png'
 
 const TopNavbar = (props) => {
 
@@ -63,6 +64,18 @@ const TopNavbar = (props) => {
   const closeRegistratatiomodal = () => {
     setRegistratationmodalOpen(false);
   }
+
+
+  // Retrieve the initial state from localStorage
+  const initialShowProfile = localStorage.getItem('showProfile') === 'true';
+  
+  // Set up state with initial value
+  const [showProfile, setShowProfile] = useState(initialShowProfile);
+
+  // Update localStorage whenever showProfile changes
+  useEffect(() => {
+    localStorage.setItem('showProfile', showProfile);
+  }, [showProfile]);
 
 
   function NavMenu() {
@@ -208,10 +221,6 @@ const TopNavbar = (props) => {
       name: "Mock Test",
       link: "/mocktest",
     },
-    // {
-    //   name: "Institute",
-    //   link: "/screen2",
-    // },
     {
       name: "College Predictor",
       link: '/college-predictor',
@@ -221,42 +230,17 @@ const TopNavbar = (props) => {
       name: "Review a College",
       link: '/review',
     },
-
-    // {
-    //   name: "Test and Services  ",
-    //   link: "/test",
-    // },
     {
       name: "One stop solution",
       link: '/one-stop-solution',
     },
 
-    // {
-    //   name: "Loan",
-    //   link: "/loan",
-    // },
 
     {
       name: "Become a Partner",
       link: '/become-partner',
     },
 
-    // {
-    //   name: "Counsellor Connect",
-    //   link: "/council-connect",
-    // },
-    // {
-    //   name: "Become a partner",
-    //   link: "/become-partner",
-    // },
-    // {
-    //   name: "One Stop Solution",
-    //   link: "/one-stop",
-    // },
-    // {
-    //   name: "Profile",
-    //   link: "/profile",
-    // },
   ];
 
 
@@ -419,7 +403,7 @@ const TopNavbar = (props) => {
                 </div>
               </div>
               <div className="login9">
-                <button>Submit</button>
+                <button  onClick={() => setShowProfile(true)}>Submit</button>
               </div>
             </div>
           </>
@@ -500,9 +484,20 @@ const TopNavbar = (props) => {
               </MoreModal>
             )}
 
-            <div>
-              <button className="loginn" onClick={() => setShow(true)}>Log In</button>
-            </div>
+
+            {showProfile ? (
+              <p style={{ color: props.color }}>
+                <img src={profileimg} alt="jjjj"  onClick={()=>navigate('/profile')} />
+              </p>
+            ) : (
+              <div>
+                <button className="loginn" onClick={() => setShow(true)}>
+                Login
+                </button>
+              </div>
+            )}
+
+
 
 
 

@@ -5,7 +5,6 @@ import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import MobileLoanNavbar from "./MobileLoanNavabr";
-import img2 from "../Images/c89.png";
 import img3 from "../Images/c90.png";
 import partner from '../Images/partner.png'
 import trophy from '../Images/trophy.png'
@@ -24,13 +23,16 @@ const BecomeSeller = () => {
   const handleShow = () => setShow2(true);
   return (
     <>
-      <div className="app1">
-        <div className="schro">
-          <TopNavbar />
-        </div>
-        <div className="app6">
-          <img src={partner} />
-        </div>
+     <div className="home200">
+        <div className="home1">
+          <div className="car1">
+            <img src={partner} />
+          </div>
+          <div className="home2">
+            <div className="home100">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <TopNavbar color="#1A3B5A" />
 
         <div className="partner57">
           <div className="partner56">
@@ -47,6 +49,10 @@ const BecomeSeller = () => {
           </div>
           
         </div>
+      </div>
+      </div>
+      </div>
+        <div className="topki">
         <TopPart3 />
       </div>
       <div className="partnerparent">

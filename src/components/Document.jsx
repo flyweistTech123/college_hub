@@ -8,11 +8,14 @@ import Footer from "./Footer";
 import img from "../Images/c116.png";
 import img2 from "../Images/c117.png";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import TopNavbar from "./TopNavbar";
 
 const Document = () => {
   return (
     <>
-      <LoanNavbar />
+      <div className="cart90">
+        <TopNavbar />
+      </div>
       <div className="profile1">
         <div className="profile2">
           <Sidebar2 />
@@ -24,7 +27,7 @@ const Document = () => {
               <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et </p>
             </div>
             <div className="doc3">
-                <img src={img} alt="" />
+              <img src={img} alt="" />
             </div>
           </div>
           <div className="doc4">

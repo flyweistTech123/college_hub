@@ -6,6 +6,7 @@ import Footer from "./Footer";
 
 import img from "../Images/c96.png";
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import TopNavbar from "./TopNavbar";
 
 const Feed = () => {
     const [show2, setShow2] = useState(false);
@@ -13,7 +14,9 @@ const Feed = () => {
     const handleShow = () => setShow2(true);
   return (
     <>
-      <LoanNavbar />
+      <div className="cart90">
+        <TopNavbar />
+      </div>
       <div className="home100">
           <i class="fa-solid fa-bars" onClick={handleShow}></i>
         </div>

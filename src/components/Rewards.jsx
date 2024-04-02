@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Sidebar2 from "./Sidebar2";
 import LoanNavbar from "./LoanNavbar";
 import MobileLoanNavbar from "./MobileLoanNavabr";
@@ -6,14 +6,17 @@ import Footer from "./Footer";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import img from "../Images/c95.png";
 import img2 from "../Images/c98.png";
+import TopNavbar from "./TopNavbar";
 
 const Rewards = () => {
-    const [show2, setShow2] = useState(false);
-    const handleClose = () => setShow2(false);
-    const handleShow = () => setShow2(true);
+  const [show2, setShow2] = useState(false);
+  const handleClose = () => setShow2(false);
+  const handleShow = () => setShow2(true);
   return (
     <>
-      <LoanNavbar />
+      <div className="cart90">
+        <TopNavbar />
+      </div>
       <div className="home100">
         <i class="fa-solid fa-bars" onClick={handleShow}></i>
       </div>
@@ -45,7 +48,7 @@ const Rewards = () => {
         <Offcanvas.Header closeButton></Offcanvas.Header>
         <Offcanvas.Body>
           <MobileLoanNavbar />
-          <Sidebar2 />     
+          <Sidebar2 />
         </Offcanvas.Body>
       </Offcanvas>
     </>

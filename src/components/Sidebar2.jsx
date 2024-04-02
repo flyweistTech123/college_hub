@@ -1,5 +1,18 @@
 import React from "react";
 import {useNavigate, useLocation} from "react-router-dom";
+import { MdOutlinePersonOutline } from "react-icons/md";
+import { GrDocumentPerformance } from "react-icons/gr";
+import { IoSchoolOutline } from "react-icons/io5";
+import { LuCompass } from "react-icons/lu";
+import { IoDocumentTextOutline } from "react-icons/io5";
+import { MdFeed } from "react-icons/md";
+import { MdOutlinePayment } from "react-icons/md";
+import { IoRibbonOutline } from "react-icons/io5";
+import { AiTwotoneBank } from "react-icons/ai";
+import { IoSettingsOutline } from "react-icons/io5";
+import { MdOutlineAttachMoney } from "react-icons/md";
+import { IoIosLogOut } from "react-icons/io";
+
 
 import img from "../Images/c93.png";
 
@@ -16,53 +29,53 @@ const Sidebar2 = () => {
         </div>
         <div className="profile9" >
           <div className={location.pathname === "/profile"?"profile11" : "profile10"} onClick={()=>navigate("/profile")}>
-            <i class="fa-solid fa-user"></i>
+            <i className="iicon123"><MdOutlinePersonOutline /></i>
             <p>Profile</p>
           </div>
           <div  className={location.pathname === "/test-perform"?"profile11" : "profile10"}
             onClick={()=>navigate("/test-perform")}
           >
-            <i class="fa-solid fa-square-poll-vertical"></i>
+            <i className="iicon123"><GrDocumentPerformance /></i>
             <p>My Test Performances</p>
           </div>
           <div  className={location.pathname === "/college"?"profile11" : "profile10"}
             onClick={()=>navigate("/college")}
           >
-            <i class="fa-solid fa-graduation-cap"></i>
+            <i className="iicon123"><IoSchoolOutline /></i>
             <p>College</p>
           </div>
           <div  className={location.pathname === "/career"?"profile11" : "profile10"}
             onClick={()=>navigate("/career")}
           >
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p>Career Options</p>
+            <i className="iicon123"><LuCompass /></i>
+            <p>Career Compass</p>
           </div>
           <div className={location.pathname === "/document"?"profile11" : "profile10"} onClick={()=>navigate("/document")}>
-            <i class="fa-solid fa-file"></i>
+            <i  className="iicon123"><IoDocumentTextOutline /></i>
             <p>Documents</p>
           </div>
           <div className={location.pathname === "/feed"?"profile11" : "profile10"}
             onClick={()=>navigate("/feed")}
           >
-            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <i className="iicon123"><MdFeed /></i>
             <p>Feeds</p>
           </div>
           <div className={location.pathname === "/payment"?"profile11" : "profile10"}
             onClick={()=>navigate("/payment")}
           >
-            <i class="fa-sharp fa-regular fa-money-bill"></i>
+            <i className="iicon123"><MdOutlinePayment /></i>
             <p>Payment</p>
           </div>
           <div className={location.pathname === "/rewards" ? "profile11" : "profile10"}
             onClick={()=>navigate("/rewards")}
           >
-            <i class="fa-solid fa-gift"></i>
+            <i className="iicon123"><IoRibbonOutline /></i>
             <p>Rewards</p>
           </div>
           <div className={location.pathname === "/insurance"?"profile11" : "profile10"}
             onClick={()=>navigate("/insurance")}
           >
-            <i class="fa-solid fa-graduation-cap"></i>
+            <i className="iicon123"><AiTwotoneBank /></i>
             <p>Insurance</p>
           </div>
           <div className={location.pathname === "/counsellor"?"profile11" : "profile10"}
@@ -74,8 +87,20 @@ const Sidebar2 = () => {
           <div className={location.pathname === "/setting" ? "profile11" : "profile10"}
             onClick={()=>navigate("/setting")}
           >
-            <i class="fa-solid fa-gear"></i>
+            <i className="iicon123"><IoSettingsOutline /></i>
             <p>Account Setting</p>
+          </div>
+          <div className={location.pathname === "/refer&earn" ? "profile11" : "profile10"}
+            onClick={()=>navigate("/refer&earn")}
+          >
+            <i className="iicon123"><MdOutlineAttachMoney /></i>
+            <p>Refer &Earn</p>
+          </div>
+          <div className={location.pathname === "/" ? "profile11" : "profile10"}
+            onClick={()=>navigate("/")}
+          >
+            <i className="iicon123"><IoIosLogOut /></i>
+            <p>Log Out</p>
           </div>
         </div>
       </div>

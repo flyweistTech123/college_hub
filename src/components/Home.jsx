@@ -43,6 +43,7 @@ import HomeTable from "./HomeTable";
 import ApplyNowModal from "./Modals/Login/Apply";
 import NavbarSlider from "./uppside/Navbar&skider";
 import ShortList from "./Modals/ShortList/ShortList";
+import Broucher from "./Modals/Login/Broucher";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -347,6 +348,7 @@ const Home = () => {
 
 
   const [modalShow, setModalShow] = useState(false);
+  const [modalShow1, setModalShow1] = useState(false);
 
   const [collegeselectModal, setCollegeSelect] = useState(false)
 
@@ -368,7 +370,7 @@ const Home = () => {
         <div className="home7">
           <h2>Top Cities</h2>
           <div className="home8">
-            <Slider {...settings4} >
+            <Slider {...settings4}>
               <div className="home9" onClick={() => navigate("/screen2")}>
                 <img src={img4} alt="" />
                 <p>Delhi</p>
@@ -388,6 +390,10 @@ const Home = () => {
               <div className="home9" onClick={() => navigate("/screen2")} >
                 <img src={img8} alt="" />
                 <p>Agra</p>
+              </div>
+              <div className="home9" onClick={() => navigate("/screen2")} >
+                <img src={img9} alt="" />
+                <p>Jaipur</p>
               </div>
               <div className="home9" onClick={() => navigate("/screen2")} >
                 <img src={img9} alt="" />
@@ -436,7 +442,7 @@ const Home = () => {
                   />
                 </div>
 
-                <div className="home17">
+                <div className="home17" onClick={() => setModalShow1(true)}>
                   <p>Download Broachers</p>
                   <img src={img11} alt="" />
                 </div>
@@ -444,7 +450,7 @@ const Home = () => {
                   <p>Compare</p>
                   <img src={img11} alt="" />
                 </div>
-                <div className="home17">
+                <div className="home17" onClick={()=>navigate('/counsellorconnect')}>
                   <p>Speak to Expert</p>
                   <img src={img11} alt="" />
                 </div>
@@ -915,37 +921,37 @@ const Home = () => {
         <div className="home25">
           <h2>Top Featured Colleges</h2>
           <div className="home26">
-          <Slider {...settings3}>
-            <div className="home29">
-              <button className="home27"><MdOutlineSort /> City Name <FaAngleDown /></button>
-            </div>
-            <div className="home29">
-              <button className="home28">MBA/PGDM</button>
-            </div>
-            <div className="home29">
-              <button className="home28">BE / B.Tech</button>
-            </div>
-            <div className="home29">
-              <button className="home28">BBA / BBM</button>
-            </div>
-            <div className="home29">
-              <button className="home28">BCA</button>
-            </div>
-            <div className="home29">
-              <button className="home28">B.Pharm</button>
-            </div>
-            <div className="home29">
-              <button className="home28">B.F.A</button>
-            </div>
-            <div className="home29">
-              <button className="home28">M.F.A</button>
-            </div>
-            <div className="home29">
-              <button className="home28">B.Design</button>
-            </div>
-            <div className="home29">
-              <button className="home28">M.Design</button>
-            </div>
+            <Slider {...settings3}>
+              <div className="home29">
+                <button className="home27"><MdOutlineSort /> City Name <FaAngleDown /></button>
+              </div>
+              <div className="home29">
+                <button className="home28">MBA/PGDM</button>
+              </div>
+              <div className="home29">
+                <button className="home28">BE / B.Tech</button>
+              </div>
+              <div className="home29">
+                <button className="home28">BBA / BBM</button>
+              </div>
+              <div className="home29">
+                <button className="home28">BCA</button>
+              </div>
+              <div className="home29">
+                <button className="home28">B.Pharm</button>
+              </div>
+              <div className="home29">
+                <button className="home28">B.F.A</button>
+              </div>
+              <div className="home29">
+                <button className="home28">M.F.A</button>
+              </div>
+              <div className="home29">
+                <button className="home28">B.Design</button>
+              </div>
+              <div className="home29">
+                <button className="home28">M.Design</button>
+              </div>
             </Slider>
           </div>
         </div>
@@ -969,6 +975,9 @@ const Home = () => {
 
       <ApplyNowModal show={modalShow}
         onHide={() => setModalShow(false)} />
+
+      <Broucher show={modalShow1}
+        onHide={() => setModalShow1(false)} />
 
       <ShortList show={collegeselectModal}
         onHide={() => setCollegeSelect(false)} />

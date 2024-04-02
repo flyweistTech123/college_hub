@@ -74,14 +74,14 @@
 }
 
 .filt50 button{
-    width: 234px;
+    width: 204px;
     height: 46px;
     border: 1px solid #1A3B5A;
     border-radius: 34.16px;
     background: transparent;
     color: #1A3B5A;
     font-weight: 400;
-    font-size: 21.35px;
+    font-size: 20px;
     line-height: 29.08px;
 }
 
@@ -90,6 +90,7 @@
     font-size: 25px;
     line-height: 34.05px;
     color: #000000;
+    margin: 0;
 }
 
 
@@ -187,7 +188,7 @@
 
 
 .filt20 {
-    width: 200px;
+    width: auto;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -385,8 +386,10 @@
 
 .filt40{
     display: flex;
-    gap: 80px;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 
@@ -461,7 +464,7 @@
 
 
 .filt36{
-    width: 95%;
+    width: 100%;
     height: 200px;
     background: #FFFFFF;
     border-radius: 12px;
