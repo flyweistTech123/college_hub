@@ -10,9 +10,9 @@ import img2 from "../Images/c100.png";
 import TopNavbar from "./TopNavbar";
 
 const Counsellor = () => {
-    const [show2, setShow2] = useState(false);
-    const handleClose = () => setShow2(false);
-    const handleShow = () => setShow2(true);
+  const [show2, setShow2] = useState(false);
+  const handleClose = () => setShow2(false);
+  const handleShow = () => setShow2(true);
   return (
     <>
       <div className="cart90">
@@ -28,14 +28,18 @@ const Counsellor = () => {
         <div className="profile3">
           <div className="counsellor1">
             <img src={img2} alt="" />
-            <div className="counsellor2">
-              <h6>Akash Sharma</h6>
-              <p>Expert Counsellor at CollegeHub</p>
+
+            <div className="counsellor5">
+              <div className="counsellor2">
+                <h6>Akash Sharma</h6>
+                <p>Expert Counsellor at CollegeHub</p>
+              </div>
+              <div className="college5">
+                <button>Rate Counsellor</button>
+                <button>Schedule a Call</button>
+              </div>
             </div>
-            <div className="counsellor3">
-                <button className="college5">Rate Counsellor</button>
-                <button className="college6">Schedule a Call</button>
-            </div>
+
           </div>
           <div className="counsellor1">
             <img src={img} alt="" />
@@ -44,8 +48,8 @@ const Counsellor = () => {
               <p>Expert Counsellor at CollegeHub</p>
             </div>
             <div className="counsellor3">
-                <button className="college5">Rate Counsellor</button>
-                <button className="college6">Schedule a Call</button>
+              <button className="college5">Rate Counsellor</button>
+              <button className="college6">Schedule a Call</button>
             </div>
           </div>
           <div className="counsellor1">
@@ -55,8 +59,8 @@ const Counsellor = () => {
               <p>Expert Counsellor at CollegeHub</p>
             </div>
             <div className="counsellor3">
-                <button className="college5">Rate Counsellor</button>
-                <button className="college6">Schedule a Call</button>
+              <button className="college5">Rate Counsellor</button>
+              <button className="college6">Schedule a Call</button>
             </div>
           </div>
           <div className="counsellor1">
@@ -66,8 +70,8 @@ const Counsellor = () => {
               <p>Expert Counsellor at CollegeHub</p>
             </div>
             <div className="counsellor3">
-                <button className="college5">Rate Counsellor</button>
-                <button className="college6">Schedule a Call</button>
+              <button className="college5">Rate Counsellor</button>
+              <button className="college6">Schedule a Call</button>
             </div>
           </div>
           <div className="counsellor1">
@@ -77,8 +81,8 @@ const Counsellor = () => {
               <p>Expert Counsellor at CollegeHub</p>
             </div>
             <div className="counsellor3">
-                <button className="college5">Rate Counsellor</button>
-                <button className="college6">Schedule a Call</button>
+              <button className="college5">Rate Counsellor</button>
+              <button className="college6">Schedule a Call</button>
             </div>
           </div>
           <div className="counsellor1">
@@ -88,8 +92,8 @@ const Counsellor = () => {
               <p>Expert Counsellor at CollegeHub</p>
             </div>
             <div className="counsellor3">
-                <button className="college5">Rate Counsellor</button>
-                <button className="college6">Schedule a Call</button>
+              <button className="college5">Rate Counsellor</button>
+              <button className="college6">Schedule a Call</button>
             </div>
           </div>
         </div>
@@ -99,8 +103,8 @@ const Counsellor = () => {
         <Offcanvas.Header closeButton>
         </Offcanvas.Header>
         <Offcanvas.Body>
-            <MobileLoanNavbar />
-            <Sidebar2 />
+          <MobileLoanNavbar />
+          <Sidebar2 />
         </Offcanvas.Body>
       </Offcanvas>
     </>

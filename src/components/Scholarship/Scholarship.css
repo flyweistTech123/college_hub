@@ -1,345 +1,312 @@
-
 .app1 {
-    position: relative;
-    z-index: 0;
-  }
-  
-  .schro{
-    margin-bottom: 0.5rem;
-  }
-  .schro1{
-    position: absolute;
-    /* z-index: 1; */
-    top: 60px;
-    width: 100%;
-  }
-  
-  .schro2 {
-    width: 100%;
-    /* margin-top: 60px; */
-    margin: auto;
-    margin-top: 20px;
-  }
-  .schro2 h2 {
-    color: #FFFFFF;
-    font-size: 40px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-left: 350px;
-    /* margin-left: 80px; */
-  }
-  
-  .schro3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  .schro3 button {
-    /* margin-right: 40px; */
-    height: 50px;
-    width: 287px;
-    background-color: #F4BC1C;
-    color: #FFFFFF;
-    font-size: 18px;
-    border-radius: 30px;
-    font-weight: 600;
-    border: none;
-    outline: none;
-    transition: all 0.3s ease; /* Adding transition for smooth animation */
-  }
-  .schro3 button:hover {
-    transform: scale(1.1); /* Increase the size by 10% on hover */
-  }
-  
-  
-  
-  .schro5{
-    display: flex;
-    margin-top: 50px;
-  }
-  
+  position: relative;
+  z-index: 0;
+}
 
+.schro {
+  margin-bottom: 0.5rem;
+}
+.schro1 {
+  position: absolute;
+  /* z-index: 1; */
+  top: 60px;
+  width: 100%;
+}
 
-.schro12{
+.schro2 {
+  width: 100%;
+  /* margin-top: 60px; */
+  margin: auto;
+  margin-top: 20px;
+}
+.schro2 h2 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 350px;
+  /* margin-left: 80px; */
+}
+
+.schro3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.schro3 button {
+  /* margin-right: 40px; */
+  height: 50px;
+  width: 287px;
+  background-color: #f4bc1c;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease; /* Adding transition for smooth animation */
+}
+.schro3 button:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+}
+
+.schro5 {
+  display: flex;
+  margin-top: 50px;
+}
+
+.schro12 {
   flex: 1;
   padding: 20px;
 }
 
-  
-.schro6{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
-  }
-  
-  .schro7{
-    width: auto;
-    height: 298px;
-    border: 1.5px solid #0185C3;
-    border-bottom: none;
-  }
-
-
-
-
-  .schro8{
-    border-bottom: 1px solid #0185C3;
-    text-align: center;
-    padding: 5px;
-  }
-  
-  .schro8 h6{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19.07px;
-    color: #1A3B5A;
-  }
-  
-  .schro9{
-    margin-top: 20px;
-  }
-
-  .schro9 ul li{
-    font-weight: 600;
-    font-size: 12px;
-    color: #252525;
-    line-height: 16.34px;
-    margin-top: 15px;
-  }
-  
-  .schro9 p{
-    font-weight: 600;
-    font-size: 12px;
-    color: #252525;
-    line-height: 16.34px;
-  }
-  
-  .schro9 span{
-    font-weight: 700;
-    font-size: 12px;
-    color: #000000;
-  }
-  .schro9 h5{
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 16.34px;
-    color: #128DC6;
-    cursor: pointer;
-    padding-left: 13px;
-  }
-  
-  .schro10{
-    display: flex;
-    margin-top: 20px;
-  }
-  
-  .schro10 button:nth-child(1){
-    width: 117px;
-    height: 41px;
-    border: none;
-    outline: none;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19.07px;
-    color: #FFFFFF;
-    background-color: #128DC6;
-    transition: all 0.3s ease; /* Adding transition for smooth animation */
-  }
-  .schro10 button:hover {
-    transform: scale(1.1); /* Increase the size by 10% on hover */
-  }
-  
-  .schro10 button{
-    width: 117px;
-    height: 41px;
-    border: none;
-    outline: none;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19.07px;
-    color: #128DC6;
-    background-color: #E7E7E7;
-    transition: all 0.3s ease; /* Adding transition for smooth animation */
-  
-  }
-
-
-
-
-  .schro11{
-    width: 100%;
-    height: 155px;
-    background-color: #D9D9D9;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-
-  .schro13{
-    margin-top: 40px;
-    display: flex;
-   gap: 90px;
-  }
-
-.schro14{
-    width: 267px;
+.schro6 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
-.schro15{
-    width: 267px;
-    height: 37px;
-    background-color: #71C3EB;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 21.79px;
-    text-align: center;
-    padding: 5px;
+.schro7 {
+  width: auto;
+  height: auto;
+  border: 1.5px solid #0185c3;
+  border-bottom: none;
 }
 
-
-.schro16{
-    width: 267px;
-    height: 47px;
-    background-color: #FFFFFF;
-    color: #000000;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17.7px;
-    text-align: center;
-    box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    margin-top: 20px;
+.schro8 {
+  border-bottom: 1px solid #0185c3;
+  text-align: center;
+  padding: 5px;
 }
 
-
-.schro17{
-    width: 285px;
+.schro8 h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.07px;
+  color: #1a3b5a;
 }
 
-
-.schro18{
-    width: 285px;
-    height: 37px;
-    background-color: #71C3EB;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 21.79px;
-    text-align: center;
-    padding: 5px;
+.schro9 {
+  margin-top: 20px;
 }
 
-
-
-.schro19{
-    width: 266px;
-    height: 47px;
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 12px;
-    margin-top: 20px;
+.schro9 ul li {
+  font-weight: 600;
+  font-size: 12px;
+  color: #252525;
+  line-height: 16.34px;
+  margin-top: 15px;
 }
 
-.schro19 img{
-    width: 41px;
-    height: 41px;
+.schro9 p {
+  font-weight: 600;
+  font-size: 12px;
+  color: #252525;
+  line-height: 16.34px;
 }
 
-
-.schro20{
-    display: flex;
-    flex-direction: column;
+.schro9 span {
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000;
+}
+.schro9 h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16.34px;
+  color: #128dc6;
+  cursor: pointer;
+  padding-left: 13px;
 }
 
-.schro20 h5{
-    font-size: 18px;
-    font-weight: 600;
-    color: #000000;
+.schro10 {
+  display: flex;
+  margin-top: 20px;
 }
 
-
-.schro20 p{
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
+.schro10 button:nth-child(1) {
+  width: 117px;
+  height: 41px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.07px;
+  color: #ffffff;
+  background-color: #128dc6;
+  transition: all 0.3s ease; /* Adding transition for smooth animation */
+}
+.schro10 button:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
 }
 
-.schro19 button{
-    width: 82px;
-    height: 26px;
-    border: none;
-    outline: none;
-    background-color: #349DCF;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.3s ease; /* Adding transition for smooth animation */
+.schro10 button {
+  width: 117px;
+  height: 41px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.07px;
+  color: #128dc6;
+  background-color: #e7e7e7;
+  transition: all 0.3s ease; /* Adding transition for smooth animation */
+}
+
+.schro11 {
+  width: 100%;
+  height: 155px;
+  background-color: #d9d9d9;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.schro13 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.schro14 {
+  width: 267px;
+}
+
+.schro15 {
+  width: 267px;
+  height: 37px;
+  background-color: #71c3eb;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  text-align: center;
+  padding: 5px;
+}
+
+.schro16 {
+  width: 267px;
+  height: 47px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.7px;
+  text-align: center;
+  box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.schro17 {
+  width: 285px;
+}
+
+.schro18 {
+  width: 285px;
+  height: 37px;
+  background-color: #71c3eb;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  text-align: center;
+  padding: 5px;
+}
+
+.schro19 {
+  width: 266px;
+  height: 47px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.schro19 img {
+  width: 41px;
+  height: 41px;
+}
+
+.schro20 {
+  display: flex;
+  flex-direction: column;
+}
+
+.schro20 h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.schro20 p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.schro19 button {
+  width: 82px;
+  height: 26px;
+  border: none;
+  outline: none;
+  background-color: #349dcf;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease; /* Adding transition for smooth animation */
 }
 
 .schro19 button:hover {
-    transform: scale(1.1); /* Increase the size by 10% on hover */
-  }
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+}
 
+.schro21 {
+  width: 326px;
+}
 
+.schro22 {
+  width: 326px;
+  height: 37px;
+  background-color: #71c3eb;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  text-align: center;
+  padding: 5px;
+}
 
-  .schro21{
-    width: 326px;
-  }
+.schro23 {
+  width: 308px;
+  height: 47px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 15px;
+  margin-top: 20px;
+}
 
-  .schro22{
-    width: 326px;
-    height: 37px;
-    background-color: #71C3EB;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 21.79px;
-    text-align: center;
-    padding: 5px;
-  }
-
-  .schro23{
-    width: 308px;
-    height: 47px;
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 15px;
-    margin-top: 20px;
-  }
-
-
-  .schro23 button{
-    width: 82px;
-    height: 26px;
-    border: none;
-    outline: none;
-    background-color: #349DCF;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.3s ease;
+.schro23 button {
+  width: 82px;
+  height: 26px;
+  border: none;
+  outline: none;
+  background-color: #349dcf;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .schro23 button:hover {
-    transform: scale(1.1); /* Increase the size by 10% on hover */
-  }
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+}
 
-
-  .schro24{
-    width: 1167px;
-    height: 268px;
-    background-color: #D9D9D9;
-    margin: auto;
-    margin-top: 100px;
-  }
-
-
-
-
-
-
-
-  
+.schro24 {
+  width: 1167px;
+  height: 268px;
+  background-color: #d9d9d9;
+  margin: auto;
+  margin-top: 100px;
+}

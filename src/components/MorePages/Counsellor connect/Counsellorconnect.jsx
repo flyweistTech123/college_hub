@@ -32,7 +32,7 @@ import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-ico
 
 
 import msgimg from '../../../Images/msg2.0.png'
-import ApplyNowModal from "../../Modals/Login/Apply";
+// import Counselling from "../../Modals/Login/Counselling";
 
 
 
@@ -231,28 +231,6 @@ const Counsellorconnect = () => {
               </div>
             </div>
           </div>
-
-          <div className="cousellor_connecting4">
-            <div className="cousellor_connecting5">
-              <p>Scholarships
-                Assistance</p>
-            </div>
-            <div className="cousellor_connecting5">
-              <p>Education Loan Assistance</p>
-            </div>
-            <div className="cousellor_connecting5">
-              <p>One Application Assistance</p>
-            </div>
-            <div className="cousellor_connecting5">
-              <p>Placement Assistance</p>
-            </div>
-            <div className="cousellor_connecting5">
-              <p>Earn n Learn</p>
-            </div>
-            <div className="cousellor_connecting5">
-              <p>Financial  Aid Assistance</p>
-            </div>
-          </div>
         </div>
 
         <div className="">
@@ -260,14 +238,34 @@ const Counsellorconnect = () => {
         </div>
 
       </div>
-
+      <div className="cousellor_connecting4">
+        <div className="cousellor_connecting5">
+          <p>Scholarships
+            Assistance</p>
+        </div>
+        <div className="cousellor_connecting5">
+          <p>Education Loan Assistance</p>
+        </div>
+        <div className="cousellor_connecting5">
+          <p>One Application Assistance</p>
+        </div>
+        <div className="cousellor_connecting5">
+          <p>Placement Assistance</p>
+        </div>
+        <div className="cousellor_connecting5">
+          <p>Earn n Learn</p>
+        </div>
+        <div className="cousellor_connecting5">
+          <p>Financial  Aid Assistance</p>
+        </div>
+      </div>
 
       <div className="cousellor_connecting12">
         <div className="screen2">
           <Sidebar4 />
         </div>
 
-        <div>
+        <div className="cousellor_connecting1011">
           <div className="cousellor_connecting10">
             <div className="cousellor_connecting6">
               <div className="cousellor_connecting7">
@@ -410,9 +408,6 @@ const Counsellorconnect = () => {
               </div>
 
             </div>
-          </div>
-
-          <div className="cousellor_connecting10">
             <div className="cousellor_connecting6">
               <div className="cousellor_connecting7">
                 <img src={cousllor11} alt="" />
@@ -481,8 +476,74 @@ const Counsellorconnect = () => {
               </div>
 
             </div>
-          </div>
-          <div className="cousellor_connecting10">
+            <div className="cousellor_connecting6">
+              <div className="cousellor_connecting7">
+                <img src={cousllor11} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+                <div className="cousellor_connecting8">
+                  <h6>Neha Sharma</h6>
+                  <p>Counselling Finance</p>
+                  <h5>6000+ Students | 7+ yrs exp</h5>
+                </div>
+              </div>
+              <div className="cousellor_connecting9">
+                <button onClick={() => setModalShow(true)}>Connect with Expert <img src={msgimg} alt="" /></button>
+              </div>
+
+            </div>
+            <div className="cousellor_connecting6">
+              <div className="cousellor_connecting7">
+                <img src={cousllor12} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+                <div className="cousellor_connecting8">
+                  <h6>Neha Sharma</h6>
+                  <p>Counselling Finance</p>
+                  <h5>6000+ Students | 7+ yrs exp</h5>
+                </div>
+              </div>
+              <div className="cousellor_connecting9">
+                <button onClick={() => setModalShow(true)}>Connect with Expert <img src={msgimg} alt="" /></button>
+              </div>
+
+            </div>
+            <div className="cousellor_connecting6">
+              <div className="cousellor_connecting7">
+                <img src={cousllor13} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+                <div className="cousellor_connecting8">
+                  <h6>Neha Sharma</h6>
+                  <p>Counselling Finance</p>
+                  <h5>6000+ Students | 7+ yrs exp</h5>
+                </div>
+              </div>
+              <div className="cousellor_connecting9">
+                <button onClick={() => setModalShow(true)}>Connect with Expert <img src={msgimg} alt="" /></button>
+              </div>
+
+            </div>
+            <div className="cousellor_connecting6">
+              <div className="cousellor_connecting7">
+                <img src={cousllor14} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+                <div className="cousellor_connecting8">
+                  <h6>Neha Sharma</h6>
+                  <p>Counselling Finance</p>
+                  <h5>6000+ Students | 7+ yrs exp</h5>
+                </div>
+              </div>
+              <div className="cousellor_connecting9">
+                <button onClick={() => setModalShow(true)}>Connect with Expert <img src={msgimg} alt="" /></button>
+              </div>
+
+            </div>
             <div className="cousellor_connecting6">
               <div className="cousellor_connecting7">
                 <img src={cousllor11} alt="" />
@@ -564,12 +625,12 @@ const Counsellorconnect = () => {
       </div>
 
 
-      <div className="loan21">
+      <div className="cousellor_connecting621">
       </div>
 
 
-      <ApplyNowModal show={modalShow}
-        onHide={() => setModalShow(false)} />
+      {/* <Counselling show={modalShow}
+        onHide={() => setModalShow(false)} /> */}
 
       <Footer1 />
       <Offcanvas show={show2} onHide={handleClose}>

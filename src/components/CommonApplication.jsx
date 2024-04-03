@@ -50,7 +50,7 @@ const CommonApplication = () => {
 
   const [showNavbar, setShowNavbar] = useState(false);
   const [modalShow, setModalShow] = useState(false);
-  const[collegeselectModal, setCollegeSelect] = useState(false)
+  const [collegeselectModal, setCollegeSelect] = useState(false)
 
 
 
@@ -145,7 +145,7 @@ const CommonApplication = () => {
           <Sidebar4 />
         </div>
 
-        <div>
+        <div className="commoncontainer">
           <div className="coommoom">
             <h4>Popular Colleges for common application</h4>
             <h6>College Hub offers you the convenience of applying to over 100 colleges through a single application.</h6>
@@ -222,6 +222,293 @@ const CommonApplication = () => {
               </div>
 
             </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+          </div>
+          <div className="common8">
+            <div className="filt33">
+              <p>Load More...</p>
+            </div>
+          </div>
+
+          <div className="coommoom3">
+            <div className="coommoom">
+              <h4>Popular Colleges for common application</h4>
+              <h6>College Hub offers you the convenience of applying to over 100 colleges through a single application.</h6>
+              <div className="coommoom1">
+                <button>View All</button>
+              </div>
+            </div>
           </div>
           <div className="common7">
             <div className="common2">
@@ -292,79 +579,198 @@ const CommonApplication = () => {
               </div>
 
             </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
+            <div className="common2">
+              <div className="common3">
+                <img src={common2} alt="" />
+                <div className="common4">
+                  <h6>340 Courses</h6>
+                  <p>₹5,000</p>
+                </div>
+              </div>
+              <div className="common5">
+                <h6>Parul University
+                  Vadodra</h6>
+              </div>
+              <div className="common6">
+                <button onClick={() => setCollegeSelect(true)}>Short List</button>
+              </div>
+
+            </div>
           </div>
-          <div className="common7">
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
+          <div className="common8">
+            <div className="filt33">
+              <p>Load More...</p>
             </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-          </div>
-          <div className="filt33">
-            <p>Load More...</p>
           </div>
           <div className="coommoom3">
             <div className="coommoom">
@@ -444,8 +850,6 @@ const CommonApplication = () => {
               </div>
 
             </div>
-          </div>
-          <div className="common7">
             <div className="common2">
               <div className="common3">
                 <img src={common2} alt="" />
@@ -514,8 +918,6 @@ const CommonApplication = () => {
               </div>
 
             </div>
-          </div>
-          <div className="common7">
             <div className="common2">
               <div className="common3">
                 <img src={common2} alt="" />
@@ -567,107 +969,6 @@ const CommonApplication = () => {
               </div>
 
             </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)} >Short List</button>
-              </div>
-
-            </div>
-          </div>
-          <div className="filt33">
-            <p>Load More...</p>
-          </div>
-          <div className="coommoom3">
-            <div className="coommoom">
-              <h4>Popular Colleges for common application</h4>
-              <h6>College Hub offers you the convenience of applying to over 100 colleges through a single application.</h6>
-              <div className="coommoom1">
-                <button>View All</button>
-              </div>
-            </div>
-          </div>
-          <div className="common7">
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-          </div>
-          <div className="common7">
             <div className="common2">
               <div className="common3">
                 <img src={common2} alt="" />
@@ -737,78 +1038,10 @@ const CommonApplication = () => {
 
             </div>
           </div>
-          <div className="common7">
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
+          <div className="common8">
+            <div className="filt33">
+              <p>Load More...</p>
             </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-            <div className="common2">
-              <div className="common3">
-                <img src={common2} alt="" />
-                <div className="common4">
-                  <h6>340 Courses</h6>
-                  <p>₹5,000</p>
-                </div>
-              </div>
-              <div className="common5">
-                <h6>Parul University
-                  Vadodra</h6>
-              </div>
-              <div className="common6">
-                <button onClick={() => setCollegeSelect(true)}>Short List</button>
-              </div>
-
-            </div>
-          </div>
-          <div className="filt33">
-            <p>Load More...</p>
           </div>
           <div className="loan21">
           </div>

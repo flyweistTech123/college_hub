@@ -11,6 +11,14 @@ const College = () => {
   const [show2, setShow2] = useState(false);
   const handleClose = () => setShow2(false);
   const handleShow = () => setShow2(true);
+  
+  const [step, setStep] = useState(0);
+  const incCnt = () => {
+    setStep((prev) => prev + 1);
+  };
+  const decCnt = () => {
+    setStep((prev) => prev - 1);
+  };
   return (
     <>
       <div className="cart90">
@@ -24,65 +32,85 @@ const College = () => {
           <Sidebar2 />
         </div>
         <div className="profile3">
-          <div className="college1">
-            <p className="college7">Recommendation</p>
-            <p className="college8">Shortlist</p>
-            <p className="college8">Applications</p>
-          </div>
-          <div className="college2">
-            <img src={img} alt="" />
-            <div className="college3">
-              <p>Pannache - INSD GhatkoparMumbai, Maharashtra</p>
-              <p>
-                Why should you choose this college? Know more about the
-                College.Checkout USPs
-              </p>
+
+          <div className="collegefaq">
+            <div
+              className={step === 0 ? "faq5" : "faq6"}
+              onClick={() => setStep(0)}
+            >
+              <p>Recommendation</p>
             </div>
-            <div className="college4">
-              <button className="college5">Schedule A Call</button>
-              <button className="college6">Move to Shortlist</button>
+            <div
+              className={step === 1 ? "faq5" : "faq6"}
+              onClick={() => setStep(1)}
+            >
+              <p>Shortlists</p>
             </div>
-          </div>
-          <div className="college2">
-            <img src={img} alt="" />
-            <div className="college3">
-              <p>Pannache - INSD GhatkoparMumbai, Maharashtra</p>
-              <p>
-                Why should you choose this college? Know more about the
-                College.Checkout USPs
-              </p>
-            </div>
-            <div className="college4">
-              <button className="college5">Schedule A Call</button>
-              <button className="college6">Move to Shortlist</button>
+            <div
+              className={step === 2 ? "faq5" : "faq6"}
+              onClick={() => setStep(2)}
+            >
+              <p>Applications</p>
             </div>
           </div>
           <div className="college2">
             <img src={img} alt="" />
             <div className="college3">
-              <p>Pannache - INSD GhatkoparMumbai, Maharashtra</p>
-              <p>
-                Why should you choose this college? Know more about the
-                College.Checkout USPs
-              </p>
-            </div>
-            <div className="college4">
-              <button className="college5">Schedule A Call</button>
-              <button className="college6">Move to Shortlist</button>
+              <p>Pannache - INSD Ghatkopar
+                Mumbai, Maharashtra</p>
+              <hr />
+              <div className="college4">
+                <p>Why should you choose this college? Know more about the College.Checkout USPs</p>
+                <div className="college5">
+                  <button>Scheduel A Call</button>
+                  <button>Move to Shortlist</button>
+                </div>
+              </div>
             </div>
           </div>
           <div className="college2">
             <img src={img} alt="" />
             <div className="college3">
-              <p>Pannache - INSD GhatkoparMumbai, Maharashtra</p>
-              <p>
-                Why should you choose this college? Know more about the
-                College.Checkout USPs
-              </p>
+              <p>Pannache - INSD Ghatkopar
+                Mumbai, Maharashtra</p>
+              <hr />
+              <div className="college4">
+                <p>Why should you choose this college? Know more about the College.Checkout USPs</p>
+                <div className="college5">
+                  <button>Scheduel A Call</button>
+                  <button>Move to Shortlist</button>
+                </div>
+              </div>
             </div>
-            <div className="college4">
-              <button className="college5">Schedule A Call</button>
-              <button className="college6">Move to Shortlist</button>
+          </div>
+          <div className="college2">
+            <img src={img} alt="" />
+            <div className="college3">
+              <p>Pannache - INSD Ghatkopar
+                Mumbai, Maharashtra</p>
+              <hr />
+              <div className="college4">
+                <p>Why should you choose this college? Know more about the College.Checkout USPs</p>
+                <div className="college5">
+                  <button>Scheduel A Call</button>
+                  <button>Move to Shortlist</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="college2">
+            <img src={img} alt="" />
+            <div className="college3">
+              <p>Pannache - INSD Ghatkopar
+                Mumbai, Maharashtra</p>
+              <hr />
+              <div className="college4">
+                <p>Why should you choose this college? Know more about the College.Checkout USPs</p>
+                <div className="college5">
+                  <button>Scheduel A Call</button>
+                  <button>Move to Shortlist</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

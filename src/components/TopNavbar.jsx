@@ -1,13 +1,332 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import logo from '../Images/collegehublogo.png'
 import MoreModal from "./Modals/MoreModal";
 import login from '../Images/loginpage.png'
 import google from '../Images/google.png'
 import profileimg from '../Images/navprofile.png'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TopNavbar = (props) => {
+  const moreMenu = [
+
+    {
+      name: "Counsellor connect",
+      link: "/counsellorconnect",
+    },
+
+    {
+      name: "Mock Test",
+      link: "/mocktest",
+    },
+    {
+      name: "College Predictor",
+      link: '/college-predictor',
+    },
+
+    {
+      name: "Review a College",
+      link: '/review',
+    },
+    {
+      name: "One stop solution",
+      link: '/one-stop-solution',
+    },
+
+
+    {
+      name: "Become a Partner",
+      link: '/become-partner',
+    },
+
+  ];
+
+  const popover = (
+    <Popover id="popover-basic" style={{ border: 'none' }}>
+      <Popover.Body className="popover5">
+        <h4>Top Universities</h4>
+        <div className="popover1">
+          <div className="popover2">
+            <h4>Delhi</h4>
+            <div className="popover3">
+              <p onClick={() => navigate('/college-info')}>Jawahar lal Nehru</p>
+              <p onClick={() => navigate('/college-info')}>IGNOU</p>
+              <p onClick={() => navigate('/college-info')}>Jamia Miliya Islamia</p>
+              <p onClick={() => navigate('/college-info')}>IP University</p>
+              <p onClick={() => navigate('/college-info')}>Jawahar lal Nehru</p>
+              <p onClick={() => navigate('/college-info')}>IGNOU</p>
+              <p onClick={() => navigate('/college-info')}>Jamia Miliya Islamia</p>
+              <p onClick={() => navigate('/college-info')}>IP University</p>
+              <p onClick={() => navigate('/college-info')}>Jawahar lal Nehru</p>
+              <p onClick={() => navigate('/college-info')}>IGNOU</p>
+              <p onClick={() => navigate('/college-info')}>Jamia Miliya Islamia</p>
+              <p onClick={() => navigate('/college-info')}>IP University</p>
+              <p onClick={() => navigate('/college-info')}>Jawahar lal Nehru</p>
+              <p onClick={() => navigate('/college-info')}>IGNOU</p>
+              <p onClick={() => navigate('/college-info')}>Jamia Miliya Islamia</p>
+              <p onClick={() => navigate('/college-info')}>IP University</p>
+            </div>
+          </div>
+          <div className="popover2">
+            <h4>Mumbai</h4>
+            <div className="popover3">
+              <p>University of Mumbai</p>
+              <p>Kishan chand</p>
+              <p>ST. XAVIER</p>
+              <p>Wilson University</p>
+              <p>University of mumbai</p>
+              <p>Kishan chand</p>
+              <p>ST. XAVIER</p>
+              <p>Wilson University</p>
+              <p>University of Mumbai</p>
+              <p>Kishan chand</p>
+              <p>ST. XAVIER</p>
+              <p>Wilson University</p>
+              <p>University of mumbai</p>
+              <p>Kishan chand</p>
+              <p>ST. XAVIER</p>
+              <p>Wilson University</p>
+            </div>
+          </div>
+          <div className="popover2">
+            <h4>Chennai</h4>
+            <div className="popover3">
+              <p>University of Chennai</p>
+              <p>University of Madras</p>
+              <p>Vels University</p>
+              <p>Wilson University</p>
+              <p>University of Chennai</p>
+              <p>University of Madras</p>
+              <p>Vels University</p>
+              <p>Wilson University</p>
+              <p>University of Chennai</p>
+              <p>University of Madras</p>
+              <p>Vels University</p>
+              <p>Wilson University</p>
+              <p>University of Chennai</p>
+              <p>University of Madras</p>
+              <p>Vels University</p>
+              <p>Wilson University</p>
+            </div>
+          </div>
+
+          <div className="popover2" style={{ border: "none" }}>
+            <h4>Bangalore</h4>
+            <div className="popover3">
+              <p>Bangalore University</p>
+              <p>REVA University</p>
+              <p>ST. Joseph University</p>
+              <p>IIT of Science</p>
+              <p>Bangalore University</p>
+              <p>REVA University</p>
+              <p>ST. Joseph University</p>
+              <p>IIT of Science</p>
+              <p>Bangalore University</p>
+              <p>REVA University</p>
+              <p>ST. Joseph University</p>
+              <p>IIT of Science</p>
+
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </Popover.Body>
+    </Popover>
+  );
+  const popover1 = (
+    <Popover id="popover-basic" style={{ border: 'none' }}>
+      <Popover.Body className="popover51">
+        <h4>Top Courses</h4>
+        <div className="popover1">
+          <div className="popover2">
+            <h4>Management</h4>
+            <div className="popover3">
+              <p>B.Tech /BA</p>
+              <p>Business tools</p>
+              <p>Communication</p>
+              <p>CSR</p>
+              <p>Business analytics</p>
+              <p>Business tools</p>
+              <p>Communication</p>
+              <p>CSR</p>
+              <p>Business analytics</p>
+              <p>Business tools</p>
+              <p>Communication</p>
+              <p>CSR</p>
+              <p>Business analytics</p>
+              <p>Business tools</p>
+              <p>Communication</p>
+              <p>CSR</p>
+            </div>
+          </div>
+          <div className="popover2">
+            <h4>Finance</h4>
+            <div className="popover3">
+              <p>Accounting</p>
+              <p>Banking</p>
+              <p>Investing</p>
+              <p>Law</p>
+              <p>Insurance</p>
+            </div>
+          </div>
+          <div className="popover2">
+            <h4>Design</h4>
+            <div className="popover3">
+              <p>UX UI Design</p>
+              <p>Graphic Design</p>
+              <p>Interaction Design</p>
+              <p>Universal Design</p>
+              <p>Architect Design </p>
+            </div>
+          </div>
+
+          <div className="popover2" style={{ border: "none" }}>
+            <h4>Health Care</h4>
+            <div className="popover3">
+              <p>Fitness & Nutrition</p>
+              <p>Health Care Research</p>
+              <p>Health Care Management</p>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </Popover.Body>
+    </Popover>
+  );
+  const popover2 = (
+    <Popover id="popover-basic" style={{ border: 'none' }}>
+      <Popover.Body className="popover52">
+        <h4>Top Exams</h4>
+        <div className="popover1">
+          <div className="popover2">
+            <div className="popover3">
+              <p>CAT</p>
+              <p>UGC NET</p>
+              <p>IES Exams</p>
+              <p>NEET- UG</p>
+              <p>IBPS RRB</p>
+              <p>CAT</p>
+              <p>UGC NET</p>
+              <p>IES Exams</p>
+              <p>NEET- UG</p>
+              <p>IBPS RRB</p>
+              <p>CAT</p>
+              <p>UGC NET</p>
+              <p>IES Exams</p>
+              <p>NEET- UG</p>
+              <p>IBPS RRB</p>
+            </div>
+          </div>
+          <div className="popover2">
+            <div className="popover3">
+              <p>NDA</p>
+              <p>CA</p>
+              <p>NID</p>
+              <p>IIT- JEE</p>
+              <p>UPSC</p>
+            </div>
+          </div>
+          <div className="popover2">
+            <div className="popover3">
+              <p>CAT</p>
+              <p>UGC NET</p>
+              <p>IES Exams</p>
+              <p>NEET- UG</p>
+              <p>IBPS RRB</p>
+              <p>CAT</p>
+              <p>UGC NET</p>
+              <p>IES Exams</p>
+              <p>NEET- UG</p>
+              <p>IBPS RRB</p>
+              <p>CAT</p>
+              <p>UGC NET</p>
+              <p>IES Exams</p>
+              <p>NEET- UG</p>
+              <p>IBPS RRB</p>
+            </div>
+          </div>
+
+          <div className="popover2" style={{ border: "none" }}>
+            <div className="popover3">
+              <p>NDA</p>
+              <p>CA</p>
+              <p>NID</p>
+              <p>IIT- JEE</p>
+              <p>UPSC</p>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </Popover.Body>
+    </Popover>
+  );
+
+
+
+  const popover3 = (
+    <Popover id="popover-basic" style={{ border: 'none' }}>
+      <Popover.Body className="popover522">
+        <div>
+          <ul className="custom-Moremodal">
+            {moreMenu.map((ele, i) => (
+              <li key={i}>
+                <Link to={ele?.link}>{ele?.name}</Link>
+                <div className="moremodal12"></div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </Popover.Body>
+    </Popover>
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   const [activeLink, setActiveLink] = useState(null);
 
@@ -68,7 +387,7 @@ const TopNavbar = (props) => {
 
   // Retrieve the initial state from localStorage
   const initialShowProfile = localStorage.getItem('showProfile') === 'true';
-  
+
   // Set up state with initial value
   const [showProfile, setShowProfile] = useState(initialShowProfile);
 
@@ -210,38 +529,7 @@ const TopNavbar = (props) => {
   const handleClick2 = () => {
     setShowNavbar2((prev) => !prev);
   };
-  const moreMenu = [
 
-    {
-      name: "Counsellor connect",
-      link: "/counsellorconnect",
-    },
-
-    {
-      name: "Mock Test",
-      link: "/mocktest",
-    },
-    {
-      name: "College Predictor",
-      link: '/college-predictor',
-    },
-
-    {
-      name: "Review a College",
-      link: '/review',
-    },
-    {
-      name: "One stop solution",
-      link: '/one-stop-solution',
-    },
-
-
-    {
-      name: "Become a Partner",
-      link: '/become-partner',
-    },
-
-  ];
 
 
 
@@ -403,7 +691,7 @@ const TopNavbar = (props) => {
                 </div>
               </div>
               <div className="login9">
-                <button  onClick={() => setShowProfile(true)}>Submit</button>
+                <button onClick={() => setShowProfile(true)}>Submit</button>
               </div>
             </div>
           </>
@@ -440,68 +728,56 @@ const TopNavbar = (props) => {
             className="logoimg"
           />
         </div>
-
         <div className="newNav2">
           <div className="drop3">
-            {data.map((i, index1) => (
-              <div ref={dropdownRef}>
-                <p onClick={() => {
-                  handleClick11(index1);
-                  setShowNavbar(true);
-                }}
-                  className={activeLink === index1 ? 'active' : ''}
-                  style={{ color: props.color }}> {i} </p>
-              </div>
-            ))}
+            <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+              <p style={{ color: props.color }}>Top Universities</p>
+            </OverlayTrigger>
 
-
-            <div className="drop3">
-              {items.map((item, index) => (
-                <p
-                  key={index}
-                  onClick={() => handleClick12(index, item.route)}
-                  className={activeLink === index ? 'active' : ''}
-                  style={{ color: props.color }}
-                >
-                  {item.name}
-                </p>
-              ))}
-            </div>
-            <p style={{ color: props.color }} onClick={openMoremodal}>
-              More
+            <OverlayTrigger trigger="click" placement="bottom" overlay={popover1}>
+              <p style={{ color: props.color }}>Top Courses</p>
+            </OverlayTrigger>
+            <OverlayTrigger trigger="click" placement="bottom" overlay={popover2}>
+              <p style={{ color: props.color }}>Top Exams</p>
+            </OverlayTrigger>
+            <p
+              onClick={() => navigate("/scholarships")}
+              style={{ color: props.color }}
+            >
+              Scholarships
             </p>
-
-            {isMoremodalOpen && (
-              <MoreModal onClose={closeMoremodal}>
-                <ul className="custom-Moremodal">
-                  {moreMenu.map((ele, i) => (
-                    <li key={i}>
-                      <a href={ele?.link}>{ele?.name}</a>
-                      <div className="moremodal12"></div>
-                    </li>
-                  ))}
-                </ul>
-              </MoreModal>
-            )}
-
-
-            {showProfile ? (
+            <p
+              onClick={() => navigate("/loan")}
+              style={{ color: props.color }}
+            >
+              Loan
+            </p>
+            <p onClick={() => navigate("/common-applications")} style={{ color: props.color }}>
+              Common Application
+            </p>
+            <p onClick={() => navigate("/scholarshiptest")} style={{ color: props.color }}>
+              Scholarship Test
+            </p>
+            <OverlayTrigger trigger="click" placement="bottom" overlay={popover3}>
               <p style={{ color: props.color }}>
-                <img src={profileimg} alt="jjjj"  onClick={()=>navigate('/profile')} />
+                More
               </p>
+            </OverlayTrigger>
+            {showProfile ? (
+              <div className="profileicons">
+                <p style={{ color: props.color }}>
+                  <img src={profileimg} alt="jjjj" onClick={() => navigate('/profile')} />
+                </p>
+              </div>
+
+
             ) : (
               <div>
                 <button className="loginn" onClick={() => setShow(true)}>
-                Login
+                  Login
                 </button>
               </div>
             )}
-
-
-
-
-
-
           </div>
 
         </div>

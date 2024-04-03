@@ -5,6 +5,7 @@ import TopPart3 from "../TopPart3";
 import Footer1 from "../Footer1";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarSlider from "../uppside/Navbar&skider";
+import { FiCode } from "react-icons/fi";
 
 const MockTest1 = () => {
     const navigate = useNavigate();
@@ -98,9 +99,16 @@ const MockTest1 = () => {
                                 <label for="option3">Always</label>
                             </div>
                         </div>
-                        <div className="tst8">
-                            <button>Next</button>
+                        <div className="test80">
+                            <div className="tst8">
+                                <button>Next</button>
+                            </div>
+                            <div className="test81">
+                                <p>Page 1 to 10</p>
+                                <FiCode  color="#1A3B5A" size={25}/>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -108,7 +116,7 @@ const MockTest1 = () => {
             <div className="tst3">
                 <button>Restart Now</button>
             </div>
-            <div className="loan21">
+            <div className="loan2131243">
             </div>
             <Footer1 />
 

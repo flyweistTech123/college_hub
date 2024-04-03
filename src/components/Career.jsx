@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import img from "../Images/c97.png";
+import { IoIosArrowDown } from "react-icons/io";
 import TopNavbar from "./TopNavbar";
 
 
@@ -41,7 +42,7 @@ const Career = () => {
               </p>
             </div>
             <div className="career4">
-              <p>Read More</p>
+              <p>Read More  <IoIosArrowDown color="#0185C3"  size={25} /></p>
             </div>
           </div>
           <div className="career5">

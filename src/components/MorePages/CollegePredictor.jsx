@@ -28,45 +28,33 @@ const Predictor = () => {
               <h6>Provide your information to receive the results of the college prediction.</h6>
               <div className="predictor7">
                 <div className="predictor3">
-                  <label htmlFor="">Your Entrance Exam</label>
-                  <select>
-                    <option value="english">Select Course</option>
-                    <option value="hindi">Hindi</option>
-                    <option value="germany">Germany</option>
-                  </select>
+                  <label htmlFor="">YOUR FULL NAME</label>
+                  <input type="text" placeholder="" />
                 </div>
 
                 <div className="predictor3">
-                  <label htmlFor="">Year of Exam</label>
-                  <select>
-                    <option value="english">General</option>
-                    <option value="hindi">Hindi</option>
-                    <option value="germany">Germany</option>
-                  </select>
+                  <label htmlFor="">YOUR EMAIL ID</label>
+                  <input type="text" placeholder="" />
                 </div>
               </div>
               <div className="predictor7">
                 <div className="predictor3">
-                  <label htmlFor="">Enter Your Rank / Score</label>
-                  <input type="text" placeholder="Enter Rank" />
+                  <label htmlFor="">YOUR MOBILE NUMBER</label>
+                  <input type="text" placeholder="" />
                 </div>
 
                 <div className="predictor3">
-                  <label htmlFor="">Reservation Category</label>
-                  <select>
-                    <option value="english">General</option>
-                    <option value="hindi">Hindi</option>
-                    <option value="germany">Germany</option>
-                  </select>
+                  <label htmlFor="">COLLEGE FEE BUDGET</label>
+                  <input type="text" placeholder="" />
                 </div>
               </div>
               <div className="predictor7">
                 <div className="predictor3">
-                  <label htmlFor="">Select State</label>
+                  <label htmlFor="">SELECT YOUR CITY</label>
                   <select>
-                    <option value="english">Select State</option>
-                    <option value="hindi">Hindi</option>
-                    <option value="germany">Germany</option>
+                    <option value="english">Select City</option>
+                    <option value="hindi">Agra</option>
+                    <option value="germany">Delhi</option>
                   </select>
                 </div>
 
@@ -179,8 +167,6 @@ const Predictor = () => {
       </div>
       <Footer1 />
       <Result show={show} onHide={() => setShow(false)} />
-
-
     </>
   );
 };

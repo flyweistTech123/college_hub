@@ -20,7 +20,7 @@ const ScholarshipTest = () => {
             </div>
             <div className="tst1">
                 <div className="tst2">
-                    <h4>Select the language for the test </h4>
+                    <h4>Select the language for the test</h4>
                     <select>
                         <option value="english">English</option>
                         <option value="hindi">Hindi</option>
@@ -39,10 +39,9 @@ const ScholarshipTest = () => {
             <div className="tst3">
                 <button onClick={handleClick}>Start Now</button>
             </div>
-            <div className="loan21">
+            <div className="loan2131243">
             </div>
             <Footer1 />
-
         </>
     );
 };

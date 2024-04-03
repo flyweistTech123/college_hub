@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import './MockTest.css'
 import { useNavigate } from "react-router-dom";
 import TopPart3 from "../TopPart3";
-import Footer from "../Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import img6 from "../../Images/c38.png";
-import img7 from "../../Images/c87.png";
-import TopNavbar from "../TopNavbar"; 
-import moke from '../../Images/moketest.png'
 import NavbarSlider from "../uppside/Navbar&skider";
 import Footer1 from "../Footer1";
 
@@ -75,7 +70,7 @@ const MockTest = () => {
       <div className="tst3">
         <button onClick={handleClick}>Start Now</button>
       </div>
-      <div className="loan21">
+      <div className="loan2131243">
       </div>
       <Footer1 />
 
