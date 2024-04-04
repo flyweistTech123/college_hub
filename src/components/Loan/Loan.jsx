@@ -28,8 +28,272 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer1 from '../Footer1'
 import ApplyNowModal from "../Modals/Login/Apply";
+import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FaCircleQuestion } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Loan = () => {
+
+  const [show1, setShow1] = useState(false);
+
+  const modalclose = () => {
+    setShow1(false);
+    setShow2(true);
+  };
+
+  function EligibilityCheck(props) {
+    console.log("Hello");
+    return (
+      <Modal
+        {...props}
+        size="xl"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+          <>
+            <div className="loan41">
+              <div className="loan42">
+                <label htmlFor="">Select the location you want to study.  <FaCircleQuestion color="#797979" /></label>
+                <div className="loan43">
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Within India</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Within India</label>
+                  </div>
+                </div>
+              </div>
+              <div className="loan42">
+                <label htmlFor="">Enter your Gross family annual Income.  <FaCircleQuestion color="#797979" /></label>
+                <div className="loan43">
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Up to ₹ 2.5 Lacs</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">₹ 2.51 Lacs to 4 lacs</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">₹ 4.01 Lacs to 6 lacs</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">₹ 6.01 Lacs to 8 lacs</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">More Than ₹8 lacs</label>
+                  </div>
+                </div>
+              </div>
+              <div className="loan42">
+                <label htmlFor="">Select your social category that help us lead a better scheme for you.  <FaCircleQuestion color="#797979" /></label>
+                <div className="loan43">
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">General</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">OBC</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">SC / ST</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Miniority</label>
+                  </div>
+                </div>
+              </div>
+              <div className="loan42">
+                <label htmlFor="">Select the course you wish to attend.  <FaCircleQuestion color="#797979" /></label>
+                <div className="loan43">
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Graduate</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Post - Graduate</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Doctorate</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Others</label>
+                  </div>
+                </div>
+              </div>
+              <div className="loan47">
+                <div className="loan42">
+                  <label htmlFor="">Type in the length of your course  <FaCircleQuestion color="#797979" /></label>
+                  <div className="loan45">
+                    <input type="text" />
+                    <div className="loan46">
+                      <IoIosArrowDown color="#000000" size={20} />
+                      <p>Years</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="loan42">
+                  <label htmlFor="">Name of the Course your are planning for</label>
+                  <div className="loan45">
+                    <input type="text" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="loan42">
+                <label htmlFor="">Choose the type of course you are interested in pursuing.  <FaCircleQuestion color="#797979" /></label>
+                <div className="loan43">
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Full Time</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Part time</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Distance Learning</label>
+                  </div>
+                  <div className="loan44">
+                    <input type="radio" name="name" id="" />
+                    <label htmlFor="">Others</label>
+                  </div>
+                </div>
+              </div>
+
+              <div className="loan42">
+                <label htmlFor="">Enter your course fees  <FaCircleQuestion color="#797979" /></label>
+                <div className="loan45">
+                  <input type="text" />
+                  <div className="loan46">
+                    {/* <IoIosArrowDown color="#000000" size={20} /> */}
+                    <p>INR</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="loan42">
+                <label htmlFor="">Enter the amount you intend to invest by yourself  <FaCircleQuestion color="#797979" /></label>
+                <div className="loan45">
+                  <input type="text" />
+                  <div className="loan46">
+                    <p>INR</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="loan48">
+                <p>Required Loan Amount : 3,00,000</p>
+              </div>
+
+              <div className="loan49">
+                <button onClick={modalclose}>Calculate Eligibility</button>
+              </div>
+
+            </div>
+          </>
+        </Modal.Body>
+      </Modal>
+    );
+  }
+
+
+  const [show2, setShow2] = useState(false);
+
+  function Calculatoreligibility(props) {
+    console.log("Hello");
+    return (
+      <Modal
+        {...props}
+        size="xl"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+          <>
+            <div className="loan51">
+              <div className="loan52">
+                <h5>HELP OUR EXPERTS TO HELP YOU GET EDUCATION LOAN</h5>
+                <p>ENTER YOUR DETAILS</p>
+              </div>
+              <div>
+                <div className="loan53">
+                  <div className="loan54">
+                    <label htmlFor="">YOUR FULL NAME</label>
+                    <input type="text" />
+                  </div>
+                  <div className="loan54">
+                    <label htmlFor="">YOUR EMAIL ID</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div className="loan53">
+                  <div className="loan54">
+                    <label htmlFor="">YOUR MOBILE NUMBER</label>
+                    <input type="text" />
+                  </div>
+                  <div className="loan54">
+                    <label htmlFor="">SELECT A COURSE</label>
+                    <div className="loan55">
+                      <IoIosArrowDown color="#000000" size={20} />
+                    </div>
+                  </div>
+                </div>
+                <div className="loan53">
+                  <div className="loan54">
+                    <label htmlFor="">SELECT YOUR CITY</label>
+                    <div className="loan55">
+                      <IoIosArrowDown color="#000000" size={20} />
+                    </div>
+                  </div>
+                  <div className="loan54">
+                    <label htmlFor="">SELECT A BANK</label>
+                    <div className="loan55">
+                      <IoIosArrowDown color="#000000" size={20} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="loan56">
+                <p>Any loan availed so far</p>
+                <div className="loan57">
+                  <button>Yes</button>
+                  <button>No</button>
+                </div>
+              </div>
+
+              <div className="loan58">
+                <h6>We may take upto 24 Hrs to get back <span>if delayed reach us at : 885203201250</span></h6>
+              </div>
+
+              <div className="loan60">
+                <button onClick={()=>setShow2(false)}>Submit</button>
+              </div>
+            </div>
+          </>
+        </Modal.Body>
+      </Modal>
+    );
+  }
 
   const settings = {
     dots: false,
@@ -197,7 +461,7 @@ const Loan = () => {
           </div>
           <div className="loan18">
             <div className="ext1">
-              <button className="ext3" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
+              <button className="ext3" onClick={() => setShow1(true)}>Eligibility Check</button>
               <button className="ext2" onClick={() => setModalShow(true)}>Apply Now</button>
             </div>
           </div>
@@ -226,7 +490,7 @@ const Loan = () => {
           <div className="loan18">
             <div className="ext1">
               <button className="ext3" onClick={() => setModalShow(true)}>Apply Now</button>
-              <button className="ext2" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
+              <button className="ext2" onClick={() => setShow1(true)}>Eligibility Check</button>
             </div>
           </div>
         </div>
@@ -254,7 +518,7 @@ const Loan = () => {
           <div className="loan18">
             <div className="ext1">
               <button className="ext3" onClick={() => setModalShow(true)}>Apply Now</button>
-              <button className="ext2" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
+              <button className="ext2" onClick={() => setShow1(true)}>Eligibility Check</button>
             </div>
           </div>
         </div>
@@ -282,7 +546,7 @@ const Loan = () => {
           <div className="loan18">
             <div className="ext1">
               <button className="ext3" onClick={() => setModalShow(true)}>Apply Now</button>
-              <button className="ext2" onClick={() => navigate("/eligibility-check")}>Eligibility Check</button>
+              <button className="ext2" onClick={() => setShow1(true)}>Eligibility Check</button>
             </div>
           </div>
         </div>
@@ -294,109 +558,109 @@ const Loan = () => {
         <h5>loan calculator</h5>
         <p>Education loans are crafted to provide financial support to students with aspirations of pursuing higher education in esteemed colleges within India.</p>
       </div>
-      <div className="loan21">
+      <div className="loan213124">
       </div>
 
       <div className="loan24">
         <div className="loan22">
           <div>
-          <div className="loan23">
-            <label htmlFor="">Fill the Loan Amount</label>
-            <input type="text" placeholder="10,000₹"  value={loanAmount}
-            onChange={handleInputChange} />
-          </div>
-          <div className="rangebox">
-            <div className="slider">
-              <div className="progress"></div>
+            <div className="loan23">
+              <label htmlFor="">Fill the Loan Amount</label>
+              <input type="text" placeholder="10,000₹" value={loanAmount}
+                onChange={handleInputChange} />
             </div>
-            <div className="range-input">
-              <input type="range" className="range-min"
-              min="2500"
-              max="10000"
-              step={priceGap}
-              value={loanAmount}
-              onChange={handleInputChange} />
+            <div className="rangebox">
+              <div className="slider">
+                <div className="progress"></div>
+              </div>
+              <div className="range-input">
+                <input type="range" className="range-min"
+                  min="2500"
+                  max="10000"
+                  step={priceGap}
+                  value={loanAmount}
+                  onChange={handleInputChange} />
+              </div>
             </div>
-          </div>
-          <div className="values">
-            <span>10,000</span>
-            <span>10L</span>
-            <span>20L</span>
-            <span>30L</span>
-            <span>40L</span>
-            <span>50L</span>
-            <span>60L</span>
-            <span>70L</span>
-            <span>80L</span>
-            <span>90L</span>
-            <span>1CR</span>
-          </div>
+            <div className="values">
+              <span>10,000</span>
+              <span>10L</span>
+              <span>20L</span>
+              <span>30L</span>
+              <span>40L</span>
+              <span>50L</span>
+              <span>60L</span>
+              <span>70L</span>
+              <span>80L</span>
+              <span>90L</span>
+              <span>1CR</span>
+            </div>
           </div>
           <div>
-          <div className="loan23">
-            <label htmlFor="">Fill the Interest Rate</label>
-            <input type="text" placeholder="10,000₹"  value={loanAmount}
-            onChange={handleInputChange} />
-          </div>
-          <div className="rangebox">
-            <div className="slider">
-              <div className="progress"></div>
+            <div className="loan23">
+              <label htmlFor="">Fill the Interest Rate</label>
+              <input type="text" placeholder="10,000₹" value={loanAmount}
+                onChange={handleInputChange} />
             </div>
-            <div className="range-input">
-              <input type="range" className="range-min"
-              min="2500"
-              max="10000"
-              step={priceGap}
-              value={loanAmount}
-              onChange={handleInputChange} />
+            <div className="rangebox">
+              <div className="slider">
+                <div className="progress"></div>
+              </div>
+              <div className="range-input">
+                <input type="range" className="range-min"
+                  min="2500"
+                  max="10000"
+                  step={priceGap}
+                  value={loanAmount}
+                  onChange={handleInputChange} />
+              </div>
             </div>
-          </div>
-          <div className="values">
-            <span>10,000</span>
-            <span>10L</span>
-            <span>20L</span>
-            <span>30L</span>
-            <span>40L</span>
-            <span>50L</span>
-            <span>60L</span>
-            <span>70L</span>
-            <span>80L</span>
-            <span>90L</span>
-            <span>1CR</span>
-          </div>
+            <div className="values">
+              <span>10,000</span>
+              <span>10L</span>
+              <span>20L</span>
+              <span>30L</span>
+              <span>40L</span>
+              <span>50L</span>
+              <span>60L</span>
+              <span>70L</span>
+              <span>80L</span>
+              <span>90L</span>
+              <span>1CR</span>
+            </div>
           </div>
           <div>
-          <div className="loan23">
-            <label htmlFor="">Fill the Loan Rate</label>
-            <input type="text" placeholder="10,000₹"  value={loanAmount}
-            onChange={handleInputChange} />
-          </div>
-          <div className="rangebox">
-            <div className="slider">
-              <div className="progress"></div>
+            <div className="loan23">
+              <label htmlFor="">Fill the Loan Rate</label>
+              <input type="text" placeholder="10,000₹" value={loanAmount}
+                onChange={handleInputChange} />
             </div>
-            <div className="range-input">
-              <input type="range" className="range-min"
-              min="2500"
-              max="10000"
-              step={priceGap}
-              value={loanAmount}
-              onChange={handleInputChange} />
+            <div className="rangebox">
+              <div className="slider">
+                <div className="progress"></div>
+              </div>
+              <div className="range-input">
+                <input type="range" className="range-min"
+                  min="2500"
+                  max="10000"
+                  step={priceGap}
+                  value={loanAmount}
+                  onChange={handleInputChange} />
+              </div>
             </div>
-          </div>
-          <div className="values">
-            <span>10,000</span>
-            <span>10L</span>
-            <span>20L</span>
-            <span>30L</span>
-            <span>40L</span>
-            <span>50L</span>
-            <span>60L</span>
-            <span>70L</span>
-            <span>80L</span>
-            <span>90L</span>
-            <span>1CR</span>
-          </div>
+            <div className="values">
+              <span>10,000</span>
+              <span>10L</span>
+              <span>20L</span>
+              <span>30L</span>
+              <span>40L</span>
+              <span>50L</span>
+              <span>60L</span>
+              <span>70L</span>
+              <span>80L</span>
+              <span>90L</span>
+              <span>1CR</span>
+            </div>
           </div>
         </div>
 
@@ -413,10 +677,12 @@ const Loan = () => {
           </div>
         </div>
       </div>
-      <div className="loan21">
+      <div className="loan213124">
       </div>
+      <EligibilityCheck show={show1} onHide={() => setShow1(false)} />
       <ApplyNowModal show={modalShow}
         onHide={() => setModalShow(false)} />
+      <Calculatoreligibility show={show2} onHide={() => setShow2(false)} />
       <Footer1 />
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>

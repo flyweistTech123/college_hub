@@ -7,16 +7,6 @@ import Footer from "../Footer";
 import course from '../../Images/course.png';
 import TopNavbar from "../TopNavbar";
 import course1 from '../../Images/course11.png'
-import img from "../../Images/c33.png";
-import img3 from "../../Images/c1.png";
-import img4 from "../../Images/c4.png";
-import img5 from "../../Images/c5.png";
-import img6 from "../../Images/c6.png";
-import img7 from "../../Images/c7.png";
-import img8 from "../../Images/c8.png";
-import img9 from "../../Images/c9.png";
-import img10 from "../../Images/c10.png";
-import img11 from "../../Images/c11.png";
 import img14 from "../../Images/c14.png";
 import img15 from "../../Images/c15.png";
 import img16 from "../../Images/c16.png";
@@ -26,11 +16,6 @@ import img19 from "../../Images/c19.png";
 import img20 from "../../Images/c20.png";
 import img21 from "../../Images/c21.png";
 import img22 from "../../Images/c22.png";
-import img23 from "../../Images/c23.png";
-import img24 from "../../Images/c24.png";
-import img25 from "../../Images/c25.png";
-import img26 from "../../Images/c26.png";
-import IIt2 from '../../Images/IIT2.png'
 import { IoIosArrowForward } from "react-icons/io";
 
 

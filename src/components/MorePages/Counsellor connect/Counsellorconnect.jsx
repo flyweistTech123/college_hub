@@ -32,7 +32,8 @@ import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-ico
 
 
 import msgimg from '../../../Images/msg2.0.png'
-// import Counselling from "../../Modals/Login/Counselling";
+import CounsellingModal from "../../Modals/Login/CounsellingModal";
+
 
 
 
@@ -629,8 +630,8 @@ const Counsellorconnect = () => {
       </div>
 
 
-      {/* <Counselling show={modalShow}
-        onHide={() => setModalShow(false)} /> */}
+      <CounsellingModal show={modalShow}
+        onHide={() => setModalShow(false)} />
 
       <Footer1 />
       <Offcanvas show={show2} onHide={handleClose}>

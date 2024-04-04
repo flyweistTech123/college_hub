@@ -450,7 +450,7 @@ const Home = () => {
                   <p>Compare</p>
                   <img src={img11} alt="" />
                 </div>
-                <div className="home17" onClick={()=>navigate('/counsellorconnect')}>
+                <div className="home17" onClick={() => navigate('/counsellorconnect')}>
                   <p>Speak to Expert</p>
                   <img src={img11} alt="" />
                 </div>
@@ -920,11 +920,13 @@ const Home = () => {
         </div>
         <div className="home25">
           <h2>Top Featured Colleges</h2>
+          <div className="home29">
+            <button className="home27"><MdOutlineSort /> City Name <FaAngleDown /></button>
+          </div>
           <div className="home26">
+
             <Slider {...settings3}>
-              <div className="home29">
-                <button className="home27"><MdOutlineSort /> City Name <FaAngleDown /></button>
-              </div>
+
               <div className="home29">
                 <button className="home28">MBA/PGDM</button>
               </div>

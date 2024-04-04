@@ -9,16 +9,16 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 
 
 import img from "../Images/c1.png";
+import CounsellingModal from "./Modals/Login/CounsellingModal";
+
+
 
 const Navbar = () => {
+  const [modalShow, setModalShow] = useState(false);
+
   const navigate = useNavigate();
-  const [show, setShow] = useState(false);
   return (
     <>
-      <MyVerticallyCenteredModal
-        show={show}
-        onHide={() => setShow(false)}
-      />
       <div className="nav1">
         <div className="nav2">
           <img src={img} alt="" onClick={() => navigate("/")} />
@@ -34,10 +34,13 @@ const Navbar = () => {
           </div>
 
           <div className="navbtn">
-            <button onClick={()=>setShow(true)}><FaRegQuestionCircle /> Need Counselling</button>
+            <button onClick={()=>setModalShow(true)}><FaRegQuestionCircle /> Need Counselling</button>
           </div>
         </div>
       </div>
+
+      <CounsellingModal show={modalShow}
+        onHide={() => setModalShow(false)} />
     </>
   );
 };

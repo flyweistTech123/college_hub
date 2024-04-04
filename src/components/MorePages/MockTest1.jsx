@@ -114,7 +114,7 @@ const MockTest1 = () => {
             </div>
 
             <div className="tst3">
-                <button>Restart Now</button>
+                <button>Submit</button>
             </div>
             <div className="loan2131243">
             </div>

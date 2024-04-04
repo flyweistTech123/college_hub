@@ -1,8 +1,10 @@
 import React from "react";
 import logo from '../Images/c1.png'
+import { useNavigate } from "react-router-dom";
 
 
 const Footer1 = () => {
+  const navigate = useNavigate()
   console.log("Footer here");
   return (
     <>
@@ -68,7 +70,7 @@ const Footer1 = () => {
         </div>
         <hr className="foot6" />
         <div className="foot7">
-          <h3>Terms & Conditions | Privacy Policy | 2023 College Hub Internet Co.</h3>
+          <h3 onClick={()=>navigate('/termscondition')}>Terms & Conditions | Privacy Policy | 2023 College Hub Internet Co.</h3>
         </div>
       </div>
     </>

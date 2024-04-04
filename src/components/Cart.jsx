@@ -100,7 +100,7 @@ const Cart = () => {
                     </div>
                 </div>
             </div>
-            <div className="loan21">
+            <div className="loan213124">
             </div>
             <Footer1 />
             <Offcanvas show={show} onHide={handleClose}>

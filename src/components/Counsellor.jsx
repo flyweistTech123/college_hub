@@ -34,66 +34,80 @@ const Counsellor = () => {
                 <h6>Akash Sharma</h6>
                 <p>Expert Counsellor at CollegeHub</p>
               </div>
-              <div className="college5">
+              <div className="counsellor6">
                 <button>Rate Counsellor</button>
                 <button>Schedule a Call</button>
               </div>
             </div>
+          </div>
+          <div className="counsellor1">
+            <img src={img} alt="" />
 
-          </div>
-          <div className="counsellor1">
-            <img src={img} alt="" />
-            <div className="counsellor2">
-              <h6>Akash Sharma</h6>
-              <p>Expert Counsellor at CollegeHub</p>
-            </div>
-            <div className="counsellor3">
-              <button className="college5">Rate Counsellor</button>
-              <button className="college6">Schedule a Call</button>
-            </div>
-          </div>
-          <div className="counsellor1">
-            <img src={img2} alt="" />
-            <div className="counsellor2">
-              <h6>Akash Sharma</h6>
-              <p>Expert Counsellor at CollegeHub</p>
-            </div>
-            <div className="counsellor3">
-              <button className="college5">Rate Counsellor</button>
-              <button className="college6">Schedule a Call</button>
-            </div>
-          </div>
-          <div className="counsellor1">
-            <img src={img} alt="" />
-            <div className="counsellor2">
-              <h6>Akash Sharma</h6>
-              <p>Expert Counsellor at CollegeHub</p>
-            </div>
-            <div className="counsellor3">
-              <button className="college5">Rate Counsellor</button>
-              <button className="college6">Schedule a Call</button>
+            <div className="counsellor5">
+              <div className="counsellor2">
+                <h6>Akash Sharma</h6>
+                <p>Expert Counsellor at CollegeHub</p>
+              </div>
+              <div className="counsellor6">
+                <button>Rate Counsellor</button>
+                <button>Schedule a Call</button>
+              </div>
             </div>
           </div>
           <div className="counsellor1">
             <img src={img2} alt="" />
-            <div className="counsellor2">
-              <h6>Akash Sharma</h6>
-              <p>Expert Counsellor at CollegeHub</p>
+
+            <div className="counsellor5">
+              <div className="counsellor2">
+                <h6>Akash Sharma</h6>
+                <p>Expert Counsellor at CollegeHub</p>
+              </div>
+              <div className="counsellor6">
+                <button>Rate Counsellor</button>
+                <button>Schedule a Call</button>
+              </div>
             </div>
-            <div className="counsellor3">
-              <button className="college5">Rate Counsellor</button>
-              <button className="college6">Schedule a Call</button>
+          </div>
+          <div className="counsellor1">
+            <img src={img2} alt="" />
+
+            <div className="counsellor5">
+              <div className="counsellor2">
+                <h6>Akash Sharma</h6>
+                <p>Expert Counsellor at CollegeHub</p>
+              </div>
+              <div className="counsellor6">
+                <button>Rate Counsellor</button>
+                <button>Schedule a Call</button>
+              </div>
+            </div>
+          </div>
+          <div className="counsellor1">
+            <img src={img2} alt="" />
+
+            <div className="counsellor5">
+              <div className="counsellor2">
+                <h6>Akash Sharma</h6>
+                <p>Expert Counsellor at CollegeHub</p>
+              </div>
+              <div className="counsellor6">
+                <button>Rate Counsellor</button>
+                <button>Schedule a Call</button>
+              </div>
             </div>
           </div>
           <div className="counsellor1">
             <img src={img} alt="" />
-            <div className="counsellor2">
-              <h6>Akash Sharma</h6>
-              <p>Expert Counsellor at CollegeHub</p>
-            </div>
-            <div className="counsellor3">
-              <button className="college5">Rate Counsellor</button>
-              <button className="college6">Schedule a Call</button>
+
+            <div className="counsellor5">
+              <div className="counsellor2">
+                <h6>Akash Sharma</h6>
+                <p>Expert Counsellor at CollegeHub</p>
+              </div>
+              <div className="counsellor6">
+                <button>Rate Counsellor</button>
+                <button>Schedule a Call</button>
+              </div>
             </div>
           </div>
         </div>

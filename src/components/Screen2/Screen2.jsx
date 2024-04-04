@@ -17,2140 +17,2165 @@ import MobileLoanNavbar from "../MobileLoanNavabr"
 
 
 
+
+
+import Broucher from "../Modals/Login/Broucher";
+import ShortList from "../Modals/ShortList/ShortList";
+import ApplyNowModal from "../Modals/Login/Apply";
+
+
 const Screen2 = () => {
+
+  const [modalShow, setModalShow] = useState(false);
+  const [modalShow1, setModalShow1] = useState(false);
+  const [collegeselectModal, setCollegeSelect] = useState(false)
+
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const navigate = useNavigate()
   return (
     <>
 
       <Navbar />
 
       <div className="screen1">
-      <div className="screen20" style={{marginTop:"10px", marginLeft:"10px"}}>
+        <div className="screen20" style={{ marginTop: "10px", marginLeft: "10px" }}>
           <i class="fa-solid fa-bars" onClick={handleShow}></i>
         </div>
         <div className="screen2">
           <Sidebar />
         </div>
         <div className="screen3">
-            <div className="filt50">
-              <h1>List of Top Colleges In India based on 2023 Ranking</h1>
-              <button> <IoFilterOutline /> Popularity <IoIosArrowDown /></button>
-            </div>
+          <div className="filt50">
+            <h1>List of Top Colleges In India based on 2023 Ranking</h1>
+            <button> <IoFilterOutline /> Popularity <IoIosArrowDown /></button>
+          </div>
 
 
-            <div className="filt40">
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
+          <div className="filt40">
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
                 </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
                 </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
                 </div>
+              </div>
 
 
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
                 </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
 
               </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-            </div>
-            <div className="filt36">
 
             </div>
-
-        
-            <div className="filt40">
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
                 </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
                 </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
                 </div>
+              </div>
 
 
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
                 </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
 
               </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-            </div>
-            <div className="filt36">
 
             </div>
-            <div className="filt40">
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
                 </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
                 </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
                 </div>
+              </div>
 
 
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
                 </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
 
               </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
 
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
-              <div className="filt20">
-                <div className="filt21">
-                  <img src={img} alt="" />
-                  <div className="filt22">
-                    <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
-                  </div>
-                </div>
-                <div className="filt30">
-                  <p>Asia Pacific Institute of Management...</p>
-                  <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
-                </div>
-
-
-
-                <div className="filt37">
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        MBBS
-                      </li>
-                      <li>
-                        M.Ch
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="filt34">
-                    <ul>
-                      <li>
-                        Admission Open
-                      </li>
-                      <li>
-                        Course Fee
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <div className="filt35">
-                  <div className="filt39">
-                    <button>Apply Now</button>
-                    <button>Brochure</button>
-                  </div>
-                  <div className="filt38">
-                    <button>Expert Talk</button>
-                    <button>Compare</button>
-                  </div>
-                  <button className="filt25btn">Add to common Application Form</button>
-
-                </div>
-
-              </div>
             </div>
-
-            <div className="filt33">
-              <p>Load More...</p>
-            </div>
-
-            <div className="filt45">
-              <img src={clgimg} alt="" />
-              <div className="filt46">
-                <h2>Upto 100% Scholarships Available</h2>
-                <button>Explore Now</button>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
               </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
             </div>
-    
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+          </div>
+          <div className="filt36">
+
+          </div>
+
+
+          <div className="filt40">
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+          </div>
+          <div className="filt36">
+
+          </div>
+          <div className="filt40">
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button>Apply Now</button>
+                  <button>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button>Expert Talk</button>
+                  <button>Compare</button>
+                </div>
+                <button className="filt25btn">Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+            <div className="filt20">
+              <div className="filt21">
+                <img src={img} alt="" />
+                <div className="filt22">
+                  <h5><i className="fa-solid fa-star"></i> 9.5/10</h5>
+                </div>
+              </div>
+              <div className="filt30">
+                <p>Asia Pacific Institute of Management...</p>
+                <p><IoLocation /> Kochi, Kerala | MCI Accredited</p>
+              </div>
+
+
+
+              <div className="filt37">
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      MBBS
+                    </li>
+                    <li>
+                      M.Ch
+                    </li>
+                  </ul>
+                </div>
+                <div className="filt34">
+                  <ul>
+                    <li>
+                      Admission Open
+                    </li>
+                    <li>
+                      Course Fee
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="filt35">
+                <div className="filt39">
+                  <button onClick={() => setModalShow(true)}>Apply Now</button>
+                  <button onClick={() => setModalShow1(true)}>Brochure</button>
+                </div>
+                <div className="filt38">
+                  <button onClick={() => navigate('/counsellorconnect')}>Expert Talk</button>
+                  <button onClick={() => navigate('/camparecolleges')}>Compare</button>
+                </div>
+                <button className="filt25btn" onClick={() => setCollegeSelect(true)}>Add to common Application Form</button>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div className="filt33">
+            <p>Load More...</p>
+          </div>
+
+          <div className="filt45">
+            <img src={clgimg} alt="" />
+            <div className="filt46">
+              <h2>Upto 100% Scholarships Available</h2>
+              <button>Explore Now</button>
+            </div>
+          </div>
+
         </div>
       </div>
       <Footer1 />
+
+      <ApplyNowModal show={modalShow}
+        onHide={() => setModalShow(false)} />
+
+      <Broucher show={modalShow1}
+        onHide={() => setModalShow1(false)} />
+
+      <ShortList show={collegeselectModal}
+        onHide={() => setCollegeSelect(false)} />
+
+
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
         </Offcanvas.Header>

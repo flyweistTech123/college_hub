@@ -11,7 +11,7 @@ import { FaGraduationCap } from "react-icons/fa";
 
 
 
-const counsellingModal = (props) => {
+const CounsellingModal = (props) => {
     const [otp, setOtp] = useState(['', '', '', '']);
 
     const handleOtpChange = (index, value) => {
@@ -100,4 +100,4 @@ const counsellingModal = (props) => {
     );
 };
 
-export default counsellingModal;
+export default CounsellingModal;
